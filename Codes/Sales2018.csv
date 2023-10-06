@@ -1,0 +1,120 @@
+MakeName,ModelName,CustomerName,CountryName,Cost,RepairsCost,PartsCost,TransportInCost,SalePrice,saledate
+Ferrari,F40,Laurent Saint Yves,France,215600,5500,1500,1950,269500,2018-05-15 12:00:00
+Ferrari,F50,Capots Reluisants S.A.,France,248000,9250,7900,1950,310000,2018-03-15 12:00:00
+Ferrari,Dino,Smooth Rocking Chrome,Italy,156000,9250,750,1950,195000,2018-04-24 12:00:00
+Ferrari,360,Smooth Rocking Chrome,Italy,108000,5500,5600,1950,135000,2018-05-25 12:00:00
+Ferrari,Daytona,Antonio Maura,Spain,79600,500,1500,750,99500,2018-03-08 12:00:00
+Ferrari,Dino,Antonio Maura,Spain,98800,2175,1500,750,123500,2018-03-08 12:00:00
+Ferrari,360,El Sport,Spain,102800,3950,2200,1950,128500,2018-07-31 12:00:00
+Ferrari,Daytona,Andy Cheshire,United Kingdom,116000,3950,2200,1950,145000,2018-12-31 12:00:00
+Ferrari,Mondial,King Leer Cars,United Kingdom,124000,3950,3150,1950,155000,2018-04-10 12:00:00
+Ferrari,F50,Stephany Rousso,United States,156000,3950,1500,1950,195000,2018-05-15 12:00:00
+Porsche,959,Laurent Saint Yves,France,71600,1490,750,750,89500,2018-05-25 12:00:00
+Porsche,928,Alicia Almodovar,Spain,12760,500,500,150,15950,2018-04-02 12:00:00
+Porsche,944,Pierre Blanc,United Kingdom,7840,500,750,150,9800,2018-03-19 12:00:00
+Lamborghini,400GT,Antonio Maura,Spain,116000,9250,1500,1950,145000,2018-03-08 12:00:00
+Lamborghini,Diabolo,Kieran O'Harris,United Kingdom,204000,2000,750,1950,255000,2018-04-09 12:00:00
+Aston Martin,DB5,Jacques Mitterand,France,55600,2000,750,750,69500,2018-10-02 12:00:00
+Aston Martin,Virage,Ronaldo Bianco,Italy,98800,2000,3150,750,123500,2018-12-05 12:00:00
+Aston Martin,DB6,Bravissima!,Italy,66072,1490,750,750,82590,2018-07-31 12:00:00
+Aston Martin,DB6,Alicia Almodovar,Spain,36760,500,750,550,45950,2018-04-15 12:00:00
+Aston Martin,DB2,YO! Speed!,Spain,42000,500,750,550,52500,2018-04-29 12:00:00
+Aston Martin,Vanquish,YO! Speed!,Spain,46080,2000,1500,550,57600,2018-08-01 12:00:00
+Aston Martin,DB9,Screamin' Wheels,United States,52360,500,1500,750,65450,2018-01-02 12:00:00
+Aston Martin,DB9,Screamin' Wheels,United States,44000,500,750,550,55000,2018-04-15 12:00:00
+Aston Martin,DB9,Stephany Rousso,United States,44000,1360,1500,550,55000,2018-07-31 12:00:00
+Aston Martin,Virage,Stephany Rousso,United States,36000,1360,750,550,45000,2018-08-01 12:00:00
+Aston Martin,DB2,Silver HubCaps,United Kingdom,50000,500,750,550,62500,2018-01-02 12:00:00
+Aston Martin,DB4,King Leer Cars,United Kingdom,45480,500,1500,550,56850,2018-01-02 12:00:00
+Aston Martin,DB9,Theo Kowalski,United States,45520,1360,500,550,56900,2018-03-08 12:00:00
+Aston Martin,DB9,Jason B. Wight,United States,47600,500,500,550,59500,2018-12-05 12:00:00
+Aston Martin,Vanquish,Stephany Rousso,United States,45592,970,750,550,56990,2018-10-31 12:00:00
+Aston Martin,DB6,Jayden Jones,United States,90872,500,750,750,113590,2018-08-01 12:00:00
+Aston Martin,Virage,Mr. Evan Telford,United Kingdom,58000,2175,1500,750,72500,2018-07-25 12:00:00
+Aston Martin,Virage,ImpressTheNeighbours.Com,United Kingdom,80000,500,750,750,100000,2018-04-20 12:00:00
+Aston Martin,Vantage,Pierre Blanc,United Kingdom,82000,2175,1500,750,102500,2018-08-01 12:00:00
+Aston Martin,DB4,Clubbing Cars,United Kingdom,45560,500,1500,550,56950,2018-01-02 12:00:00
+Aston Martin,DB4,Honest Pete Motors,United Kingdom,34000,2000,750,550,42500,2018-01-02 12:00:00
+Aston Martin,DB2,Executive Motor Delight,United Kingdom,79992,2000,750,750,99990,2018-07-05 12:00:00
+Aston Martin,DB9,Expensive Shine,United Kingdom,49240,660,750,550,61550,2018-08-11 12:00:00
+Aston Martin,Virage,Steve Docherty,United Kingdom,44000,1360,1500,550,55000,2018-08-15 12:00:00
+Aston Martin,DB6,Beltway Prestige Driving,United Kingdom,35908,2000,750,550,44885,2018-04-20 12:00:00
+Aston Martin,DB6,Boris Spry,United Kingdom,43600,970,750,550,54500,2018-12-08 12:00:00
+Aston Martin,DB9,Andrea Tarbuck,United Kingdom,79600,1490,750,750,99500,2018-12-08 12:00:00
+Aston Martin,DB2,Mr. Evan Telford,United Kingdom,31600,970,750,550,39500,2018-08-10 12:00:00
+Bentley,Flying Spur,SuperSport S.A.R.L.,France,58000,1490,750,750,72500,2018-09-01 12:00:00
+Bentley,Brooklands,Capots Reluisants S.A.,France,151600,500,1500,1950,189500,2018-02-17 12:00:00
+Bentley,Mulsanne,Rodolph Legler,Germany,79600,2000,750,750,99500,2018-08-16 12:00:00
+Bentley,Flying Spur,Glittering Prize Cars Ltd,United Kingdom,45560,2000,500,550,56950,2018-01-10 12:00:00
+Bentley,Mulsanne,Convertible Dreams,United Kingdom,45560,970,750,550,56950,2018-09-01 12:00:00
+Bentley,Continental,King Leer Cars,United Kingdom,79600,500,750,750,99500,2018-06-23 12:00:00
+Bentley,Continental,Screamin' Wheels,United States,71600,1490,750,750,89500,2018-09-01 12:00:00
+Rolls Royce,Silver Seraph,M. Pierre Dubois,France,96000,2175,750,750,120000,2018-02-10 12:00:00
+Rolls Royce,Ghost,Boris Spry,United Kingdom,79160,1490,750,750,98950,2018-02-17 12:00:00
+Rolls Royce,Phantom,Sondra Horowitz,United States,146000,5500,1500,1950,182500,2018-02-12 12:00:00
+Mercedes,350SL,Wladimir Lacroix,France,26880,2000,750,550,33600,2018-09-08 12:00:00
+Mercedes,280SL,Antonio Maura,Spain,45512,1360,750,550,56890,2018-09-04 12:00:00
+Mercedes,500SL,Pete Spring,United Kingdom,24400,1360,750,150,30500,2018-09-08 12:00:00
+Mercedes,280SL,Bling Motors,United Kingdom,26760,1360,750,550,33450,2018-07-25 12:00:00
+Mercedes,280SL,ImpressTheNeighbours.Com,United Kingdom,50000,500,750,550,62500,2018-09-04 12:00:00
+Mercedes,350SL,Executive Motor Delight,United Kingdom,18800,1360,750,150,23500,2018-04-15 12:00:00
+Mercedes,250SL,Kieran O'Harris,United Kingdom,10360,1360,750,150,12950,2018-04-09 12:00:00
+Mercedes,280SL,Screamin' Wheels,United States,31600,500,750,550,39500,2018-04-15 12:00:00
+Alfa Romeo,1750,Vive La Vitesse,France,7960,500,750,150,9950,2018-04-15 12:00:00
+Alfa Romeo,Giulietta,Ralph Obermann,Germany,9240,500,750,150,11550,2018-01-05 12:00:00
+Alfa Romeo,Giulietta,Alicia Almodovar,Spain,4552,500,750,150,5690,2018-03-05 12:00:00
+Alfa Romeo,Giulia,Mary Blackhouse,United Kingdom,5560,500,750,150,6950,2018-07-10 12:00:00
+Alfa Romeo,Giulietta,Maurice Dujardin,United Kingdom,8400,500,750,150,10500,2018-07-15 12:00:00
+Alfa Romeo,Giulietta,Kieran O'Harris,United Kingdom,14800,500,750,150,18500,2018-05-25 12:00:00
+Alfa Romeo,Spider,Silver HubCaps,United Kingdom,4760,500,750,150,5950,2018-01-15 12:00:00
+Alfa Romeo,Giulietta,Screamin' Wheels,United States,14360,2000,750,150,17950,2018-12-17 12:00:00
+Austin,Princess,Vive La Vitesse,France,4800,500,750,150,6000,2018-03-05 12:00:00
+Austin,Princess,Mr. Evan Telford,United Kingdom,920,500,750,150,1150,2018-01-05 12:00:00
+Austin,Cambridge,ImpressTheNeighbours.Com,United Kingdom,18000,1360,750,150,22500,2018-02-13 12:00:00
+Austin,Princess,Screamin' Wheels,United States,2000,500,750,150,2500,2018-04-11 12:00:00
+BMW,Alpina,Wladimir Lacroix,France,17200,500,750,150,21500,2018-02-14 12:00:00
+Bugatti,57C,La Bagnole de Luxe,France,284000,9250,7500,1950,355000,2018-01-15 12:00:00
+Bugatti,57C,Bling Bling S.A.,France,276000,5500,750,1950,345000,2018-07-31 12:00:00
+Bugatti,57C,Andrea Tarbuck,United Kingdom,284000,9250,2200,1950,355000,2018-02-17 12:00:00
+Citroen,Traaction Avant,Khader El Ghannam,France,20000,1360,750,150,25000,2018-09-15 12:00:00
+Citroen,Rosalie,Laurent Saint Yves,France,4400,500,750,150,5500,2018-12-31 12:00:00
+Citroen,Rosalie,Birmingham Executive Prestige Vehicles,United Kingdom,1080,500,750,150,1350,2018-05-03 12:00:00
+Delahaye,135,Khader El Ghannam,France,20400,1360,750,150,25500,2018-09-15 12:00:00
+Delahaye,175,Bravissima!,Italy,10000,500,750,150,12500,2018-09-15 12:00:00
+Delahaye,145,Expensive Shine,United Kingdom,31600,970,750,550,39500,2018-09-15 12:00:00
+Jaguar,XK120,Casseroles Chromes,France,47200,2000,750,550,59000,2018-10-31 12:00:00
+Jaguar,Mark V,Francois Chirac,France,20760,1360,750,150,25950,2018-10-31 12:00:00
+Jaguar,XK120,Laurent Saint Yves,France,17240,970,750,150,21550,2018-01-10 12:00:00
+Jaguar,XK150,Snazzy Roadsters,United Kingdom,21200,500,750,150,26500,2018-06-16 12:00:00
+Jaguar,Mark X,Glittering Prize Cars Ltd,United Kingdom,19600,1360,750,150,24500,2018-06-22 12:00:00
+Jaguar,XJ12,Alex McWhirter,United Kingdom,14280,970,750,150,17850,2018-10-31 12:00:00
+Jaguar,XK150,Andy Cheshire,United Kingdom,23600,660,750,150,29500,2018-10-31 12:00:00
+Jaguar,XK120,Mike Beeton,United Kingdom,54800,500,1500,750,68500,2018-07-30 12:00:00
+Jaguar,Mark V,Paul Blasio,United States,26800,2000,750,550,33500,2018-06-18 12:00:00
+Jaguar,Mark X,Jayden Jones,United States,69200,2175,750,750,86500,2018-10-31 12:00:00
+Lagonda,V12,Bling Motors,United Kingdom,49200,500,750,550,61500,2018-04-22 12:00:00
+Morgan,Plus 4,ImpressTheNeighbours.Com,United Kingdom,14800,970,750,150,18500,2018-07-30 12:00:00
+Noble,M600,Prestige Imports,Spain,36760,660,1500,550,45950,2018-01-10 12:00:00
+Noble,M14,Melissa Bertrand,United Kingdom,4400,500,750,150,5500,2018-07-31 12:00:00
+Noble,M600,My Shiny Sports Car Ltd.,United Kingdom,20760,1360,750,150,25950,2018-05-23 12:00:00
+Triumph,TR4,Flash Voitures,Belgium,5560,500,750,150,6950,2018-06-03 12:00:00
+Triumph,TR7,Capots Reluisants S.A.,France,7912,500,750,150,9890,2018-01-05 12:00:00
+Triumph,TR5,Laurent Saint Yves,France,7120,500,750,150,8900,2018-11-02 12:00:00
+Triumph,TR5,Antonio Maura,Spain,9200,500,750,150,11500,2018-12-16 12:00:00
+Triumph,TR4,Posh Vehicles Ltd,United Kingdom,6800,500,750,150,8500,2018-11-22 12:00:00
+Triumph,TR4,My Shiny Sports Car Ltd.,United Kingdom,5272,500,750,150,6590,2018-05-25 12:00:00
+Triumph,TR4,Beltway Prestige Driving,United Kingdom,7992,500,750,150,9990,2018-05-23 12:00:00
+Triumph,TR5,Pierre Blanc,United Kingdom,10056,2000,500,150,12570,2018-01-05 12:00:00
+Triumph,TR5,Stephany Rousso,United States,7600,500,750,150,9500,2018-10-31 12:00:00
+Trabant,500,Mary Blackhouse,United Kingdom,920,500,750,150,1150,2018-10-02 12:00:00
+Trabant,500,Mary Blackhouse,United Kingdom,2000,500,750,150,2500,2018-10-02 12:00:00
+Trabant,600,Mary Blackhouse,United Kingdom,1560,500,750,150,1950,2018-10-02 12:00:00
+Trabant,600,Bling Motors,United Kingdom,1000,500,750,150,1250,2018-05-25 12:00:00
+Trabant,600,Boris Spry,United Kingdom,1272,500,750,150,1590,2018-12-08 12:00:00
+Peugeot,205,Stefan Van Helsing,Belgium,760,500,750,150,950,2018-01-10 12:00:00
+Peugeot,203,Jean-Yves Truffaut,France,1560,500,750,150,1950,2018-01-05 12:00:00
+Peugeot,404,Smooth Rocking Chrome,Italy,1000,500,750,150,1250,2018-07-31 12:00:00
+Peugeot,404,Leslie Whittington,United Kingdom,1920,500,750,150,2400,2018-07-30 12:00:00
+Peugeot,404,Clubbing Cars,United Kingdom,760,500,750,150,950,2018-04-23 12:00:00
+Peugeot,404,Silver HubCaps,United Kingdom,1996,500,750,150,2495,2018-05-03 12:00:00
+Reliant,Robin,Mrs. Ivana Telford,United Kingdom,760,500,750,150,950,2018-12-31 12:00:00

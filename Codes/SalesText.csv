@@ -1,0 +1,349 @@
+CountryName,MakeName,ModelName,SalePrice,LineItemDiscount,InvoiceNumber,SaleDate
+United Kingdom,Ferrari,Testarossa,"£65,000",2700,GBPGB001,02/01/2015
+United Kingdom,Ferrari,355,220000,60000,GBPGB002,01/25/2016
+United Kingdom,Porsche,911,19 500,,GBPGB003,12-02-2015
+Germany,Porsche,924,11500,,EURDE004,16/02/2015
+France,Porsche,944,19950,,EURFR005,02/01/2015
+United Kingdom,Aston Martin,DB4,29500 .00,1250,GBPGB006,14/03/2015
+United Kingdom,Aston Martin,DB5,49500,2450,GBPGB007,24/03/2015
+United Kingdom,Aston Martin,DB6,76000,5500,GBPGB008,30/03/2015
+France,Porsche,911,19600,,EURFR009,06/04/2015
+United States,Aston Martin,DB5,36500,2500,USDUS010,04/04/2015
+United Kingdom,Porsche,944,8500,50,GBPGB011,30/04/2015
+France,Aston Martin,DB6,45000,,EURFR136,31/03/2017
+United Kingdom,Bentley,Flying Spur,80500,500,GBPGB011,30/04/2015
+United Kingdom,Ferrari,355,169500,,GBPGB012,10/05/2015
+France,Porsche,944,8950,25,EURFR013,20/05/2015
+United Kingdom,Ferrari,Testarossa,195000,,GBPGB014,28/05/2015
+France,Mercedes,280SL,22950,950,EURFR015,04/06/2015
+United Kingdom,Alfa Romeo,Giulia,8695,95,GBPGB016,12/07/2015
+United Kingdom,Jaguar,XK150,22990,,GBPGB017,15/07/2015
+France,Jaguar,XJS,19500,1500,EURFR018,25/07/2015
+France,Aston Martin,DB6,56000,,EURFR018,25/07/2015
+United Kingdom,Porsche,944,8800,500,GBPGB042,30/04/2016
+United States,Triumph,TR4,5500,500,USDUS019,02/08/2015
+United Kingdom,Triumph,TR5,12650,,GBPGB020,05/09/2015
+United Kingdom,Ferrari,355,156500,,GBPGB094,19/09/2016
+United Kingdom,Porsche,924,8950,950,GBPGB021,15/09/2015
+Switzerland,Bentley,Flying Spur,55450,1500,GBPCH228,17/02/2018
+United Kingdom,Jaguar,XK120,15600,,GBPGB022,15/09/2015
+United Kingdom,Jaguar,XJS,22600,600,GBPGB023,30/10/2015
+United States,Aston Martin,Virage,123590,2450,USDUS024,30/10/2015
+United Kingdom,Porsche,911,22950,50,GBPGB025,10/11/2015
+United Kingdom,Aston Martin,DB6,69500,,GBPGB026,01/12/2015
+Switzerland,Triumph,TR4,12500,,GBPCH027,01/01/2016
+United Kingdom,Porsche,944,12500,1500,GBPGB028,01/01/2016
+United States,Ferrari,355,159500,,USDUS029,01/01/2016
+United Kingdom,Ferrari,Testarossa,165000,5000,GBPGB030,01/01/2016
+France,Alfa Romeo,Giulia,2550,50,EURFR031,07/01/2016
+United Kingdom,Porsche,911,29500,,GBPGB032,07/01/2016
+United States,Porsche,944,12650,500,USDUS033,09/01/2016
+United Kingdom,Bentley,Continental,56950,,GBPGB034,22/01/2016
+United Kingdom,Aston Martin,DB6,56000,,GBPGB035,22/02/2016
+Germany,Bentley,Flying Spur,65890,750,EURDE036,17/02/2016
+Germany,Alfa Romeo,Giulia,6000,,EURDE036,17/02/2016
+France,Porsche,924,39500,2450,EURFR037,16/02/2016
+United Kingdom,Lamborghini,Countach,3650,,GBPGB038,28/02/2016
+Switzerland,Lamborghini,Diabolo,220500,,GBPCH039,20/03/2016
+United Kingdom,Ferrari,Mondial,102950,2450,GBPGB040,05/04/2016
+United States,Porsche,911,17500,,USDUS041,30/04/2016
+Germany,Ferrari,360,99500,500,EURDE043,30/04/2016
+United Kingdom,Alfa Romeo,Giulia,17500,500,GBPGB044,30/04/2016
+United Kingdom,Alfa Romeo,Spider,12500,,GBPGB045,30/04/2016
+United Kingdom,Jaguar,XJS,9950,,GBPGB046,30/05/2016
+United Kingdom,Jaguar,E-Type,39500,2450,GBPGB046,30/05/2016
+France,Aston Martin,DB6,49580,,EURFR047,30/05/2016
+France,Triumph,TR4,5500,,EURFR048,15/06/2016
+United Kingdom,Porsche,911,22150,500,GBPGB049,15/06/2016
+United Kingdom,Jaguar,XK120,35000,,GBPGB050,15/06/2016
+France,Jaguar,XK150,29650,,EURFR051,15/06/2016
+France,Aston Martin,DB6,45500,,EURFR051,15/06/2016
+France,Bentley,Flying Spur,99500,750,EURFR051,15/06/2016
+United Kingdom,Porsche,944,15650,,GBPGB052,01/07/2016
+Spain,Porsche,911,49500,,EURES192,01/11/2017
+United States,Alfa Romeo,Giulia,12500,750,USDUS053,06/07/2016
+United Kingdom,Ferrari,Testarossa,195000,,GBPGB054,25/07/2016
+United Kingdom,Ferrari,355,205000,,GBPGB055,25/07/2016
+United Kingdom,Porsche,959,66500,,GBPGB056,25/07/2016
+United Kingdom,Porsche,928,19500,,GBPGB057,25/07/2016
+Spain,Bentley,Flying Spur,79500,500,EURES058,26/07/2016
+Italy,Triumph,TR4,14590,,EURIT059,26/07/2016
+Spain,Triumph,TR5,12750,,EURES060,02/08/2016
+United Kingdom,Aston Martin,DB6,225000,,GBPGB137,31/03/2017
+United Kingdom,Aston Martin,DB9,45600,,GBPGB061,02/08/2016
+United Kingdom,Triumph,TR6,6500,500,GBPGB062,02/08/2016
+United Kingdom,Aston Martin,Virage,102500,1500,GBPGB063,02/08/2016
+France,Jaguar,XK120,99500,,EURFR064,09/08/2016
+United Kingdom,Aston Martin,Vanquish,12500,750,GBPGB065,10/08/2016
+Germany,Aston Martin,Rapide,61500,,EURDE066,12/08/2016
+Switzerland,Aston Martin,DB9,79500,2450,GBPCH067,13/08/2016
+United Kingdom,Porsche,924,16500,,GBPGB068,13/08/2016
+United Kingdom,Porsche,911,33600,,GBPGB068,13/08/2016
+France,Porsche,911,66500,750,EURFR069,13/08/2016
+Italy,Aston Martin,DB5,45000,,EURIT070,19/08/2016
+Germany,Porsche,944,19500,,EURDE071,19/08/2016
+United Kingdom,Bentley,Flying Spur,76500,,GBPGB072,21/08/2016
+United Kingdom,Aston Martin,Virage,45900,500,GBPGB073,22/08/2016
+Belgium,Aston Martin,Vantage,125000,1500,EURBE074,23/08/2016
+France,Aston Martin,Vanquish,65500,,EURFR075,24/08/2016
+United States,Bentley,Flying Spur,92150,,USDUS076,25/08/2016
+United Kingdom,Porsche,928,9500,,GBPGB077,28/08/2016
+Italy,Triumph,TR6,9950,,EURIT078,28/08/2016
+United Kingdom,Triumph,TR5,5680,500,GBPGB079,29/08/2016
+Switzerland,Triumph,TR7,19500,,GBPCH080,30/08/2016
+United Kingdom,Triumph,GT6,3500,,GBPGB081,04/09/2016
+Switzerland,Triumph,TR7,3950,,GBPCH082,04/09/2016
+United Kingdom,Porsche,911,20950,750,GBPGB083,04/09/2016
+United Kingdom,Porsche,944,7500,75,GBPGB084,06/09/2016
+United Kingdom,Aston Martin,Virage,56500,1500,GBPGB085,07/09/2016
+United Kingdom,Aston Martin,Vantage,49500,750,GBPGB086,07/09/2016
+Spain,Porsche,911,68900,,EURES087,11/09/2016
+United Kingdom,Aston Martin,Vanquish,55000,,GBPGB088,11/09/2016
+France,Jaguar,XJ12,3575,,EURFR089,14/09/2016
+United Kingdom,Jaguar,XJ12,35250,,GBPGB090,14/09/2016
+France,Jaguar,XK120,19600,1250,EURFR091,16/09/2016
+France,Jaguar,XK120,27890,,EURFR091,16/09/2016
+United Kingdom,Porsche,911,45950,,GBPGB092,16/09/2016
+United Kingdom,Porsche,924,9950,,GBPGB093,18/09/2016
+United Kingdom,Triumph,TR5,6550,750,GBPGB094,19/09/2016
+Belgium,Triumph,TR6,12500,750,EURBE125,12/02/2017
+United Kingdom,Bentley,Arnage,76500,1500,GBPGB095,05/10/2016
+France,Bentley,Brooklands,189500,1500,EURFR227,17/02/2018
+Spain,Rolls Royce,Phantom,119600,,EURES096,05/10/2016
+United Kingdom,Bentley,Arnage,85650,2450,GBPGB097,30/10/2016
+United Kingdom,Triumph,TR7,9950,,GBPGB097,30/10/2016
+Spain,Triumph,TR6,12500,,EURES098,30/10/2016
+Italy,Aston Martin,DB4,12500,750,EURIT099,30/10/2016
+United Kingdom,Aston Martin,DB5,56890,2450,GBPGB100,03/11/2016
+United Kingdom,Aston Martin,DB6,55000,2450,GBPGB101,04/11/2016
+United Kingdom,Triumph,TR6,9990,,GBPGB102,02/12/2016
+United Kingdom,Aston Martin,DB9,46500,,GBPGB102,02/12/2016
+United Kingdom,Triumph,TR7,9500,,GBPGB102,02/12/2016
+United Kingdom,Aston Martin,Virage,125500,,GBPGB102,02/12/2016
+Italy,Rolls Royce,Phantom,99500,5000,EURIT103,06/12/2016
+France,Rolls Royce,Ghost,60500,,EURFR104,06/12/2016
+United Kingdom,Lamborghini,Countach,123500,5000,GBPGB105,06/12/2016
+Germany,Lamborghini,Diabolo,25000,,EURDE106,08/12/2016
+France,Lamborghini,Diabolo,169500,,EURFR107,20/12/2016
+United Kingdom,Bentley,Brooklands,99500,,GBPGB108,28/12/2016
+Spain,Porsche,959,39500,,EURES109,31/12/2016
+France,Porsche,Boxster,22500,,EURFR110,01/01/2017
+United Kingdom,Aston Martin,Virage,125000,,GBPGB111,05/01/2017
+United Kingdom,Rolls Royce,Silver Shadow,85000,,GBPGB112,10/01/2017
+France,Peugeot,203,1250,,EURFR113,21/01/2017
+Switzerland,Mercedes,280SL,22500,,GBPCH114,11/01/2017
+United Kingdom,Ferrari,355,125950,12500,GBPGB115,12/01/2017
+Switzerland,Triumph,TR7,8850,,GBPCH116,13/01/2017
+United Kingdom,Triumph,TR5,9950,,GBPGB117,14/01/2017
+France,Aston Martin,Vanquish,56500,2450,EURFR118,30/01/2017
+United Kingdom,Aston Martin,Rapide,55000,,GBPGB119,31/01/2017
+United Kingdom,Aston Martin,Vanquish,56950,750,GBPGB120,31/01/2017
+France,Ferrari,Enzo,365000,,EURFR121,07/02/2017
+France,Ferrari,Enzo,395000,,EURFR122,08/02/2017
+United States,Alfa Romeo,Giulietta,21500,,USDUS123,09/02/2017
+United Kingdom,Austin,Lichfield,6500,,GBPGB124,10/02/2017
+United Kingdom,Austin,Princess,2250,,GBPGB126,14/02/2017
+United Kingdom,Peugeot,404,3500,,GBPGB127,05/03/2017
+United Kingdom,Triumph,TR7,5680,750,GBPGB128,05/03/2017
+France,Triumph,TR5,8550,,EURFR129,05/03/2017
+United Kingdom,Lagonda,V12,156500,10000,GBPGB130,10/03/2017
+United Kingdom,Aston Martin,DB9,56500,,GBPGB131,10/03/2017
+Belgium,Aston Martin,Rapide,86500,1250,EURBE132,12/03/2017
+United Kingdom,Aston Martin,Vantage,66500,,GBPGB133,12/03/2017
+France,Porsche,959,55600,,EURFR134,25/03/2017
+Germany,Lamborghini,Jarama,305000,,EURDE135,30/03/2017
+United Kingdom,Aston Martin,DB5,42950,,GBPGB138,31/03/2017
+United Kingdom,Citroen,Rosalie,990,,GBPGB139,31/03/2017
+Spain,Delahaye,145,29500,1500,EURES140,05/04/2017
+France,Rolls Royce,Silver Seraph,139500,,EURFR141,06/04/2017
+United Kingdom,Bugatti,57C,295000,,GBPGB142,07/04/2017
+France,Bugatti,Veyron,220500,,EURFR143,07/04/2017
+United Kingdom,Rolls Royce,Phantom,79500,1500,GBPGB144,01/05/2017
+United Kingdom,Rolls Royce,Wraith,162500,,GBPGB145,01/05/2017
+Italy,Jaguar,XK150,79500,,EURIT146,09/05/2017
+Spain,Citroen,Torpedo,65890,,EURES147,09/05/2017
+Italy,Aston Martin,DB2,61500,,EURIT148,10/05/2017
+Spain,Porsche,924,12500,,EURES149,10/05/2017
+United Kingdom,Ferrari,Enzo,255000,,GBPGB150,10/05/2017
+France,Ferrari,F50,255950,500,EURFR151,12/05/2017
+United States,Ferrari,F40,250000,2450,USDUS152,13/05/2017
+Italy,Alfa Romeo,Giulietta,6500,,EURIT153,16/05/2017
+United Kingdom,Triumph,GT6,9250,,GBPGB154,19/05/2017
+United Kingdom,Reliant,Robin,950,,GBPGB155,20/05/2017
+France,McLaren,P1,295000,,EURFR156,21/05/2017
+United Kingdom,Delorean,DMC 12,99500,,GBPGB157,22/05/2017
+France,BMW,E30,33500,750,EURFR158,23/05/2017
+Germany,Aston Martin,DB2,45000,2450,EURDE159,24/05/2017
+France,Aston Martin,DB4,36500,,EURFR160,26/05/2017
+France,Aston Martin,DB9,77500,,EURFR160,26/05/2017
+Switzerland,Citroen,Rosalie,2350,,GBPCH161,27/05/2017
+United Kingdom,Mercedes,280SL,32500,500,GBPGB162,01/06/2017
+United Kingdom,Noble,M600,45000,1500,GBPGB163,01/06/2017
+United Kingdom,Trabant,600,1250,,GBPGB259,25/05/2018
+Switzerland,Triumph,TR5,8500,,GBPCH164,15/06/2017
+United Kingdom,Triumph,TR4,6590,750,GBPGB260,25/05/2018
+Germany,Aston Martin,DB9,99500,,EURDE165,15/06/2017
+Spain,Triumph,Roadster,12950,750,EURES168,15/06/2017
+United Kingdom,Alfa Romeo,Spider,5650,,GBPGB169,22/06/2017
+France,Jaguar,XK150,29500,1500,EURFR170,24/06/2017
+Belgium,Peugeot,205,3950,750,EURBE171,01/07/2017
+Belgium,Noble,M600,29500,750,EURBE171,01/07/2017
+Belgium,Alfa Romeo,Spider,12500,,EURBE171,01/07/2017
+France,Rolls Royce,Silver Seraph,99950,,EURFR172,01/07/2017
+United Kingdom,Bugatti,57C,335000,1250,GBPGB173,03/07/2017
+France,Aston Martin,DB9,56500,,EURFR174,31/07/2017
+United Kingdom,Aston Martin,Rapide,99500,,GBPGB175,31/07/2017
+France,Rolls Royce,Silver Shadow,135000,1500,EURFR176,31/07/2017
+United Kingdom,Rolls Royce,Corniche,89500,,GBPGB177,31/07/2017
+Switzerland,Rolls Royce,Wraith,165000,,GBPCH178,04/08/2017
+United States,Mercedes,250SL,22600,500,USDUS179,04/08/2017
+France,Mercedes,350SL,32675,,EURFR180,06/08/2017
+France,Mercedes,500SL,45000,,EURFR181,07/08/2017
+United Kingdom,BMW,Isetta,5500,,GBPGB182,27/08/2017
+United Kingdom,Noble,M600,55000,2450,GBPGB183,30/08/2017
+United States,Aston Martin,DB2,49500,,USDUS184,20/09/2017
+Spain,Ferrari,Testarossa,250000,,EURES185,20/09/2017
+France,Ferrari,355,155000,500,EURFR186,20/09/2017
+United States,Porsche,944,15750,,USDUS187,26/09/2017
+United Kingdom,Porsche,928,19500,,GBPGB188,15/10/2017
+France,Lamborghini,Diabolo,235000,750,EURFR189,15/10/2017
+United Kingdom,Alfa Romeo,Giulia,25000,1500,GBPGB190,01/11/2017
+Italy,Lamborghini,Jarama,245000,,EURIT191,01/11/2017
+Spain,Triumph,TR3A,39500,,EURES192,01/11/2017
+Belgium,Triumph,Roadster,23500,,EURBE193,06/11/2017
+Belgium,Alfa Romeo,Giulia,10500,,EURBE193,06/11/2017
+France,Alfa Romeo,Spider,11500,750,EURFR194,12/11/2017
+France,Alfa Romeo,1750,9950,,EURFR241,15/04/2018
+France,Porsche,911,51200,,EURFR194,12/11/2017
+United Kingdom,Aston Martin,DB2,45950,,GBPGB195,01/12/2017
+United Kingdom,Porsche,924,21600,,GBPGB196,01/12/2017
+Germany,Austin,Lichfield,23600,,EURDE198,05/12/2017
+Spain,Bentley,Arnage,99950,,EURES199,10/12/2017
+Italy,Aston Martin,DB4,46900,,EURIT200,10/12/2017
+United Kingdom,Porsche,911,45950,,GBPGB201,10/12/2017
+France,Porsche,924,7550,,EURFR202,10/12/2017
+Spain,Porsche,924,11990,900,EURES203,12/12/2017
+United States,Porsche,944,12500,,USDUS204,27/12/2017
+United Kingdom,Porsche,944,7500,,GBPGB205,27/12/2017
+United Kingdom,Aston Martin,DB4,56850,,GBPGB206,02/01/2018
+United Kingdom,Aston Martin,DB4,56950,,GBPGB210,02/01/2018
+United Kingdom,Aston Martin,DB2,62500,1250,GBPGB207,02/01/2018
+United Kingdom,Aston Martin,DB4,42500,,GBPGB208,02/01/2018
+United States,Aston Martin,DB9,65450,1250,USDUS209,02/01/2018
+France,Peugeot,203,1950,,EURFR211,05/01/2018
+United Kingdom,Austin,Princess,1150,,GBPGB212,05/01/2018
+Germany,Alfa Romeo,Giulietta,11550,,EURDE213,05/01/2018
+United Kingdom,Triumph,TR5,12570,500,GBPGB214,05/01/2018
+France,Triumph,TR7,9890,,EURFR215,05/01/2018
+United Kingdom,Bentley,Flying Spur,56950,,GBPGB216,10/01/2018
+Spain,Noble,M600,45950,,EURES217,10/01/2018
+Belgium,Peugeot,205,950,25,EURBE218,10/01/2018
+France,Jaguar,XK120,21550,1250,EURFR219,10/01/2018
+United Kingdom,Alfa Romeo,Spider,5950,,GBPGB220,15/01/2018
+France,Bugatti,57C,365000,,EURFR221,15/01/2018
+France,Rolls Royce,Silver Seraph,120000,,EURFR222,10/02/2018
+Switzerland,Porsche,928,17850,750,GBPCH223,11/02/2018
+Switzerland,Aston Martin,Virage,103650,,GBPCH223,11/02/2018
+United States,Rolls Royce,Phantom,182500,17500,USDUS224,12/02/2018
+United Kingdom,Austin,Cambridge,22500,,GBPGB225,13/02/2018
+France,BMW,Alpina,21500,,EURFR226,14/02/2018
+United Kingdom,Rolls Royce,Ghost,98950,,GBPGB229,17/02/2018
+United Kingdom,Bugatti,57C,355000,,GBPGB230,17/02/2018
+France,Austin,Princess,6000,,EURFR231,05/03/2018
+Spain,Alfa Romeo,Giulietta,5690,750,EURES232,05/03/2018
+United States,Aston Martin,DB9,56900,500,USDUS233,08/03/2018
+Spain,Lamborghini,400GT,145000,,EURES234,08/03/2018
+Spain,Ferrari,Daytona,99500,,EURES234,08/03/2018
+Spain,Ferrari,Dino,123500,750,EURES234,08/03/2018
+France,Ferrari,F50,310000,,EURFR235,15/03/2018
+United Kingdom,Porsche,944,9800,35,GBPGB236,19/03/2018
+Spain,Porsche,928,15950,,EURES237,02/04/2018
+United Kingdom,Lamborghini,Diabolo,255000,,GBPGB238,09/04/2018
+United Kingdom,Mercedes,250SL,12950,,GBPGB238,09/04/2018
+United Kingdom,Ferrari,Mondial,155000,,GBPGB239,10/04/2018
+United States,Austin,Princess,2500,,USDUS240,11/04/2018
+United States,Mercedes,280SL,39500,2450,USDUS242,15/04/2018
+United Kingdom,Mercedes,350SL,23500,,GBPGB243,15/04/2018
+Spain,Aston Martin,DB6,45950,,EURES244,15/04/2018
+United States,Aston Martin,DB9,55000,750,USDUS245,15/04/2018
+United Kingdom,Aston Martin,Virage,100000,,GBPGB246,20/04/2018
+United Kingdom,Aston Martin,DB6,44885,,GBPGB247,20/04/2018
+United Kingdom,Lagonda,V12,61500,,GBPGB248,22/04/2018
+United Kingdom,Peugeot,404,950,,GBPGB249,23/04/2018
+Italy,Ferrari,Dino,195000,,EURIT250,24/04/2018
+Spain,Aston Martin,DB2,52500,1575,EURES251,29/04/2018
+United Kingdom,Citroen,Rosalie,1350,,GBPGB252,03/05/2018
+United Kingdom,Peugeot,404,2495,45,GBPGB253,03/05/2018
+France,Ferrari,F40,269500,,EURFR254,15/05/2018
+United States,Ferrari,F50,195000,,USDUS255,15/05/2018
+United Kingdom,Noble,M600,25950,1250,GBPGB256,23/05/2018
+United Kingdom,Triumph,TR4,9990,,GBPGB257,23/05/2018
+Italy,Ferrari,360,135000,,EURIT258,25/05/2018
+France,Porsche,959,89500,,EURFR261,25/05/2018
+United Kingdom,Alfa Romeo,Giulietta,18500,,GBPGB262,25/05/2018
+Switzerland,Alfa Romeo,1750,3575,750,GBPCH263,03/06/2018
+Belgium,Triumph,TR4,6950,,EURBE264,03/06/2018
+United Kingdom,Jaguar,XK150,26500,,GBPGB265,16/06/2018
+United States,Jaguar,Mark V,33500,,USDUS266,18/06/2018
+United Kingdom,Jaguar,Mark X,24500,,GBPGB267,22/06/2018
+United Kingdom,Bentley,Continental,99500,500,GBPGB268,23/06/2018
+United Kingdom,Aston Martin,DB2,99990,,GBPGB269,05/07/2018
+United Kingdom,Alfa Romeo,Giulia,6950,1250,GBPGB270,10/07/2018
+United Kingdom,Alfa Romeo,Giulietta,10500,1500,GBPGB271,15/07/2018
+United Kingdom,Mercedes,280SL,33450,,GBPGB272,25/07/2018
+United Kingdom,Aston Martin,Virage,72500,,GBPGB273,25/07/2018
+United Kingdom,Peugeot,404,2400,,GBPGB274,30/07/2018
+United Kingdom,Jaguar,XK120,68500,2450,GBPGB275,30/07/2018
+Switzerland,Peugeot,404,2350,,GBPCH276,30/07/2018
+United Kingdom,Morgan,Plus 4,18500,1950,GBPGB277,30/07/2018
+United Kingdom,Noble,M14,5500,,GBPGB278,31/07/2018
+Spain,Ferrari,360,128500,12500,EURES279,31/07/2018
+United States,Aston Martin,DB9,55000,,USDUS280,31/07/2018
+Italy,Peugeot,404,1250,,EURIT281,31/07/2018
+France,Bugatti,57C,345000,,EURFR282,31/07/2018
+Italy,Aston Martin,DB6,82590,,EURIT283,31/07/2018
+United States,Aston Martin,DB6,113590,,USDUS284,01/08/2018
+United States,Aston Martin,Virage,45000,1250,USDUS285,01/08/2018
+Spain,Aston Martin,Vanquish,57600,,EURES286,01/08/2018
+United Kingdom,Aston Martin,Vantage,102500,,GBPGB287,01/08/2018
+United Kingdom,Aston Martin,DB2,39500,,GBPGB288,10/08/2018
+United Kingdom,Aston Martin,DB9,61550,,GBPGB289,11/08/2018
+United Kingdom,Aston Martin,Virage,55000,,GBPGB290,15/08/2018
+Germany,Bentley,Mulsanne,99500,1250,EURDE291,16/08/2018
+Switzerland,Bentley,Arnage,56800,750,GBPCH292,18/08/2018
+United States,Bentley,Continental,89500,,USDUS293,01/09/2018
+France,Bentley,Flying Spur,72500,,EURFR294,01/09/2018
+United Kingdom,Bentley,Mulsanne,56950,,GBPGB295,01/09/2018
+United Kingdom,Mercedes,280SL,62500,,GBPGB296,04/09/2018
+Spain,Mercedes,280SL,56890,,EURES297,04/09/2018
+France,Mercedes,350SL,33600,,EURFR298,08/09/2018
+United Kingdom,Mercedes,500SL,30500,2450,GBPGB299,08/09/2018
+France,Citroen,Traaction Avant,25000,,EURFR300,15/09/2018
+France,Delahaye,135,25500,,EURFR300,15/09/2018
+United Kingdom,Delahaye,145,39500,,GBPGB301,15/09/2018
+Italy,Delahaye,175,12500,,EURIT302,15/09/2018
+United Kingdom,Trabant,500,1150,1500,GBPGB303,02/10/2018
+United Kingdom,Trabant,600,1950,,GBPGB303,02/10/2018
+United Kingdom,Trabant,500,2500,,GBPGB303,02/10/2018
+France,Aston Martin,DB5,69500,,EURFR304,02/10/2018
+Switzerland,Aston Martin,DB9,45000,,GBPCH305,02/10/2018
+United States,Aston Martin,Vanquish,56990,,USDUS306,31/10/2018
+United States,Jaguar,Mark X,86500,2450,USDUS307,31/10/2018
+United Kingdom,Jaguar,XJ12,17850,1250,GBPGB308,31/10/2018
+France,Jaguar,Mark V,25950,,EURFR309,31/10/2018
+United Kingdom,Jaguar,XK150,29500,,GBPGB310,31/10/2018
+France,Jaguar,XK120,59000,4500,EURFR311,31/10/2018
+United States,Triumph,TR5,9500,,USDUS312,31/10/2018
+France,Triumph,TR5,8900,,EURFR313,02/11/2018
+Switzerland,Triumph,TR4,11590,,GBPCH314,15/11/2018
+United Kingdom,Triumph,TR4,8500,,GBPGB315,22/11/2018
+United States,Aston Martin,DB9,59500,,USDUS316,05/12/2018
+Italy,Aston Martin,Virage,123500,3500,EURIT317,05/12/2018
+United Kingdom,Aston Martin,DB9,99500,,GBPGB318,08/12/2018
+United Kingdom,Aston Martin,DB6,54500,,GBPGB319,08/12/2018
+United Kingdom,Trabant,600,1590,,GBPGB319,08/12/2018
+Spain,Triumph,TR5,11500,,EURES320,16/12/2018
+United States,Alfa Romeo,Giulietta,17950,1500,USDUS321,17/12/2018
+France,Citroen,Rosalie,5500,,EURFR322,31/12/2018
+United Kingdom,Reliant,Robin,950,,GBPGB323,31/12/2018
+United Kingdom,Ferrari,Daytona,145000,5000,GBPGB324,31/12/2018

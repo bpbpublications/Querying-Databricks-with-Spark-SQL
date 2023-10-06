@@ -1,0 +1,7 @@
+LowerThreshold,UpperThreshold,CategoryDescription
+10000,25000,Very Low
+25001,50000,Low
+50001,75000,Medium
+75001,100000,High
+100001,150000,Very High
+150001,250000,Exceptional

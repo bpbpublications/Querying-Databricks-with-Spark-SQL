@@ -1,0 +1,14 @@
+StaffID,StaffName,ManagerID,Department
+1,Amelia,,
+2,Gerard,1,Finance
+3,Chloe,1,Marketing
+4,Susan,1,Sales
+5,Andy,4,Sales
+6,Steve,4,Sales
+7,Stan,4,Sales
+8,Nathan,4,Sales
+9,Maggie,4,Sales
+10,Jenny,2,Finance
+11,Chris,2,Finance
+12,Megan,3,Marketing
+13,Sandy,11,Finance

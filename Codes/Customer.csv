@@ -1,0 +1,89 @@
+CustomerID,CustomerName,Address1,Address2,Town,PostCode,Country,IsReseller,IsCreditRisk
+1,Magic Motors,"27, Handsworth Road",,Birmingham,B1 7AZ,GB,1,0
+2,Snazzy Roadsters,"102, Bleak Street",,Birmingham,B3 5ST,GB,1,1
+3,Birmingham Executive Prestige Vehicles,"96, Aardvark Avenue",,Birmingham,B2 8UH,GB,1,0
+4,WunderKar,AlexanderPlatz 205,,Berlin,,DE,1,0
+5,Casseroles Chromes,"29, Rue Gigondas",,Lyon,,FR,1,0
+6,Le Luxe en Motion,"Avenue des Indes, 26",,Geneva,CH-1201,CH,1,1
+7,Eat My Exhaust Ltd,"29, Kop Hill",,Liverpool,L1 8UY,GB,1,0
+8,M. Pierre Dubois,"14, Rue De La Hutte",,Marseille,,FR,0,0
+9,Sondra Horowitz,10040 Great Western Road,,Los Angeles,,US,0,0
+10,Wonderland Wheels,"57, Grosvenor Estate Avenue",,London,E7 4BR,GB,1,0
+11,London Executive Prestige Vehicles,"199, Park Lane",,London,NW1 0AK,GB,1,1
+12,Glittering Prize Cars Ltd,"46, Golders Green Road",PO Box 27,London,E17 9IK,GB,1,0
+13,La Bagnole de Luxe,890 Place de la Concorde,Cedex 8,Paris,,FR,1,0
+14,Convertible Dreams,"31, Archbishop Ave",,London,SW2 6PL,GB,1,0
+15,Alexei Tolstoi,"83, Abbey Road",,London,N4 2CV,GB,0,0
+16,SuperSport S.A.R.L.,210 Place de la Republique,,Paris,,FR,1,1
+17,Theo Kowalski,1000 East 51st Street,,New York,,US,0,0
+18,Peter McLuckie,"73, Entwhistle Street",,London,W10 BN,GB,0,0
+19,Posh Vehicles Ltd,"82, Millar Close",,Manchester,M4 5SD,GB,1,0
+20,Jason B. Wight,5300 Star Boulevard,,Washington,,US,0,0
+21,Silver HubCaps,"54, Didsbury Lane",,Manchester,M1 7TH,GB,1,0
+22,Stan Collywobble,"65, Townsend Road",,Manchester,M1 5HJ,GB,0,1
+23,Glitz,FriedrichStrasse 579,,Stuttgart,,DE,1,0
+24,Matterhorn Motors,"1, Rue de la Colline",,Lausanne,,CH,1,0
+25,King Leer Cars,"87, Lindisfarne Road",,Newcastle,NE1 4OX,GB,1,0
+26,Honest Pete Motors,"76, Williams Street",,Stoke,ST3 9XY,GB,1,0
+27,Peter Smith,"82, Ell Pie Lane",,Birmingham,B5 5SD,GB,0,0
+28,Vive La Vitesse,"56, Rue Noiratre",,Marseille,,FR,1,0
+29,Liverpool Executive Prestige Vehicles,"8, Everton Avenue",,Liverpool,L2 2RD,GB,1,0
+30,Mrs. Ivana Telford,"52, Gerrard Mansions",,Liverpool,L2 9RT,GB,0,0
+31,Kieran O'Harris,"71, Askwith Ave",,Liverpool,L7 6OP,GB,0,0
+32,Prestige Imports,Gran Via 26,,Barcelona,8120,ES,1,0
+33,Prestissimo!,Via Appia 239,,Milan,,IT,1,0
+34,Diplomatic Cars,"Rue Des Coteaux, 39",,Brussels,,BE,1,0
+35,Laurent Saint Yves,"49, Rue Quicampoix",,Marseille,,FR,0,0
+36,Screamin' Wheels,1090 Reagan Road,,Los Angeles,,US,1,0
+37,Screamin' Wheels,"4, Churchill Close",,London,SE1 5RU,GB,1,0
+38,Executive Motor Delight,"17, The Brambles",,London,SE17 6AD,GB,1,0
+39,Alicia Almodovar,Palacia Del Sol,,Barcelona,8400,ES,0,0
+40,Ronaldo Bianco,Palazzo Medusa 2000,,Milan,,IT,0,0
+41,Sport.Car,Via Barberini 59,,Rome,120,IT,1,0
+42,Autos Sportivos,"Paseo del Prado, 270",,Madrid,,ES,1,0
+43,Le Luxe en Motion,"32, Allee de la Paix",,Paris,,FR,1,0
+44,Screamin' Wheels Corp,50000 Fifth Avenue,,New York,,US,1,0
+45,Pierre Blanc,52 Deirdre Lane,,London,C1 3EJ,GB,0,0
+46,Capots Reluisants S.A.,567 rue Lafayette,,Paris,,FR,1,0
+47,Stefano DiLonghi,Piazza Verona,,Rome,129,IT,0,0
+48,Antonio Maura,"Puerta del Sol, 45",,Madrid,,ES,0,0
+49,Stefan Van Helsing,Nieuwstraat 5,,Brussels,,BE,0,0
+50,Mme Anne Duport,"90, Place de la Victoire 1945",,Paris,,FR,0,0
+51,Screamin' Wheels,10500 The Potomac,,Washington,,US,1,0
+52,Clubbing Cars,"91, Acid Avenue",,Manchester,M5 9RD,GB,1,0
+53,Jean-Yves Truffaut,87 Rue du Combat,,Paris,,FR,0,0
+54,Mr. Evan Telford,"7, Godzilla Street",,Manchester,M2 6KL,GB,0,0
+55,Ralph Obermann,BerolinaStrasse 210,,Berlin,,DE,0,0
+56,ImpressTheNeighbours.Com,"47, Edgbaston Row",,Birmingham,B4 4RY,GB,1,0
+57,Wladimir Lacroix,"3, Rue de la Vie en Rose",,Lyon,,FR,0,0
+58,Raimondo Delattre,"9, Place de Chatelet",,Geneva,CH-1211,CH,0,0
+59,Boris Spry,"53, Odeon Way",,Birmingham,B1 4BZ,GB,0,0
+60,Andrea Tarbuck,"2,Newcastle Lane",,Birmingham,B4 8SG,GB,0,0
+61,Beltway Prestige Driving,"1, Smithy Close",,Liverpool,L1 WS,GB,1,0
+62,Bling Motors,"2, Arndale Lane",,Liverpool,L3 QS,GB,1,0
+63,Smooth Rocking Chrome,Via Stromboli 2,,Milan,,IT,1,1
+64,YO! Speed!,Plaza Mayor,,Barcelona,8550,ES,1,0
+65,Stephany Rousso,10180 Orange County Place,,Los Angeles,,US,0,0
+66,My Shiny Sports Car Ltd.,"1091, Cambride Street",,London,W1 3GH,GB,1,0
+67,Flash Voitures,Place Anspach 85,,Brussels,,BE,1,0
+68,Paul Blasio,50500 JFK Square,,New York,,US,0,0
+69,Mary Blackhouse,"260, Oxford Avenue",,London,E1 9AP,GB,0,0
+70,Maurice Dujardin,"10, Daltrey Lane",,London,NW1 7YU,GB,0,0
+71,Leslie Whittington,"17, Mercury Street",,London,SE1 4AT,GB,0,0
+72,Mike Beeton,Green Plaza Place,,London,SW13 7ED,GB,0,1
+73,Melissa Bertrand,"7, Westlands Street",,London,NW10 2SG,GB,0,0
+74,El Sport,Plaza San Andres,,Madrid,,ES,1,0
+75,Bling Bling S.A.,"7, Place de la Richesse",Z.I Les Arnaques,Paris,,FR,1,0
+76,Bravissima!,"Via Rosso, 34",,Rome,175,IT,1,0
+77,Jayden Jones,10500 Lincoln Square,,Washington,,US,0,0
+78,Expensive Shine,"89, Abbots Lane",,Manchester,M17 3EF,GB,1,0
+79,Steve Docherty,"5, Albermarle Avenue",,Manchester,M7 9AS,GB,0,0
+80,Rodolph Legler,SingerStrasse 89,,Stuttgart,,DE,0,0
+81,Pete Spring,"53, Pimlico Square",,Manchester,M3 4WR,GB,0,1
+82,Khader El Ghannam,"10, rue de Jemappes",4eme etage,Paris,,FR,0,0
+83,Jacques Mitterand,1 Quai des Pertes,,Paris,,FR,0,0
+84,Francoise LeBrun,"56, Rue Verte",,Lausanne,,CH,0,0
+85,Alex McWhirter,"89, Harlequin Road",,Newcastle,NE1 7DH,GB,0,0
+86,Francois Chirac,"2, Quai de l'Enfer",,Paris,,FR,0,0
+87,Andy Cheshire,"7, Wedgewood Steet",,Stoke,ST4 2OZ,GB,0,0
+88,Jimmy McFiddler,"57, Smile Square",,Glasgow,G15 1AA,GB,1,1

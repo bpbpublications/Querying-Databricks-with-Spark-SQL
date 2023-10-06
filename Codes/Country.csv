@@ -1,0 +1,11 @@
+CountryName,CountryISO2,CountryISO3,SalesRegion,CountryFlag,FlagFileName,FlagFileType
+Belgium,BE,BEL       ,EMEA,,,
+France,FR,FRA       ,EMEA,,,
+Germany,DE,DEU       ,EMEA,,,
+Italy,IT,ITA       ,EMEA,,,
+Spain,ES,ESP       ,EMEA,,,
+United Kingdom,GB,GBR       ,EMEA,,,
+United States,US,USA       ,North America,,,
+China,CN,CHN       ,Asia,,,
+India,IN,IND       ,Asia,,,
+Switzerland,CH,CHF       ,EMEA,,,

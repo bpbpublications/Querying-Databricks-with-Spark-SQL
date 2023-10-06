@@ -1,0 +1,349 @@
+CountryName,MakeName,ModelName,Cost,RepairsCost,PartsCost,TransportInCost,Color,SalePrice,LineItemDiscount,InvoiceNumber,SaleDate,CustomerName,SalesDetailsID
+United Kingdom,Ferrari,Testarossa,52000,2175,1500,750,Red,65000,2700,GBPGB001,2015-01-02 08:00:00,Magic Motors,1
+United Kingdom,Ferrari,355,176000,5500,2200,1950,Blue,220000,60000,GBPGB002,2015-01-25 12:00:00,Snazzy Roadsters,2
+United Kingdom,Porsche,911,15600,660,0,150,British Racing Green,19500,NULL,GBPGB003,2015-02-03 10:00:00,Birmingham Executive Prestige Vehicles,3
+Germany,Porsche,924,9200,500,750,150,British Racing Green,11500,NULL,EURDE004,2015-02-16 08:00:00,WunderKar,4
+France,Porsche,944,15960,1360,500,150,Red,19950,NULL,EURFR005,2015-01-02 10:33:00,Casseroles Chromes,5
+United Kingdom,Aston Martin,DB4,23600,500,750,150,Night Blue,29500,1250,GBPGB006,2015-03-14 12:00:00,Magic Motors,6
+United Kingdom,Aston Martin,DB5,39600,2500,1500,550,Black,49500,2450,GBPGB007,2015-03-24 12:00:00,Birmingham Executive Prestige Vehicles,7
+United Kingdom,Aston Martin,DB6,60800,3250,750,750,Canary Yellow,76000,5500,GBPGB008,2015-03-30 12:00:00,Eat My Exhaust Ltd,8
+France,Porsche,911,15680,890,500,150,Blue,19600,NULL,EURFR009,2015-04-06 12:00:00,M. Pierre Dubois,9
+United States,Aston Martin,DB5,29200,1950,500,550,Blue,36500,2500,USDUS010,2015-04-04 12:00:00,Sondra Horowitz,10
+United Kingdom,Porsche,944,6800,250,225,150,Blue,8500,50,GBPGB011,2015-04-30 12:00:00,Wonderland Wheels,11
+France,Aston Martin,DB6,36000,1250,750,550,Night Blue,45000,NULL,EURFR136,2017-03-31 01:08:00,Vive La Vitesse,149
+United Kingdom,Bentley,Flying Spur,64400,500,750,750,British Racing Green,80500,500,GBPGB011,2015-04-30 12:00:00,Wonderland Wheels,12
+United Kingdom,Ferrari,355,135600,5500,2200,1950,Black,169500,NULL,GBPGB012,2015-05-10 12:00:00,London Executive Prestige Vehicles,13
+France,Porsche,944,7160,500,750,150,Green,8950,25,EURFR013,2015-05-20 12:00:00,M. Pierre Dubois,14
+United Kingdom,Ferrari,Testarossa,156000,6000,1500,1950,Green,195000,NULL,GBPGB014,2015-05-28 12:00:00,Glittering Prize Cars Ltd,15
+France,Mercedes,280SL,18360,550,500,150,Red,22950,950,EURFR015,2015-06-04 04:37:00,La Bagnole de Luxe,16
+United Kingdom,Alfa Romeo,Giulia,6956,400,750,150,Red,8695,95,GBPGB016,2015-07-12 10:00:00,Convertible Dreams,17
+United Kingdom,Jaguar,XK150,18392,390,150,150,Night Blue,22990,NULL,GBPGB017,2015-07-15 12:00:00,Alexei Tolstoi,18
+France,Jaguar,XJS,15600,290,750,150,Silver,19500,1500,EURFR018,2015-07-25 12:00:00,SuperSport S.A.R.L.,19
+France,Aston Martin,DB6,44800,1785,500,550,Canary Yellow,56000,NULL,EURFR018,2015-07-25 12:00:00,SuperSport S.A.R.L.,20
+United Kingdom,Porsche,944,7040,140,750,150,Blue,8800,500,GBPGB042,2016-04-30 12:00:00,Silver HubCaps,45
+United States,Triumph,TR4,4400,500,750,150,Night Blue,5500,500,USDUS019,2015-08-02 08:00:00,Theo Kowalski,21
+United Kingdom,Triumph,TR5,10120,320,750,150,Green,12650,NULL,GBPGB020,2015-09-05 12:00:00,Peter McLuckie,22
+United Kingdom,Ferrari,355,125200,2200,3150,1950,British Racing Green,156500,NULL,GBPGB094,2016-09-19 12:00:00,Honest Pete Motors,103
+United Kingdom,Porsche,924,7160,360,750,150,Black,8950,950,GBPGB021,2015-09-15 10:00:00,Posh Vehicles Ltd,23
+Switzerland,Bentley,Flying Spur,44360,490,225,550,Red,55450,1500,GBPCH228,2018-02-17 12:00:00,Raimondo Delattre,248
+United Kingdom,Jaguar,XK120,12480,1100,500,150,Red,15600,NULL,GBPGB022,2015-09-15 12:00:00,Peter McLuckie,24
+United Kingdom,Jaguar,XJS,18080,660,750,150,Red,22600,600,GBPGB023,2015-10-30 12:00:00,Alexei Tolstoi,25
+United States,Aston Martin,Virage,98872,2175,2200,750,Black,123590,2450,USDUS024,2015-10-30 12:00:00,Theo Kowalski,26
+United Kingdom,Porsche,911,18360,500,750,150,Black,22950,50,GBPGB025,2015-11-10 12:00:00,Convertible Dreams,27
+United Kingdom,Aston Martin,DB6,55600,1490,1500,750,Silver,69500,NULL,GBPGB026,2015-12-01 08:00:00,Alexei Tolstoi,28
+Switzerland,Triumph,TR4,10000,500,225,150,Silver,12500,NULL,GBPCH027,2016-01-01 12:00:00,Le Luxe en Motion,29
+United Kingdom,Porsche,944,10000,500,750,150,Black,12500,1500,GBPGB028,2016-01-01 12:00:00,Eat My Exhaust Ltd,30
+United States,Ferrari,355,127600,2000,3150,1950,Silver,159500,NULL,USDUS029,2016-01-01 12:00:00,Sondra Horowitz,31
+United Kingdom,Ferrari,Testarossa,132000,3950,2200,1950,Night Blue,165000,5000,GBPGB030,2016-01-01 08:00:00,Wonderland Wheels,32
+France,Alfa Romeo,Giulia,2040,500,750,150,British Racing Green,2550,50,EURFR031,2016-01-07 12:00:00,M. Pierre Dubois,33
+United Kingdom,Porsche,911,23600,1360,500,150,Black,29500,NULL,GBPGB032,2016-01-07 12:00:00,Posh Vehicles Ltd,34
+United States,Porsche,944,10120,500,750,150,Night Blue,12650,500,USDUS033,2016-01-09 12:00:00,Jason B. Wight,35
+United Kingdom,Bentley,Continental,45560,2000,750,550,Pink,56950,NULL,GBPGB034,2016-01-22 12:00:00,Silver HubCaps,36
+United Kingdom,Aston Martin,DB6,44800,1360,500,550,British Racing Green,56000,NULL,GBPGB035,2016-02-22 12:00:00,Stan Collywobble,37
+Germany,Bentley,Flying Spur,52712,1490,1500,750,Canary Yellow,65890,750,EURDE036,2016-02-17 12:00:00,Glitz,38
+Germany,Alfa Romeo,Giulia,4800,500,750,150,British Racing Green,6000,NULL,EURDE036,2016-02-17 12:00:00,Glitz,39
+France,Porsche,924,31600,500,1500,550,Green,39500,2450,EURFR037,2016-02-16 12:00:00,SuperSport S.A.R.L.,40
+United Kingdom,Lamborghini,Countach,2920,500,750,150,Green,3650,NULL,GBPGB038,2016-02-28 10:10:00,Magic Motors,41
+Switzerland,Lamborghini,Diabolo,176400,5500,3150,1950,Blue,220500,NULL,GBPCH039,2016-03-20 12:00:00,Matterhorn Motors,42
+United Kingdom,Ferrari,Mondial,82360,2175,2200,750,Black,102950,2450,GBPGB040,2016-04-05 12:00:00,King Leer Cars,43
+United States,Porsche,911,14000,2000,500,150,British Racing Green,17500,NULL,USDUS041,2016-04-30 12:00:00,Jason B. Wight,44
+Germany,Ferrari,360,79600,500,750,750,Black,99500,500,EURDE043,2016-04-30 12:00:00,Glitz,46
+United Kingdom,Alfa Romeo,Giulia,14000,1360,225,150,Green,17500,500,GBPGB044,2016-04-30 11:27:00,Silver HubCaps,47
+United Kingdom,Alfa Romeo,Spider,10000,500,750,150,Black,12500,NULL,GBPGB045,2016-04-30 12:00:00,Wonderland Wheels,48
+United Kingdom,Jaguar,XJS,7960,500,750,150,Red,9950,NULL,GBPGB046,2016-05-30 12:00:00,Alexei Tolstoi,49
+United Kingdom,Jaguar,E-Type,31600,2000,750,550,Black,39500,2450,GBPGB046,2016-05-30 12:00:00,Alexei Tolstoi,50
+France,Aston Martin,DB6,39664,660,500,550,Black,49580,NULL,EURFR047,2016-05-30 12:00:00,SuperSport S.A.R.L.,51
+France,Triumph,TR4,4400,500,750,150,Black,5500,NULL,EURFR048,2016-06-15 12:00:00,M. Pierre Dubois,52
+United Kingdom,Porsche,911,17720,1360,750,150,Night Blue,22150,500,GBPGB049,2016-06-15 12:00:00,Honest Pete Motors,53
+United Kingdom,Jaguar,XK120,28000,500,750,550,Black,35000,NULL,GBPGB050,2016-06-15 12:00:00,Peter Smith,54
+France,Jaguar,XK150,23720,660,750,150,Red,29650,NULL,EURFR051,2016-06-15 12:00:00,Vive La Vitesse,55
+France,Aston Martin,DB6,36400,500,750,550,Red,45500,NULL,EURFR051,2016-06-15 12:00:00,Vive La Vitesse,56
+France,Bentley,Flying Spur,79600,2175,750,750,Silver,99500,750,EURFR051,2016-06-15 12:00:00,Vive La Vitesse,57
+United Kingdom,Porsche,944,12520,500,225,150,Night Blue,15650,NULL,GBPGB052,2016-07-01 08:00:00,Liverpool Executive Prestige Vehicles,58
+Spain,Porsche,911,39600,500,500,550,Silver,49500,NULL,EURES192,2017-11-01 05:36:00,Antonio Maura,209
+United States,Alfa Romeo,Giulia,10000,500,750,150,British Racing Green,12500,750,USDUS053,2016-07-06 12:00:00,Jason B. Wight,59
+United Kingdom,Ferrari,Testarossa,156000,3950,3150,1950,Black,195000,NULL,GBPGB054,2016-07-25 10:00:00,Mrs. Ivana Telford,60
+United Kingdom,Ferrari,355,164000,9250,750,1950,Black,205000,NULL,GBPGB055,2016-07-25 12:00:00,Alexei Tolstoi,61
+United Kingdom,Porsche,959,53200,1490,750,750,Black,66500,NULL,GBPGB056,2016-07-25 12:00:00,Convertible Dreams,62
+United Kingdom,Porsche,928,15600,1360,750,150,Night Blue,19500,NULL,GBPGB057,2016-07-25 12:00:00,Kieran O'Harris,63
+Spain,Bentley,Flying Spur,63600,2000,1500,750,Blue,79500,500,EURES058,2016-07-26 12:00:00,Prestige Imports,64
+Italy,Triumph,TR4,11672,500,750,150,Silver,14590,NULL,EURIT059,2016-07-26 10:00:00,Prestissimo!,65
+Spain,Triumph,TR5,10200,970,750,150,Blue,12750,NULL,EURES060,2016-08-02 12:00:00,Prestige Imports,66
+United Kingdom,Aston Martin,DB6,180000,5500,3150,1950,Black,225000,NULL,GBPGB137,2017-03-31 04:08:00,Liverpool Executive Prestige Vehicles,150
+United Kingdom,Aston Martin,DB9,36480,500,500,550,Dark Purple,45600,NULL,GBPGB061,2016-08-02 12:00:00,Stan Collywobble,67
+United Kingdom,Triumph,TR6,5200,500,750,150,Black,6500,500,GBPGB062,2016-08-02 12:00:00,Silver HubCaps,68
+United Kingdom,Aston Martin,Virage,82000,2175,1500,750,Pink,102500,1500,GBPGB063,2016-08-02 12:00:00,Alexei Tolstoi,69
+France,Jaguar,XK120,79600,2000,750,750,Canary Yellow,99500,NULL,EURFR064,2016-08-09 12:00:00,SuperSport S.A.R.L.,70
+United Kingdom,Aston Martin,Vanquish,10000,500,750,150,Dark Purple,12500,750,GBPGB065,2016-08-10 12:00:00,Convertible Dreams,71
+Germany,Aston Martin,Rapide,49200,1360,750,550,Red,61500,NULL,EURDE066,2016-08-12 10:00:00,WunderKar,72
+Switzerland,Aston Martin,DB9,63600,1490,750,750,Red,79500,2450,GBPCH067,2016-08-13 12:00:00,Le Luxe en Motion,73
+United Kingdom,Porsche,924,13200,500,750,150,British Racing Green,16500,NULL,GBPGB068,2016-08-13 12:00:00,Peter McLuckie,74
+United Kingdom,Porsche,911,26880,500,500,550,Black,33600,NULL,GBPGB068,2016-08-13 12:00:00,Peter McLuckie,75
+France,Porsche,911,53200,2175,1500,750,British Racing Green,66500,750,EURFR069,2016-08-13 12:00:00,Casseroles Chromes,76
+Italy,Aston Martin,DB5,36000,500,150,550,Red,45000,NULL,EURIT070,2016-08-19 12:00:00,Prestissimo!,77
+Germany,Porsche,944,15600,500,750,150,Night Blue,19500,NULL,EURDE071,2016-08-19 12:00:00,Glitz,78
+United Kingdom,Bentley,Flying Spur,61200,2000,750,750,Pink,76500,NULL,GBPGB072,2016-08-21 12:00:00,Silver HubCaps,79
+United Kingdom,Aston Martin,Virage,36720,500,500,550,Red,45900,500,GBPGB073,2016-08-22 08:00:00,Convertible Dreams,80
+Belgium,Aston Martin,Vantage,100000,500,2200,750,Green,125000,1500,EURBE074,2016-08-23 12:00:00,Diplomatic Cars,81
+France,Aston Martin,Vanquish,52400,500,750,750,Green,65500,NULL,EURFR075,2016-08-24 12:00:00,Laurent Saint Yves,82
+United States,Bentley,Flying Spur,73720,2175,225,750,Blue,92150,NULL,USDUS076,2016-08-25 12:00:00,Screamin' Wheels,83
+United Kingdom,Porsche,928,7600,500,750,150,Black,9500,NULL,GBPGB077,2016-08-28 12:00:00,Screamin' Wheels,84
+Italy,Triumph,TR6,7960,500,225,150,Blue,9950,NULL,EURIT078,2016-08-28 12:00:00,Prestissimo!,85
+United Kingdom,Triumph,TR5,4544,500,150,150,Canary Yellow,5680,500,GBPGB079,2016-08-29 12:00:00,King Leer Cars,86
+Switzerland,Triumph,TR7,15600,2000,750,150,Black,19500,NULL,GBPCH080,2016-08-30 12:00:00,Matterhorn Motors,87
+United Kingdom,Triumph,GT6,2800,500,750,150,Black,3500,NULL,GBPGB081,2016-09-04 12:00:00,Alexei Tolstoi,88
+Switzerland,Triumph,TR7,3160,500,150,150,Black,3950,NULL,GBPCH082,2016-09-04 12:00:00,Le Luxe en Motion,89
+United Kingdom,Porsche,911,16760,1360,750,150,British Racing Green,20950,750,GBPGB083,2016-09-04 12:00:00,Posh Vehicles Ltd,90
+United Kingdom,Porsche,944,6000,500,750,150,British Racing Green,7500,75,GBPGB084,2016-09-06 12:00:00,Birmingham Executive Prestige Vehicles,91
+United Kingdom,Aston Martin,Virage,45200,500,1500,550,Dark Purple,56500,1500,GBPGB085,2016-09-07 12:00:00,Snazzy Roadsters,92
+United Kingdom,Aston Martin,Vantage,39600,660,500,550,British Racing Green,49500,750,GBPGB086,2016-09-07 12:00:00,Stan Collywobble,93
+Spain,Porsche,911,55120,500,750,750,Dark Purple,68900,NULL,EURES087,2016-09-11 12:00:00,Prestige Imports,94
+United Kingdom,Aston Martin,Vanquish,44000,500,150,550,Silver,55000,NULL,GBPGB088,2016-09-11 12:00:00,Magic Motors,95
+France,Jaguar,XJ12,2860,500,750,150,Silver,3575,NULL,EURFR089,2016-09-14 12:00:00,M. Pierre Dubois,96
+United Kingdom,Jaguar,XJ12,28200,500,750,550,British Racing Green,35250,NULL,GBPGB090,2016-09-14 12:00:00,Glittering Prize Cars Ltd,97
+France,Jaguar,XK120,15680,1360,150,150,Night Blue,19600,1250,EURFR091,2016-09-16 12:00:00,La Bagnole de Luxe,98
+France,Jaguar,XK120,22312,970,500,150,Black,27890,NULL,EURFR091,2016-09-16 12:00:00,La Bagnole de Luxe,99
+United Kingdom,Porsche,911,36760,970,750,550,Night Blue,45950,NULL,GBPGB092,2016-09-16 12:00:00,Alexei Tolstoi,100
+United Kingdom,Porsche,924,7960,500,150,150,Black,9950,NULL,GBPGB093,2016-09-18 12:00:00,King Leer Cars,101
+United Kingdom,Triumph,TR5,5240,500,750,150,Black,6550,750,GBPGB094,2016-09-19 12:00:00,Honest Pete Motors,102
+Belgium,Triumph,TR6,10000,500,750,150,Red,12500,750,EURBE125,2017-02-12 04:02:00,Diplomatic Cars,138
+United Kingdom,Bentley,Arnage,61200,2175,750,750,Canary Yellow,76500,1500,GBPGB095,2016-10-05 12:00:00,Stan Collywobble,104
+France,Bentley,Brooklands,151600,500,1500,1950,Blue,189500,1500,EURFR227,2018-02-17 12:00:00,Capots Reluisants S.A.,247
+Spain,Rolls Royce,Phantom,95680,1490,2200,750,Green,119600,NULL,EURES096,2016-10-05 10:00:00,Prestige Imports,105
+United Kingdom,Bentley,Arnage,68520,2175,750,750,Silver,85650,2450,GBPGB097,2016-10-30 12:00:00,Executive Motor Delight,106
+United Kingdom,Triumph,TR7,7960,500,750,150,Black,9950,NULL,GBPGB097,2016-10-30 12:00:00,Executive Motor Delight,107
+Spain,Triumph,TR6,10000,500,750,150,Black,12500,NULL,EURES098,2016-10-30 12:00:00,Alicia Almodovar,108
+Italy,Aston Martin,DB4,10000,500,750,150,Black,12500,750,EURIT099,2016-10-30 12:00:00,Ronaldo Bianco,109
+United Kingdom,Aston Martin,DB5,45512,2000,750,550,Silver,56890,2450,GBPGB100,2016-11-03 12:00:00,Birmingham Executive Prestige Vehicles,110
+United Kingdom,Aston Martin,DB6,44000,660,500,550,Silver,55000,2450,GBPGB101,2016-11-04 12:00:00,Glittering Prize Cars Ltd,111
+United Kingdom,Triumph,TR6,7992,500,750,150,Black,9990,NULL,GBPGB102,2016-12-02 12:00:00,Honest Pete Motors,112
+United Kingdom,Aston Martin,DB9,37200,2000,750,550,British Racing Green,46500,NULL,GBPGB102,2016-12-02 12:00:00,Honest Pete Motors,113
+United Kingdom,Triumph,TR7,7600,500,750,150,Black,9500,NULL,GBPGB102,2016-12-02 12:00:00,Honest Pete Motors,114
+United Kingdom,Aston Martin,Virage,100400,3950,1500,1950,Red,125500,NULL,GBPGB102,2016-12-02 12:00:00,Honest Pete Motors,115
+Italy,Rolls Royce,Phantom,79600,1490,750,750,Dark Purple,99500,5000,EURIT103,2016-12-06 12:00:00,Prestissimo!,116
+France,Rolls Royce,Ghost,48400,500,1500,550,Night Blue,60500,NULL,EURFR104,2016-12-06 12:00:00,La Bagnole de Luxe,117
+United Kingdom,Lamborghini,Countach,98800,2000,750,750,Black,123500,5000,GBPGB105,2016-12-06 12:00:00,Convertible Dreams,118
+Germany,Lamborghini,Diabolo,20000,1360,750,150,Night Blue,25000,NULL,EURDE106,2016-12-08 12:00:00,Glitz,119
+France,Lamborghini,Diabolo,135600,9250,1500,1950,British Racing Green,169500,NULL,EURFR107,2016-12-20 12:00:00,Vive La Vitesse,120
+United Kingdom,Bentley,Brooklands,79600,2175,750,750,Black,99500,NULL,GBPGB108,2016-12-28 12:00:00,Liverpool Executive Prestige Vehicles,121
+Spain,Porsche,959,31600,500,500,550,Canary Yellow,39500,NULL,EURES109,2016-12-31 10:00:00,Alicia Almodovar,122
+France,Porsche,Boxster,18000,1360,750,150,Pink,22500,NULL,EURFR110,2017-01-01 11:12:00,Vive La Vitesse,123
+United Kingdom,Aston Martin,Virage,100000,500,1500,750,Green,125000,NULL,GBPGB111,2017-01-05 11:55:00,Peter Smith,124
+United Kingdom,Rolls Royce,Silver Shadow,68000,1490,1500,750,Black,85000,NULL,GBPGB112,2017-01-10 03:56:00,Eat My Exhaust Ltd,125
+France,Peugeot,203,1000,500,750,150,Silver,1250,NULL,EURFR113,2017-01-21 01:56:00,La Bagnole de Luxe,126
+Switzerland,Mercedes,280SL,18000,500,750,150,Silver,22500,NULL,GBPCH114,2017-01-11 05:52:00,Le Luxe en Motion,127
+United Kingdom,Ferrari,355,100760,9250,2200,1950,Black,125950,12500,GBPGB115,2017-01-12 06:57:00,Magic Motors,128
+Switzerland,Triumph,TR7,7080,500,750,150,Black,8850,NULL,GBPCH116,2017-01-13 07:58:00,Le Luxe en Motion,129
+United Kingdom,Triumph,TR5,7960,500,750,150,Pink,9950,NULL,GBPGB117,2017-01-14 09:58:00,Posh Vehicles Ltd,130
+France,Aston Martin,Vanquish,45200,500,750,550,Black,56500,2450,EURFR118,2017-01-30 10:59:00,Vive La Vitesse,131
+United Kingdom,Aston Martin,Rapide,44000,500,750,550,Black,55000,NULL,GBPGB119,2017-01-31 09:59:00,Screamin' Wheels,132
+United Kingdom,Aston Martin,Vanquish,45560,1360,750,550,Night Blue,56950,750,GBPGB120,2017-01-31 12:00:00,Honest Pete Motors,133
+France,Ferrari,Enzo,292000,3950,750,1950,Black,365000,NULL,EURFR121,2017-02-07 08:00:00,Vive La Vitesse,134
+France,Ferrari,Enzo,316000,9250,2200,1950,British Racing Green,395000,NULL,EURFR122,2017-02-08 01:01:00,Laurent Saint Yves,135
+United States,Alfa Romeo,Giulietta,17200,500,500,150,Dark Purple,21500,NULL,USDUS123,2017-02-09 05:01:00,Screamin' Wheels,136
+United Kingdom,Austin,Lichfield,5200,500,750,150,Pink,6500,NULL,GBPGB124,2017-02-10 11:02:00,Screamin' Wheels,137
+United Kingdom,Austin,Princess,1800,500,750,150,Canary Yellow,2250,NULL,GBPGB126,2017-02-14 02:03:00,Magic Motors,139
+United Kingdom,Peugeot,404,2800,500,750,150,Blue,3500,NULL,GBPGB127,2017-03-05 06:03:00,London Executive Prestige Vehicles,140
+United Kingdom,Triumph,TR7,4544,500,750,150,Blue,5680,750,GBPGB128,2017-03-05 07:04:00,Glittering Prize Cars Ltd,141
+France,Triumph,TR5,6840,500,750,150,Black,8550,NULL,EURFR129,2017-03-05 02:04:00,SuperSport S.A.R.L.,142
+United Kingdom,Lagonda,V12,125200,2000,1500,1950,Blue,156500,10000,GBPGB130,2017-03-10 08:05:00,Honest Pete Motors,143
+United Kingdom,Aston Martin,DB9,45200,660,750,550,Silver,56500,NULL,GBPGB131,2017-03-10 04:05:00,King Leer Cars,144
+Belgium,Aston Martin,Rapide,69200,2000,1500,750,Silver,86500,1250,EURBE132,2017-03-12 05:06:00,Diplomatic Cars,145
+United Kingdom,Aston Martin,Vantage,53200,2175,1500,750,Black,66500,NULL,GBPGB133,2017-03-12 08:06:00,Magic Motors,146
+France,Porsche,959,44480,660,750,550,Green,55600,NULL,EURFR134,2017-03-25 10:07:00,Casseroles Chromes,147
+Germany,Lamborghini,Jarama,244000,3950,3150,1950,Green,305000,NULL,EURDE135,2017-03-30 01:07:00,Glitz,148
+United Kingdom,Aston Martin,DB5,34360,970,750,550,Night Blue,42950,NULL,GBPGB138,2017-03-31 06:09:00,Screamin' Wheels,151
+United Kingdom,Citroen,Rosalie,792,500,150,150,British Racing Green,990,NULL,GBPGB139,2017-03-31 02:09:00,Kieran O'Harris,152
+Spain,Delahaye,145,23600,970,750,150,Black,29500,1500,EURES140,2017-04-05 08:10:00,Prestige Imports,153
+France,Rolls Royce,Silver Seraph,111600,9250,2200,1950,British Racing Green,139500,NULL,EURFR141,2017-04-06 07:10:00,Laurent Saint Yves,154
+United Kingdom,Bugatti,57C,236000,5500,750,1950,Black,295000,NULL,GBPGB142,2017-04-07 12:11:00,Honest Pete Motors,155
+France,Bugatti,Veyron,176400,9250,2200,1950,Red,220500,NULL,EURFR143,2017-04-07 12:11:00,Vive La Vitesse,156
+United Kingdom,Rolls Royce,Phantom,63600,500,750,750,Red,79500,1500,GBPGB144,2017-05-01 05:12:00,Liverpool Executive Prestige Vehicles,157
+United Kingdom,Rolls Royce,Wraith,130000,3950,3150,1950,Red,162500,NULL,GBPGB145,2017-05-01 10:12:00,Peter Smith,158
+Italy,Jaguar,XK150,63600,2175,750,750,Black,79500,NULL,EURIT146,2017-05-09 06:13:00,Sport.Car,159
+Spain,Citroen,Torpedo,52712,500,750,750,Blue,65890,NULL,EURES147,2017-05-09 12:13:00,Autos Sportivos,160
+Italy,Aston Martin,DB2,49200,1360,750,550,Black,61500,NULL,EURIT148,2017-05-10 08:14:00,Ronaldo Bianco,161
+Spain,Porsche,924,10000,500,750,150,Blue,12500,NULL,EURES149,2017-05-10 04:14:00,Alicia Almodovar,162
+United Kingdom,Ferrari,Enzo,204000,9250,1500,1950,Black,255000,NULL,GBPGB150,2017-05-10 11:15:00,Magic Motors,163
+France,Ferrari,F50,204760,5500,750,1950,Blue,255950,500,EURFR151,2017-05-12 01:15:00,Le Luxe en Motion,164
+United States,Ferrari,F40,200000,3950,3150,1950,Black,250000,2450,USDUS152,2017-05-13 08:16:00,Screamin' Wheels Corp,165
+Italy,Alfa Romeo,Giulietta,5200,500,750,150,Blue,6500,NULL,EURIT153,2017-05-16 04:16:00,Prestissimo!,166
+United Kingdom,Triumph,GT6,7400,500,750,150,Silver,9250,NULL,GBPGB154,2017-05-19 09:17:00,Stan Collywobble,167
+United Kingdom,Reliant,Robin,760,500,750,150,Black,950,NULL,GBPGB155,2017-05-20 02:17:00,London Executive Prestige Vehicles,168
+France,McLaren,P1,236000,9250,3150,1950,Silver,295000,NULL,EURFR156,2017-05-21 04:18:00,M. Pierre Dubois,169
+United Kingdom,Delorean,DMC 12,79600,1490,750,750,Night Blue,99500,NULL,GBPGB157,2017-05-22 11:18:00,Pierre Blanc,170
+France,BMW,E30,26800,500,750,550,Black,33500,750,EURFR158,2017-05-23 09:19:00,Capots Reluisants S.A.,171
+Germany,Aston Martin,DB2,36000,500,750,550,Night Blue,45000,2450,EURDE159,2017-05-24 05:19:00,Glitz,172
+France,Aston Martin,DB4,29200,500,500,550,Black,36500,NULL,EURFR160,2017-05-26 10:20:00,Laurent Saint Yves,173
+France,Aston Martin,DB9,62000,1490,1500,750,Canary Yellow,77500,NULL,EURFR160,2017-05-26 10:20:00,Laurent Saint Yves,174
+Switzerland,Citroen,Rosalie,1880,500,225,150,British Racing Green,2350,NULL,GBPCH161,2017-05-27 09:20:00,Matterhorn Motors,175
+United Kingdom,Mercedes,280SL,26000,1360,750,550,Black,32500,500,GBPGB162,2017-06-01 08:21:00,London Executive Prestige Vehicles,176
+United Kingdom,Noble,M600,36000,500,750,550,Blue,45000,1500,GBPGB163,2017-06-01 12:21:00,Posh Vehicles Ltd,177
+United Kingdom,Trabant,600,1000,500,225,150,Red,1250,NULL,GBPGB259,2018-05-25 12:00:00,Bling Motors,282
+Switzerland,Triumph,TR5,6800,500,750,150,Green,8500,NULL,GBPCH164,2017-06-15 09:22:00,Le Luxe en Motion,178
+United Kingdom,Triumph,TR4,5272,500,750,150,Dark Purple,6590,750,GBPGB260,2018-05-25 12:00:00,My Shiny Sports Car Ltd.,283
+Germany,Aston Martin,DB9,79600,2175,750,750,Green,99500,NULL,EURDE165,2017-06-15 08:22:00,WunderKar,179
+Spain,Triumph,Roadster,10360,1360,750,150,Blue,12950,750,EURES168,2017-06-15 06:24:00,Antonio Maura,182
+United Kingdom,Alfa Romeo,Spider,4520,500,150,150,Black,5650,NULL,GBPGB169,2017-06-22 06:24:00,King Leer Cars,183
+France,Jaguar,XK150,23600,500,150,150,Black,29500,1500,EURFR170,2017-06-24 09:25:00,SuperSport S.A.R.L.,184
+Belgium,Peugeot,205,3160,500,750,150,Black,3950,750,EURBE171,2017-07-01 10:25:00,Stefan Van Helsing,185
+Belgium,Noble,M600,23600,1360,750,150,Black,29500,750,EURBE171,2017-07-01 10:25:00,Stefan Van Helsing,186
+Belgium,Alfa Romeo,Spider,10000,500,750,150,Black,12500,NULL,EURBE171,2017-07-01 10:25:00,Stefan Van Helsing,187
+France,Rolls Royce,Silver Seraph,79960,1490,750,750,Blue,99950,NULL,EURFR172,2017-07-01 06:26:00,Mme Anne Duport,188
+United Kingdom,Bugatti,57C,268000,2000,2200,1950,Silver,335000,1250,GBPGB173,2017-07-03 07:26:00,Birmingham Executive Prestige Vehicles,189
+France,Aston Martin,DB9,45200,500,750,550,Silver,56500,NULL,EURFR174,2017-07-31 08:27:00,M. Pierre Dubois,190
+United Kingdom,Aston Martin,Rapide,79600,2175,750,750,Night Blue,99500,NULL,GBPGB175,2017-07-31 07:27:00,London Executive Prestige Vehicles,191
+France,Rolls Royce,Silver Shadow,108000,2000,1500,1950,Silver,135000,1500,EURFR176,2017-07-31 05:28:00,SuperSport S.A.R.L.,192
+United Kingdom,Rolls Royce,Corniche,71600,500,750,750,British Racing Green,89500,NULL,GBPGB177,2017-07-31 05:28:00,King Leer Cars,193
+Switzerland,Rolls Royce,Wraith,132000,9250,3150,1950,Dark Purple,165000,NULL,GBPCH178,2017-08-04 09:29:00,Matterhorn Motors,194
+United States,Mercedes,250SL,18080,1360,500,150,Black,22600,500,USDUS179,2017-08-04 11:29:00,Screamin' Wheels,195
+France,Mercedes,350SL,26140,660,500,550,Dark Purple,32675,NULL,EURFR180,2017-08-06 02:30:00,Capots Reluisants S.A.,196
+France,Mercedes,500SL,36000,2000,500,550,Night Blue,45000,NULL,EURFR181,2017-08-07 01:30:00,Vive La Vitesse,197
+United Kingdom,BMW,Isetta,4400,500,750,150,Blue,5500,NULL,GBPGB182,2017-08-27 01:31:00,Silver HubCaps,198
+United Kingdom,Noble,M600,44000,500,500,550,Black,55000,2450,GBPGB183,2017-08-30 07:31:00,Eat My Exhaust Ltd,199
+United States,Aston Martin,DB2,39600,1360,500,550,Green,49500,NULL,USDUS184,2017-09-20 02:32:00,Sondra Horowitz,200
+Spain,Ferrari,Testarossa,200000,500,2200,1950,Black,250000,NULL,EURES185,2017-09-20 12:32:00,Alicia Almodovar,201
+France,Ferrari,355,124000,9250,750,1950,Red,155000,500,EURFR186,2017-09-20 04:33:00,Vive La Vitesse,202
+United States,Porsche,944,12600,1360,750,150,Pink,15750,NULL,USDUS187,2017-09-26 10:33:00,Theo Kowalski,203
+United Kingdom,Porsche,928,15600,1360,750,150,Black,19500,NULL,GBPGB188,2017-10-15 04:34:00,Honest Pete Motors,204
+France,Lamborghini,Diabolo,188000,500,1500,1950,Black,235000,750,EURFR189,2017-10-15 06:34:00,Laurent Saint Yves,205
+United Kingdom,Alfa Romeo,Giulia,20000,1360,750,150,Black,25000,1500,GBPGB190,2017-11-01 07:35:00,Convertible Dreams,206
+Italy,Lamborghini,Jarama,196000,500,3150,1950,British Racing Green,245000,NULL,EURIT191,2017-11-01 12:35:00,Stefano DiLonghi,207
+Spain,Triumph,TR3A,31600,970,500,550,Black,39500,NULL,EURES192,2017-11-01 05:36:00,Antonio Maura,208
+Belgium,Triumph,Roadster,18800,1360,500,150,Black,23500,NULL,EURBE193,2017-11-06 09:36:00,Stefan Van Helsing,210
+Belgium,Alfa Romeo,Giulia,8400,500,750,150,Black,10500,NULL,EURBE193,2017-11-06 09:36:00,Stefan Van Helsing,211
+France,Alfa Romeo,Spider,9200,500,150,150,Blue,11500,750,EURFR194,2017-11-12 11:37:00,Mme Anne Duport,212
+France,Alfa Romeo,1750,7960,500,750,150,Blue,9950,NULL,EURFR241,2018-04-15 12:00:00,Vive La Vitesse,264
+France,Porsche,911,40960,1360,500,550,Black,51200,NULL,EURFR194,2017-11-12 11:37:00,Mme Anne Duport,213
+United Kingdom,Aston Martin,DB2,36760,500,150,550,Black,45950,NULL,GBPGB195,2017-12-01 05:37:00,Snazzy Roadsters,214
+United Kingdom,Porsche,924,17280,1360,750,150,Red,21600,NULL,GBPGB196,2017-12-01 09:38:00,Glittering Prize Cars Ltd,215
+Germany,Austin,Lichfield,18880,1360,750,150,Night Blue,23600,NULL,EURDE198,2017-12-05 11:39:00,Glitz,217
+Spain,Bentley,Arnage,79960,1490,750,750,Black,99950,NULL,EURES199,2017-12-10 10:39:00,Prestige Imports,218
+Italy,Aston Martin,DB4,37520,500,1500,550,Silver,46900,NULL,EURIT200,2017-12-10 04:40:00,Sport.Car,219
+United Kingdom,Porsche,911,36760,2000,500,550,Black,45950,NULL,GBPGB201,2017-12-10 05:40:00,Pierre Blanc,220
+France,Porsche,924,6040,500,750,150,Red,7550,NULL,EURFR202,2017-12-10 12:41:00,Capots Reluisants S.A.,221
+Spain,Porsche,924,9592,500,750,150,Green,11990,900,EURES203,2017-12-12 02:41:00,Antonio Maura,222
+United States,Porsche,944,10000,500,750,150,Black,12500,NULL,USDUS204,2017-12-27 05:42:00,Screamin' Wheels,223
+United Kingdom,Porsche,944,6000,500,750,150,Blue,7500,NULL,GBPGB205,2017-12-27 12:42:00,Screamin' Wheels,224
+United Kingdom,Aston Martin,DB4,45480,500,1500,550,Canary Yellow,56850,NULL,GBPGB206,2018-01-02 12:00:00,King Leer Cars,225
+United Kingdom,Aston Martin,DB4,45560,500,1500,550,Pink,56950,NULL,GBPGB210,2018-01-02 12:00:00,Clubbing Cars,229
+United Kingdom,Aston Martin,DB2,50000,500,750,550,British Racing Green,62500,1250,GBPGB207,2018-01-02 12:00:00,Silver HubCaps,226
+United Kingdom,Aston Martin,DB4,34000,2000,150,550,Black,42500,NULL,GBPGB208,2018-01-02 12:00:00,Honest Pete Motors,227
+United States,Aston Martin,DB9,52360,500,1500,750,Black,65450,1250,USDUS209,2018-01-02 12:00:00,Screamin' Wheels,228
+France,Peugeot,203,1560,500,750,150,British Racing Green,1950,NULL,EURFR211,2018-01-05 12:00:00,Jean-Yves Truffaut,230
+United Kingdom,Austin,Princess,920,500,750,150,Black,1150,NULL,GBPGB212,2018-01-05 12:00:00,Mr. Evan Telford,231
+Germany,Alfa Romeo,Giulietta,9240,500,750,150,Night Blue,11550,NULL,EURDE213,2018-01-05 12:00:00,Ralph Obermann,232
+United Kingdom,Triumph,TR5,10056,2000,500,150,Black,12570,500,GBPGB214,2018-01-05 12:00:00,Pierre Blanc,233
+France,Triumph,TR7,7912,500,225,150,Black,9890,NULL,EURFR215,2018-01-05 12:00:00,Capots Reluisants S.A.,234
+United Kingdom,Bentley,Flying Spur,45560,2000,500,550,Night Blue,56950,NULL,GBPGB216,2018-01-10 12:00:00,Glittering Prize Cars Ltd,235
+Spain,Noble,M600,36760,660,1500,550,Dark Purple,45950,NULL,EURES217,2018-01-10 12:00:00,Prestige Imports,236
+Belgium,Peugeot,205,760,500,750,150,British Racing Green,950,25,EURBE218,2018-01-10 12:00:00,Stefan Van Helsing,237
+France,Jaguar,XK120,17240,970,750,150,Black,21550,1250,EURFR219,2018-01-10 12:00:00,Laurent Saint Yves,238
+United Kingdom,Alfa Romeo,Spider,4760,500,225,150,Black,5950,NULL,GBPGB220,2018-01-15 12:00:00,Silver HubCaps,239
+France,Bugatti,57C,284000,9250,7500,1950,Red,365000,NULL,EURFR221,2018-01-15 12:00:00,La Bagnole de Luxe,240
+France,Rolls Royce,Silver Seraph,96000,2175,750,750,Black,120000,NULL,EURFR222,2018-02-10 12:00:00,M. Pierre Dubois,241
+Switzerland,Porsche,928,14280,1360,150,150,British Racing Green,17850,750,GBPCH223,2018-02-11 12:00:00,Le Luxe en Motion,242
+Switzerland,Aston Martin,Virage,82920,1490,750,750,Pink,103650,NULL,GBPCH223,2018-02-11 12:00:00,Le Luxe en Motion,243
+United States,Rolls Royce,Phantom,146000,5500,1500,1950,Green,182500,17500,USDUS224,2018-02-12 12:00:00,Sondra Horowitz,244
+United Kingdom,Austin,Cambridge,18000,1360,750,150,Black,22500,NULL,GBPGB225,2018-02-13 12:00:00,ImpressTheNeighbours.Com,245
+France,BMW,Alpina,17200,500,750,150,Black,21500,NULL,EURFR226,2018-02-14 12:00:00,Wladimir Lacroix,246
+United Kingdom,Rolls Royce,Ghost,79160,1490,750,750,Blue,98950,NULL,GBPGB229,2018-02-17 12:00:00,Boris Spry,249
+United Kingdom,Bugatti,57C,284000,9250,2200,1950,Blue,355000,NULL,GBPGB230,2018-02-17 12:00:00,Andrea Tarbuck,250
+France,Austin,Princess,4800,500,750,150,Black,6000,NULL,EURFR231,2018-03-05 12:00:00,Vive La Vitesse,251
+Spain,Alfa Romeo,Giulietta,4552,500,750,150,Night Blue,5690,750,EURES232,2018-03-05 12:00:00,Alicia Almodovar,252
+United States,Aston Martin,DB9,45520,1360,500,550,Silver,56900,500,USDUS233,2018-03-08 12:00:00,Theo Kowalski,253
+Spain,Lamborghini,400GT,116000,9250,1500,1950,Black,145000,NULL,EURES234,2018-03-08 12:00:00,Antonio Maura,254
+Spain,Ferrari,Daytona,79600,500,1500,750,Silver,99500,NULL,EURES234,2018-03-08 12:00:00,Antonio Maura,255
+Spain,Ferrari,Dino,98800,2175,1500,750,Dark Purple,123500,750,EURES234,2018-03-08 12:00:00,Antonio Maura,256
+France,Ferrari,F50,248000,9250,7900,1950,Silver,310000,NULL,EURFR235,2018-03-15 12:00:00,Capots Reluisants S.A.,257
+United Kingdom,Porsche,944,7840,500,750,150,Canary Yellow,9800,35,GBPGB236,2018-03-19 12:00:00,Pierre Blanc,258
+Spain,Porsche,928,12760,500,500,150,Silver,15950,NULL,EURES237,2018-04-02 12:00:00,Alicia Almodovar,259
+United Kingdom,Lamborghini,Diabolo,204000,2000,150,1950,Black,255000,NULL,GBPGB238,2018-04-09 12:00:00,Kieran O'Harris,260
+United Kingdom,Mercedes,250SL,10360,1360,750,150,Green,12950,NULL,GBPGB238,2018-04-09 12:00:00,Kieran O'Harris,261
+United Kingdom,Ferrari,Mondial,124000,3950,3150,1950,Black,155000,NULL,GBPGB239,2018-04-10 12:00:00,King Leer Cars,262
+United States,Austin,Princess,2000,500,750,150,Red,2500,NULL,USDUS240,2018-04-11 12:00:00,Screamin' Wheels,263
+United States,Mercedes,280SL,31600,500,750,550,Green,39500,2450,USDUS242,2018-04-15 12:00:00,Screamin' Wheels,265
+United Kingdom,Mercedes,350SL,18800,1360,750,150,Black,23500,NULL,GBPGB243,2018-04-15 12:00:00,Executive Motor Delight,266
+Spain,Aston Martin,DB6,36760,500,750,550,Black,45950,NULL,EURES244,2018-04-15 12:00:00,Alicia Almodovar,267
+United States,Aston Martin,DB9,44000,500,750,550,Blue,55000,750,USDUS245,2018-04-15 12:00:00,Screamin' Wheels,268
+United Kingdom,Aston Martin,Virage,80000,500,750,750,Blue,100000,NULL,GBPGB246,2018-04-20 12:00:00,ImpressTheNeighbours.Com,269
+United Kingdom,Aston Martin,DB6,35908,2000,750,550,British Racing Green,44885,NULL,GBPGB247,2018-04-20 12:00:00,Beltway Prestige Driving,270
+United Kingdom,Lagonda,V12,49200,500,750,550,Black,61500,NULL,GBPGB248,2018-04-22 12:00:00,Bling Motors,271
+United Kingdom,Peugeot,404,760,500,750,150,Black,950,NULL,GBPGB249,2018-04-23 12:00:00,Clubbing Cars,272
+Italy,Ferrari,Dino,156000,9250,750,1950,British Racing Green,195000,NULL,EURIT250,2018-04-24 12:00:00,Smooth Rocking Chrome,273
+Spain,Aston Martin,DB2,42000,500,750,550,Green,52500,1575,EURES251,2018-04-29 12:00:00,YO! Speed!,274
+United Kingdom,Citroen,Rosalie,1080,500,750,150,Black,1350,NULL,GBPGB252,2018-05-03 12:00:00,Birmingham Executive Prestige Vehicles,275
+United Kingdom,Peugeot,404,1996,500,750,150,Canary Yellow,2495,45,GBPGB253,2018-05-03 12:00:00,Silver HubCaps,276
+France,Ferrari,F40,215600,5500,1500,1950,Dark Purple,269500,NULL,EURFR254,2018-05-15 12:00:00,Laurent Saint Yves,277
+United States,Ferrari,F50,156000,3950,1500,1950,Green,195000,NULL,USDUS255,2018-05-15 12:00:00,Stephany Rousso,278
+United Kingdom,Noble,M600,20760,1360,750,150,Black,25950,1250,GBPGB256,2018-05-23 12:00:00,My Shiny Sports Car Ltd.,279
+United Kingdom,Triumph,TR4,7992,500,750,150,Black,9990,NULL,GBPGB257,2018-05-23 12:00:00,Beltway Prestige Driving,280
+Italy,Ferrari,360,108000,5500,5600,1950,British Racing Green,135000,NULL,EURIT258,2018-05-25 12:00:00,Smooth Rocking Chrome,281
+France,Porsche,959,71600,1490,750,750,Black,89500,NULL,EURFR261,2018-05-25 12:00:00,Laurent Saint Yves,284
+United Kingdom,Alfa Romeo,Giulietta,14800,500,750,150,Blue,18500,NULL,GBPGB262,2018-05-25 12:00:00,Kieran O'Harris,285
+Switzerland,Alfa Romeo,1750,2860,500,750,150,Black,3575,750,GBPCH263,2018-06-03 12:00:00,Matterhorn Motors,286
+Belgium,Triumph,TR4,5560,500,457,150,Red,6950,NULL,EURBE264,2018-06-03 12:00:00,Flash Voitures,287
+United Kingdom,Jaguar,XK150,21200,500,750,150,Night Blue,26500,NULL,GBPGB265,2018-06-16 12:00:00,Snazzy Roadsters,288
+United States,Jaguar,Mark V,26800,2000,750,550,Black,33500,NULL,USDUS266,2018-06-18 12:00:00,Paul Blasio,289
+United Kingdom,Jaguar,Mark X,19600,1360,750,150,British Racing Green,24500,NULL,GBPGB267,2018-06-22 12:00:00,Glittering Prize Cars Ltd,290
+United Kingdom,Bentley,Continental,79600,500,1050,750,Night Blue,99500,500,GBPGB268,2018-06-23 12:00:00,King Leer Cars,291
+United Kingdom,Aston Martin,DB2,79992,2000,750,750,Silver,99990,NULL,GBPGB269,2018-07-05 12:00:00,Executive Motor Delight,292
+United Kingdom,Alfa Romeo,Giulia,5560,500,1050,150,Black,6950,1250,GBPGB270,2018-07-10 12:00:00,Mary Blackhouse,293
+United Kingdom,Alfa Romeo,Giulietta,8400,500,750,150,Black,10500,1500,GBPGB271,2018-07-15 12:00:00,Maurice Dujardin,294
+United Kingdom,Mercedes,280SL,26760,1360,750,550,Black,33450,NULL,GBPGB272,2018-07-25 12:00:00,Bling Motors,295
+United Kingdom,Aston Martin,Virage,58000,2175,1500,750,Night Blue,72500,NULL,GBPGB273,2018-07-25 12:00:00,Mr. Evan Telford,296
+United Kingdom,Peugeot,404,1920,500,750,150,Canary Yellow,2400,NULL,GBPGB274,2018-07-30 12:00:00,Leslie Whittington,297
+United Kingdom,Jaguar,XK120,54800,500,1500,750,Dark Purple,68500,2450,GBPGB275,2018-07-30 12:00:00,Mike Beeton,298
+Switzerland,Peugeot,404,1880,500,750,150,British Racing Green,2350,NULL,GBPCH276,2018-07-30 12:00:00,Le Luxe en Motion,299
+United Kingdom,Morgan,Plus 4,14800,970,1050,150,Pink,18500,1950,GBPGB277,2018-07-30 12:00:00,ImpressTheNeighbours.Com,300
+United Kingdom,Noble,M14,4400,500,750,150,Blue,5500,NULL,GBPGB278,2018-07-31 12:00:00,Melissa Bertrand,301
+Spain,Ferrari,360,102800,3950,2200,1950,Blue,128500,12500,EURES279,2018-07-31 12:00:00,El Sport,302
+United States,Aston Martin,DB9,44000,1360,1500,550,Silver,55000,NULL,USDUS280,2018-07-31 12:00:00,Stephany Rousso,303
+Italy,Peugeot,404,1000,500,750,150,Red,1250,NULL,EURIT281,2018-07-31 12:00:00,Smooth Rocking Chrome,304
+France,Bugatti,57C,276000,5500,457,1950,Red,345000,NULL,EURFR282,2018-07-31 12:00:00,Bling Bling S.A.,305
+Italy,Aston Martin,DB6,66072,1490,457,750,Green,82590,NULL,EURIT283,2018-07-31 12:00:00,Bravissima!,306
+United States,Aston Martin,DB6,90872,500,225,750,Night Blue,113590,NULL,USDUS284,2018-08-01 12:00:00,Jayden Jones,307
+United States,Aston Martin,Virage,36000,1360,750,550,Black,45000,1250,USDUS285,2018-08-01 12:00:00,Stephany Rousso,308
+Spain,Aston Martin,Vanquish,46080,2000,1500,550,Night Blue,57600,NULL,EURES286,2018-08-01 12:00:00,YO! Speed!,309
+United Kingdom,Aston Martin,Vantage,82000,2175,1500,750,Black,102500,NULL,GBPGB287,2018-08-01 12:00:00,Pierre Blanc,310
+United Kingdom,Aston Martin,DB2,31600,970,750,550,Blue,39500,NULL,GBPGB288,2018-08-10 12:00:00,Mr. Evan Telford,311
+United Kingdom,Aston Martin,DB9,49240,660,750,550,Black,61550,NULL,GBPGB289,2018-08-11 12:00:00,Expensive Shine,312
+United Kingdom,Aston Martin,Virage,44000,1360,1500,550,Blue,55000,NULL,GBPGB290,2018-08-15 12:00:00,Steve Docherty,313
+Germany,Bentley,Mulsanne,79600,2000,750,750,Silver,99500,1250,EURDE291,2018-08-16 12:00:00,Rodolph Legler,314
+Switzerland,Bentley,Arnage,45440,500,750,550,Silver,56800,750,GBPCH292,2018-08-18 12:00:00,Le Luxe en Motion,315
+United States,Bentley,Continental,71600,1490,750,750,Dark Purple,89500,NULL,USDUS293,2018-09-01 12:00:00,Screamin' Wheels,316
+France,Bentley,Flying Spur,58000,1490,225,750,British Racing Green,72500,NULL,EURFR294,2018-09-01 12:00:00,SuperSport S.A.R.L.,317
+United Kingdom,Bentley,Mulsanne,45560,970,750,550,Red,56950,NULL,GBPGB295,2018-09-01 12:00:00,Convertible Dreams,318
+United Kingdom,Mercedes,280SL,50000,500,225,550,Canary Yellow,62500,NULL,GBPGB296,2018-09-04 12:00:00,ImpressTheNeighbours.Com,319
+Spain,Mercedes,280SL,45512,1360,750,550,Silver,56890,NULL,EURES297,2018-09-04 12:00:00,Antonio Maura,320
+France,Mercedes,350SL,26880,2000,457,550,Dark Purple,33600,NULL,EURFR298,2018-09-08 12:00:00,Wladimir Lacroix,321
+United Kingdom,Mercedes,500SL,24400,1360,750,150,Silver,30500,2450,GBPGB299,2018-09-08 12:00:00,Pete Spring,322
+France,Citroen,Traaction Avant,20000,1360,457,150,Green,25000,NULL,EURFR300,2018-09-15 12:00:00,Khader El Ghannam,323
+France,Delahaye,135,20400,1360,750,150,Dark Purple,25500,NULL,EURFR300,2018-09-15 12:00:00,Khader El Ghannam,324
+United Kingdom,Delahaye,145,31600,970,750,550,Night Blue,39500,NULL,GBPGB301,2018-09-15 12:00:00,Expensive Shine,325
+Italy,Delahaye,175,10000,500,457,150,Pink,12500,NULL,EURIT302,2018-09-15 12:00:00,Bravissima!,326
+United Kingdom,Trabant,500,920,500,750,150,Red,1150,1500,GBPGB303,2018-10-02 12:00:00,Mary Blackhouse,327
+United Kingdom,Trabant,600,1560,500,750,150,Red,1950,NULL,GBPGB303,2018-10-02 12:00:00,Mary Blackhouse,328
+United Kingdom,Trabant,500,2000,500,750,150,Blue,2500,NULL,GBPGB303,2018-10-02 12:00:00,Mary Blackhouse,329
+France,Aston Martin,DB5,55600,2000,457,750,Blue,69500,NULL,EURFR304,2018-10-02 12:00:00,Jacques Mitterand,330
+Switzerland,Aston Martin,DB9,36000,500,750,550,Silver,45000,NULL,GBPCH305,2018-10-02 12:00:00,Francoise LeBrun,331
+United States,Aston Martin,Vanquish,45592,970,457,550,Black,56990,NULL,USDUS306,2018-10-31 12:00:00,Stephany Rousso,332
+United States,Jaguar,Mark X,69200,2175,750,750,Red,86500,2450,USDUS307,2018-10-31 12:00:00,Jayden Jones,333
+United Kingdom,Jaguar,XJ12,14280,970,750,150,Black,17850,1250,GBPGB308,2018-10-31 12:00:00,Alex McWhirter,334
+France,Jaguar,Mark V,20760,1360,457,150,Black,25950,NULL,EURFR309,2018-10-31 12:00:00,Francois Chirac,335
+United Kingdom,Jaguar,XK150,23600,660,750,150,Black,29500,NULL,GBPGB310,2018-10-31 12:00:00,Andy Cheshire,336
+France,Jaguar,XK120,47200,2000,750,550,Blue,59000,4500,EURFR311,2018-10-31 12:00:00,Casseroles Chromes,337
+United States,Triumph,TR5,7600,500,750,150,Green,9500,NULL,USDUS312,2018-10-31 12:00:00,Stephany Rousso,338
+France,Triumph,TR5,7120,500,750,150,British Racing Green,8900,NULL,EURFR313,2018-11-02 12:00:00,Laurent Saint Yves,339
+Switzerland,Triumph,TR4,9272,500,250,150,Black,11590,NULL,GBPCH314,2018-11-15 12:00:00,Matterhorn Motors,340
+United Kingdom,Triumph,TR4,6800,500,750,150,Red,8500,NULL,GBPGB315,2018-11-22 12:00:00,Posh Vehicles Ltd,341
+United States,Aston Martin,DB9,47600,500,500,550,Black,59500,NULL,USDUS316,2018-12-05 12:00:00,Jason B. Wight,342
+Italy,Aston Martin,Virage,98800,2000,3150,750,Black,123500,3500,EURIT317,2018-12-05 12:00:00,Ronaldo Bianco,343
+United Kingdom,Aston Martin,DB9,79600,1490,750,750,Night Blue,99500,NULL,GBPGB318,2018-12-08 12:00:00,Andrea Tarbuck,344
+United Kingdom,Aston Martin,DB6,43600,970,289,550,Black,54500,NULL,GBPGB319,2018-12-08 12:00:00,Boris Spry,345
+United Kingdom,Trabant,600,1272,500,750,150,Black,1590,NULL,GBPGB319,2018-12-08 12:00:00,Boris Spry,346
+Spain,Triumph,TR5,9200,500,750,150,Black,11500,NULL,EURES320,2018-12-16 12:00:00,Antonio Maura,347
+United States,Alfa Romeo,Giulietta,14360,2000,1050,150,Night Blue,17950,1500,USDUS321,2018-12-17 12:00:00,Screamin' Wheels,348
+France,Citroen,Rosalie,4400,500,750,150,Black,5500,NULL,EURFR322,2018-12-31 12:00:00,Laurent Saint Yves,349
+United Kingdom,Reliant,Robin,760,500,750,150,Black,950,NULL,GBPGB323,2018-12-31 12:00:00,Mrs. Ivana Telford,350
+United Kingdom,Ferrari,Daytona,116000,3950,NULL,1950,Black,145000,5000,GBPGB324,2018-12-31 12:00:00,Andy Cheshire,351

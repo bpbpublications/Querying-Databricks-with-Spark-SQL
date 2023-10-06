@@ -1,0 +1,90 @@
+MakeName,ModelName,CustomerName,CountryName,Cost,RepairsCost,PartsCost,TransportInCost,SalePrice,saledate
+Ferrari,360,Glitz,Germany,79600,500,750,750,99500,2016-04-30 12:00:00
+Ferrari,Testarossa,Mrs. Ivana Telford,United Kingdom,156000,3950,3150,1950,195000,2016-07-25 12:00:00
+Ferrari,355,Honest Pete Motors,United Kingdom,125200,2200,3150,1950,156500,2016-09-19 12:00:00
+Ferrari,Mondial,King Leer Cars,United Kingdom,82360,2175,2200,750,102950,2016-04-05 12:00:00
+Ferrari,355,Alexei Tolstoi,United Kingdom,164000,9250,750,1950,205000,2016-07-25 12:00:00
+Ferrari,Testarossa,Wonderland Wheels,United Kingdom,132000,3950,2200,1950,165000,2016-01-01 12:00:00
+Ferrari,355,Sondra Horowitz,United States,127600,2000,3150,1950,159500,2016-01-01 12:00:00
+Porsche,911,Casseroles Chromes,France,53200,2175,1500,750,66500,2016-08-13 12:00:00
+Porsche,924,SuperSport S.A.R.L.,France,31600,500,1500,550,39500,2016-02-16 12:00:00
+Porsche,944,Glitz,Germany,15600,500,750,150,19500,2016-08-19 12:00:00
+Porsche,911,Prestige Imports,Spain,55120,500,750,750,68900,2016-09-11 12:00:00
+Porsche,959,Alicia Almodovar,Spain,31600,500,500,550,39500,2016-12-31 12:00:00
+Porsche,944,Birmingham Executive Prestige Vehicles,United Kingdom,6000,500,750,150,7500,2016-09-06 12:00:00
+Porsche,959,Convertible Dreams,United Kingdom,53200,1490,750,750,66500,2016-07-25 12:00:00
+Porsche,911,Jason B. Wight,United States,14000,2000,500,150,17500,2016-04-30 12:00:00
+Porsche,944,Jason B. Wight,United States,10120,500,750,150,12650,2016-01-09 12:00:00
+Porsche,944,Silver HubCaps,United Kingdom,7040,140,750,150,8800,2016-04-30 12:00:00
+Porsche,911,Peter McLuckie,United Kingdom,26880,500,500,550,33600,2016-08-13 12:00:00
+Porsche,924,Peter McLuckie,United Kingdom,13200,500,750,150,16500,2016-08-13 12:00:00
+Porsche,911,Posh Vehicles Ltd,United Kingdom,23600,1360,500,150,29500,2016-01-07 12:00:00
+Porsche,911,Posh Vehicles Ltd,United Kingdom,16760,1360,750,150,20950,2016-09-04 12:00:00
+Porsche,911,Alexei Tolstoi,United Kingdom,36760,970,750,550,45950,2016-09-16 12:00:00
+Porsche,944,Eat My Exhaust Ltd,United Kingdom,10000,500,750,150,12500,2016-01-01 12:00:00
+Porsche,928,Screamin' Wheels,United Kingdom,7600,500,750,150,9500,2016-08-28 12:00:00
+Porsche,944,Liverpool Executive Prestige Vehicles,United Kingdom,12520,500,750,150,15650,2016-07-01 12:00:00
+Porsche,928,Kieran O'Harris,United Kingdom,15600,1360,750,150,19500,2016-07-25 12:00:00
+Porsche,911,Honest Pete Motors,United Kingdom,17720,1360,750,150,22150,2016-06-15 12:00:00
+Porsche,924,King Leer Cars,United Kingdom,7960,500,750,150,9950,2016-09-18 12:00:00
+Lamborghini,Diabolo,Vive La Vitesse,France,135600,9250,1500,1950,169500,2016-12-20 12:00:00
+Lamborghini,Diabolo,Glitz,Germany,20000,1360,750,150,25000,2016-12-08 12:00:00
+Lamborghini,Countach,Magic Motors,United Kingdom,2920,500,750,150,3650,2016-02-28 12:00:00
+Lamborghini,Countach,Convertible Dreams,United Kingdom,98800,2000,750,750,123500,2016-12-06 12:00:00
+Aston Martin,Vantage,Diplomatic Cars,Belgium,100000,500,2200,750,125000,2016-08-23 12:00:00
+Aston Martin,Vanquish,Laurent Saint Yves,France,52400,500,750,750,65500,2016-08-24 12:00:00
+Aston Martin,DB6,SuperSport S.A.R.L.,France,39664,660,500,550,49580,2016-05-30 12:00:00
+Aston Martin,DB6,Vive La Vitesse,France,36400,500,750,550,45500,2016-06-15 12:00:00
+Aston Martin,Rapide,WunderKar,Germany,49200,1360,750,550,61500,2016-08-12 12:00:00
+Aston Martin,DB5,Prestissimo!,Italy,36000,500,750,550,45000,2016-08-19 12:00:00
+Aston Martin,DB6,Glittering Prize Cars Ltd,United Kingdom,44000,660,500,550,55000,2016-11-04 12:00:00
+Aston Martin,DB9,Stan Collywobble,United Kingdom,36480,500,500,550,45600,2016-08-02 12:00:00
+Aston Martin,Vantage,Stan Collywobble,United Kingdom,39600,660,500,550,49500,2016-09-07 12:00:00
+Aston Martin,DB6,Stan Collywobble,United Kingdom,44800,1360,500,550,56000,2016-02-22 12:00:00
+Aston Martin,Virage,Convertible Dreams,United Kingdom,36720,500,500,550,45900,2016-08-22 12:00:00
+Aston Martin,Vanquish,Convertible Dreams,United Kingdom,10000,500,750,150,12500,2016-08-10 12:00:00
+Aston Martin,Virage,Alexei Tolstoi,United Kingdom,82000,2175,1500,750,102500,2016-08-02 12:00:00
+Aston Martin,DB4,Ronaldo Bianco,Italy,10000,500,750,150,12500,2016-10-30 12:00:00
+Aston Martin,Vanquish,Magic Motors,United Kingdom,44000,500,750,550,55000,2016-09-11 12:00:00
+Aston Martin,Virage,Snazzy Roadsters,United Kingdom,45200,500,1500,550,56500,2016-09-07 12:00:00
+Aston Martin,DB5,Birmingham Executive Prestige Vehicles,United Kingdom,45512,2000,750,550,56890,2016-11-03 12:00:00
+Aston Martin,DB9,Honest Pete Motors,United Kingdom,37200,2000,750,550,46500,2016-12-02 12:00:00
+Aston Martin,Virage,Honest Pete Motors,United Kingdom,100400,3950,1500,1950,125500,2016-12-02 12:00:00
+Bentley,Flying Spur,Vive La Vitesse,France,79600,2175,750,750,99500,2016-06-15 12:00:00
+Bentley,Flying Spur,Glitz,Germany,52712,1490,1500,750,65890,2016-02-17 12:00:00
+Bentley,Flying Spur,Prestige Imports,Spain,63600,2000,1500,750,79500,2016-07-26 12:00:00
+Bentley,Arnage,Executive Motor Delight,United Kingdom,68520,2175,750,750,85650,2016-10-30 12:00:00
+Bentley,Brooklands,Liverpool Executive Prestige Vehicles,United Kingdom,79600,2175,750,750,99500,2016-12-28 12:00:00
+Bentley,Arnage,Stan Collywobble,United Kingdom,61200,2175,750,750,76500,2016-10-05 12:00:00
+Bentley,Continental,Silver HubCaps,United Kingdom,45560,2000,750,550,56950,2016-01-22 12:00:00
+Bentley,Flying Spur,Silver HubCaps,United Kingdom,61200,2000,750,750,76500,2016-08-21 12:00:00
+Bentley,Flying Spur,Screamin' Wheels,United States,73720,2175,750,750,92150,2016-08-25 12:00:00
+Rolls Royce,Ghost,La Bagnole de Luxe,France,48400,500,1500,550,60500,2016-12-06 12:00:00
+Rolls Royce,Phantom,Prestissimo!,Italy,79600,1490,750,750,99500,2016-12-06 12:00:00
+Rolls Royce,Phantom,Prestige Imports,Spain,95680,1490,2200,750,119600,2016-10-05 12:00:00
+Alfa Romeo,Giulia,M. Pierre Dubois,France,2040,500,750,150,2550,2016-01-07 12:00:00
+Alfa Romeo,Giulia,Glitz,Germany,4800,500,750,150,6000,2016-02-17 12:00:00
+Alfa Romeo,Giulia,Silver HubCaps,United Kingdom,14000,1360,750,150,17500,2016-04-30 12:00:00
+Alfa Romeo,Spider,Wonderland Wheels,United Kingdom,10000,500,750,150,12500,2016-04-30 12:00:00
+Alfa Romeo,Giulia,Jason B. Wight,United States,10000,500,750,150,12500,2016-07-06 12:00:00
+Jaguar,XJ12,M. Pierre Dubois,France,2860,500,750,150,3575,2016-09-14 12:00:00
+Jaguar,XK120,La Bagnole de Luxe,France,15680,1360,750,150,19600,2016-09-16 12:00:00
+Jaguar,XK150,Vive La Vitesse,France,23720,660,750,150,29650,2016-06-15 12:00:00
+Jaguar,XK120,La Bagnole de Luxe,France,22312,970,500,150,27890,2016-09-16 12:00:00
+Jaguar,XK120,SuperSport S.A.R.L.,France,79600,2000,750,750,99500,2016-08-09 12:00:00
+Jaguar,XK120,Peter Smith,United Kingdom,28000,500,750,550,35000,2016-06-15 12:00:00
+Jaguar,E-Type,Alexei Tolstoi,United Kingdom,31600,2000,750,550,39500,2016-05-30 12:00:00
+Jaguar,XJS,Alexei Tolstoi,United Kingdom,7960,500,750,150,9950,2016-05-30 12:00:00
+Jaguar,XJ12,Glittering Prize Cars Ltd,United Kingdom,28200,500,750,550,35250,2016-09-14 12:00:00
+Triumph,TR4,M. Pierre Dubois,France,4400,500,750,150,5500,2016-06-15 12:00:00
+Triumph,TR4,Prestissimo!,Italy,11672,500,750,150,14590,2016-07-26 12:00:00
+Triumph,TR6,Prestissimo!,Italy,7960,500,750,150,9950,2016-08-28 12:00:00
+Triumph,TR5,Prestige Imports,Spain,10200,970,750,150,12750,2016-08-02 12:00:00
+Triumph,TR6,Alicia Almodovar,Spain,10000,500,750,150,12500,2016-10-30 12:00:00
+Triumph,TR7,Executive Motor Delight,United Kingdom,7960,500,750,150,9950,2016-10-30 12:00:00
+Triumph,TR7,Honest Pete Motors,United Kingdom,7600,500,750,150,9500,2016-12-02 12:00:00
+Triumph,TR5,Honest Pete Motors,United Kingdom,5240,500,750,150,6550,2016-09-19 12:00:00
+Triumph,TR6,Honest Pete Motors,United Kingdom,7992,500,750,150,9990,2016-12-02 12:00:00
+Triumph,TR5,King Leer Cars,United Kingdom,4544,500,750,150,5680,2016-08-29 12:00:00
+Triumph,TR6,Silver HubCaps,United Kingdom,5200,500,750,150,6500,2016-08-02 12:00:00
+Triumph,GT6,Alexei Tolstoi,United Kingdom,2800,500,750,150,3500,2016-09-04 12:00:00

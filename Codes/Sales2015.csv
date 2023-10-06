@@ -1,0 +1,29 @@
+MakeName,ModelName,CustomerName,CountryName,Cost,RepairsCost,PartsCost,TransportInCost,SalePrice,saledate
+Ferrari,Testarossa,Magic Motors,United Kingdom,52000,2175,1500,750,65000,2015-01-02 12:00:00
+Ferrari,355,Snazzy Roadsters,United Kingdom,176000,5500,2200,1950,220000,2015-01-25 12:00:00
+Ferrari,355,London Executive Prestige Vehicles,United Kingdom,135600,5500,2200,1950,169500,2015-05-10 12:00:00
+Ferrari,Testarossa,Glittering Prize Cars Ltd,United Kingdom,156000,6000,1500,1950,195000,2015-05-28 12:00:00
+Porsche,944,Casseroles Chromes,France,15960,1360,500,150,19950,2015-02-28 12:00:00
+Porsche,911,M. Pierre Dubois,France,15680,890,500,150,19600,2015-04-06 12:00:00
+Porsche,944,M. Pierre Dubois,France,7160,500,750,150,8950,2015-05-20 12:00:00
+Porsche,924,WunderKar,Germany,9200,500,750,150,11500,2015-02-16 12:00:00
+Porsche,911,Birmingham Executive Prestige Vehicles,United Kingdom,15600,660,500,150,19500,2015-02-03 12:00:00
+Porsche,924,Posh Vehicles Ltd,United Kingdom,7160,360,750,150,8950,2015-09-15 12:00:00
+Porsche,944,Wonderland Wheels,United Kingdom,6800,250,750,150,8500,2015-04-30 12:00:00
+Porsche,911,Convertible Dreams,United Kingdom,18360,500,750,150,22950,2015-11-10 12:00:00
+Aston Martin,DB6,SuperSport S.A.R.L.,France,44800,1785,500,550,56000,2015-07-25 12:00:00
+Aston Martin,DB4,Magic Motors,United Kingdom,23600,500,750,150,29500,2015-03-14 12:00:00
+Aston Martin,DB5,Birmingham Executive Prestige Vehicles,United Kingdom,39600,2500,1500,550,49500,2015-03-24 12:00:00
+Aston Martin,DB6,Eat My Exhaust Ltd,United Kingdom,60800,3250,750,750,76000,2015-03-30 12:00:00
+Aston Martin,DB6,Alexei Tolstoi,United Kingdom,55600,1490,1500,750,69500,2015-12-01 12:00:00
+Aston Martin,DB5,Sondra Horowitz,United States,29200,1950,500,550,36500,2015-04-04 12:00:00
+Aston Martin,Virage,Theo Kowalski,United States,98872,2175,2200,750,123590,2015-10-30 12:00:00
+Bentley,Flying Spur,Wonderland Wheels,United Kingdom,64400,500,750,750,80500,2015-04-30 12:00:00
+Mercedes,280SL,La Bagnole de Luxe,France,18360,550,500,150,22950,2015-06-04 12:00:00
+Alfa Romeo,Giulia,Convertible Dreams,United Kingdom,6956,400,750,150,8695,2015-07-12 12:00:00
+Jaguar,XJS,SuperSport S.A.R.L.,France,15600,290,750,150,19500,2015-07-25 12:00:00
+Jaguar,XK150,Alexei Tolstoi,United Kingdom,18392,390,750,150,22990,2015-07-15 12:00:00
+Jaguar,XJS,Alexei Tolstoi,United Kingdom,18080,660,750,150,22600,2015-10-30 12:00:00
+Jaguar,XK120,Peter McLuckie,United Kingdom,12480,1100,500,150,15600,2015-09-15 12:00:00
+Triumph,TR5,Peter McLuckie,United Kingdom,10120,320,750,150,12650,2015-09-05 12:00:00
+Triumph,TR4,Theo Kowalski,United States,4400,500,750,150,5500,2015-08-02 12:00:00

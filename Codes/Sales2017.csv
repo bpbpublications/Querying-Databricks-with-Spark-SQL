@@ -1,0 +1,95 @@
+MakeName,ModelName,CustomerName,CountryName,Cost,RepairsCost,PartsCost,TransportInCost,SalePrice,saledate
+Ferrari,F50,Le Luxe en Motion,France,204760,5500,750,1950,255950,2017-05-12 12:00:00
+Ferrari,Enzo,Laurent Saint Yves,France,316000,9250,2200,1950,395000,2017-02-08 12:00:00
+Ferrari,355,Vive La Vitesse,France,124000,9250,750,1950,155000,2017-09-20 12:00:00
+Ferrari,Enzo,Vive La Vitesse,France,292000,3950,750,1950,365000,2017-02-07 12:00:00
+Ferrari,Testarossa,Alicia Almodovar,Spain,200000,500,2200,1950,250000,2017-09-20 12:00:00
+Ferrari,355,Magic Motors,United Kingdom,100760,9250,2200,1950,125950,2017-01-12 12:00:00
+Ferrari,Enzo,Magic Motors,United Kingdom,204000,9250,1500,1950,255000,2017-05-10 12:00:00
+Ferrari,F40,Screamin' Wheels Corp,United States,200000,3950,3150,1950,250000,2017-05-13 12:00:00
+Porsche,959,Casseroles Chromes,France,44480,660,750,550,55600,2017-03-25 12:00:00
+Porsche,924,Capots Reluisants S.A.,France,6040,500,750,150,7550,2017-12-10 12:00:00
+Porsche,911,Mme Anne Duport,France,40960,1360,500,550,51200,2017-11-12 12:00:00
+Porsche,Boxster,Vive La Vitesse,France,18000,1360,750,150,22500,2017-01-01 12:00:00
+Porsche,924,Alicia Almodovar,Spain,10000,500,750,150,12500,2017-05-10 12:00:00
+Porsche,911,Antonio Maura,Spain,39600,500,500,550,49500,2017-11-01 12:00:00
+Porsche,944,Screamin' Wheels,United States,10000,500,750,150,12500,2017-12-27 12:00:00
+Porsche,924,Antonio Maura,Spain,9592,500,750,150,11990,2017-12-12 12:00:00
+Porsche,944,Screamin' Wheels,United Kingdom,6000,500,750,150,7500,2017-12-27 12:00:00
+Porsche,911,Pierre Blanc,United Kingdom,36760,2000,500,550,45950,2017-12-10 12:00:00
+Porsche,928,Honest Pete Motors,United Kingdom,15600,1360,750,150,19500,2017-10-15 12:00:00
+Porsche,924,Glittering Prize Cars Ltd,United Kingdom,17280,1360,750,150,21600,2017-12-01 12:00:00
+Porsche,944,Theo Kowalski,United States,12600,1360,750,150,15750,2017-09-26 12:00:00
+Lamborghini,Diabolo,Laurent Saint Yves,France,188000,500,1500,1950,235000,2017-10-15 12:00:00
+Lamborghini,Jarama,Glitz,Germany,244000,3950,3150,1950,305000,2017-03-30 12:00:00
+Lamborghini,Jarama,Stefano DiLonghi,Italy,196000,500,3150,1950,245000,2017-11-01 12:00:00
+Aston Martin,Rapide,Diplomatic Cars,Belgium,69200,2000,1500,750,86500,2017-03-12 12:00:00
+Aston Martin,DB9,M. Pierre Dubois,France,45200,500,750,550,56500,2017-07-31 12:00:00
+Aston Martin,DB4,Laurent Saint Yves,France,29200,500,500,550,36500,2017-05-26 12:00:00
+Aston Martin,DB9,Laurent Saint Yves,France,62000,1490,1500,750,77500,2017-05-26 12:00:00
+Aston Martin,DB6,Vive La Vitesse,France,36000,1250,750,550,45000,2017-03-31 12:00:00
+Aston Martin,Vanquish,Vive La Vitesse,France,45200,500,750,550,56500,2017-01-30 12:00:00
+Aston Martin,Rapide,London Executive Prestige Vehicles,United Kingdom,79600,2175,750,750,99500,2017-07-31 12:00:00
+Aston Martin,DB2,Sondra Horowitz,United States,39600,1360,500,550,49500,2017-09-20 12:00:00
+Aston Martin,DB5,Screamin' Wheels,United Kingdom,34360,970,750,550,42950,2017-03-31 12:00:00
+Aston Martin,Rapide,Screamin' Wheels,United Kingdom,44000,500,750,550,55000,2017-01-31 12:00:00
+Aston Martin,Virage,Peter Smith,United Kingdom,100000,500,1500,750,125000,2017-01-01 12:00:00
+Aston Martin,DB6,Liverpool Executive Prestige Vehicles,United Kingdom,180000,5500,3150,1950,225000,2017-03-31 12:00:00
+Aston Martin,DB9,King Leer Cars,United Kingdom,45200,660,750,550,56500,2017-03-10 12:00:00
+Aston Martin,Vanquish,Honest Pete Motors,United Kingdom,45560,1360,750,550,56950,2017-01-31 12:00:00
+Aston Martin,DB9,WunderKar,Germany,79600,2175,750,750,99500,2017-06-15 12:00:00
+Aston Martin,DB2,Glitz,Germany,36000,500,750,550,45000,2017-05-24 12:00:00
+Aston Martin,DB2,Ronaldo Bianco,Italy,49200,1360,750,550,61500,2017-05-10 12:00:00
+Aston Martin,DB4,Sport.Car,Italy,37520,500,1500,550,46900,2017-12-10 12:00:00
+Aston Martin,Vantage,Magic Motors,United Kingdom,53200,2175,1500,750,66500,2017-03-12 12:00:00
+Aston Martin,DB2,Snazzy Roadsters,United Kingdom,36760,500,750,550,45950,2017-12-01 12:00:00
+Bentley,Arnage,Prestige Imports,Spain,79960,1490,750,750,99950,2017-12-10 12:00:00
+Rolls Royce,Silver Shadow,SuperSport S.A.R.L.,France,108000,2000,1500,1950,135000,2017-07-31 12:00:00
+Rolls Royce,Silver Seraph,Mme Anne Duport,France,79960,1490,750,750,99950,2017-07-01 12:00:00
+Rolls Royce,Silver Seraph,Laurent Saint Yves,France,111600,9250,2200,1950,139500,2017-04-06 12:00:00
+Rolls Royce,Wraith,Peter Smith,United Kingdom,130000,3950,3150,1950,162500,2017-05-01 12:00:00
+Rolls Royce,Phantom,Liverpool Executive Prestige Vehicles,United Kingdom,63600,500,750,750,79500,2017-05-01 12:00:00
+Rolls Royce,Corniche,King Leer Cars,United Kingdom,71600,500,750,750,89500,2017-07-31 12:00:00
+Rolls Royce,Silver Shadow,Eat My Exhaust Ltd,United Kingdom,68000,1490,1500,750,85000,2017-01-01 12:00:00
+Mercedes,350SL,Capots Reluisants S.A.,France,26140,660,500,550,32675,2017-08-06 12:00:00
+Mercedes,500SL,Vive La Vitesse,France,36000,2000,500,550,45000,2017-08-07 12:00:00
+Mercedes,280SL,London Executive Prestige Vehicles,United Kingdom,26000,1360,750,550,32500,2017-06-01 12:00:00
+Mercedes,250SL,Screamin' Wheels,United States,18080,1360,500,150,22600,2017-08-04 12:00:00
+Alfa Romeo,Giulia,Stefan Van Helsing,Belgium,8400,500,750,150,10500,2017-11-06 12:00:00
+Alfa Romeo,Spider,Stefan Van Helsing,Belgium,10000,500,750,150,12500,2017-07-01 12:00:00
+Alfa Romeo,Spider,Mme Anne Duport,France,9200,500,750,150,11500,2017-11-12 12:00:00
+Alfa Romeo,Giulietta,Prestissimo!,Italy,5200,500,750,150,6500,2017-05-16 12:00:00
+Alfa Romeo,Spider,King Leer Cars,United Kingdom,4520,500,750,150,5650,2017-06-22 12:00:00
+Alfa Romeo,Giulia,Convertible Dreams,United Kingdom,20000,1360,750,150,25000,2017-11-01 12:00:00
+Alfa Romeo,Giulietta,Screamin' Wheels,United States,17200,500,500,150,21500,2017-02-09 12:00:00
+Austin,Lichfield,Glitz,Germany,18880,1360,750,150,23600,2017-12-05 12:00:00
+Austin,Princess,Magic Motors,United Kingdom,1800,500,750,150,2250,2017-02-14 12:00:00
+Austin,Lichfield,Screamin' Wheels,United Kingdom,5200,500,750,150,6500,2017-02-10 12:00:00
+BMW,E30,Capots Reluisants S.A.,France,26800,500,750,550,33500,2017-05-23 12:00:00
+BMW,Isetta,Silver HubCaps,United Kingdom,4400,500,750,150,5500,2017-08-27 12:00:00
+Bugatti,Veyron,Vive La Vitesse,France,176400,9250,2200,1950,220500,2017-04-07 12:00:00
+Bugatti,57C,Birmingham Executive Prestige Vehicles,United Kingdom,268000,2000,2200,1950,335000,2017-07-03 12:00:00
+Bugatti,57C,Honest Pete Motors,United Kingdom,236000,5500,750,1950,295000,2017-04-07 12:00:00
+Citroen,Torpedo,Autos Sportivos,Spain,52712,500,750,750,65890,2017-05-09 12:00:00
+Citroen,Rosalie,Kieran O'Harris,United Kingdom,792,500,750,150,990,2017-03-31 12:00:00
+Delahaye,145,Prestige Imports,Spain,23600,970,750,150,29500,2017-04-05 12:00:00
+Delorean,DMC 12,Pierre Blanc,United Kingdom,79600,1490,750,750,99500,2017-05-22 12:00:00
+Jaguar,XK150,SuperSport S.A.R.L.,France,23600,500,750,150,29500,2017-06-24 12:00:00
+Jaguar,XK150,Sport.Car,Italy,63600,2175,750,750,79500,2017-05-09 12:00:00
+Lagonda,V12,Honest Pete Motors,United Kingdom,125200,2000,1500,1950,156500,2017-03-10 12:00:00
+McLaren,P1,M. Pierre Dubois,France,236000,9250,3150,1950,295000,2017-05-21 12:00:00
+Noble,M600,Stefan Van Helsing,Belgium,23600,1360,750,150,29500,2017-07-01 12:00:00
+Noble,M600,Posh Vehicles Ltd,United Kingdom,36000,500,750,550,45000,2017-06-01 12:00:00
+Noble,M600,Eat My Exhaust Ltd,United Kingdom,44000,500,500,550,55000,2017-08-30 12:00:00
+Triumph,TR6,Diplomatic Cars,Belgium,10000,500,750,150,12500,2017-02-12 12:00:00
+Triumph,Roadster,Stefan Van Helsing,Belgium,18800,1360,500,150,23500,2017-11-06 12:00:00
+Triumph,TR5,SuperSport S.A.R.L.,France,6840,500,750,150,8550,2017-03-05 12:00:00
+Triumph,Roadster,Antonio Maura,Spain,10360,1360,750,150,12950,2017-06-15 12:00:00
+Triumph,TR3A,Antonio Maura,Spain,31600,970,500,550,39500,2017-11-01 12:00:00
+Triumph,GT6,Stan Collywobble,United Kingdom,7400,500,750,150,9250,2017-05-19 12:00:00
+Triumph,TR7,Glittering Prize Cars Ltd,United Kingdom,4544,500,750,150,5680,2017-03-05 12:00:00
+Triumph,TR5,Posh Vehicles Ltd,United Kingdom,7960,500,750,150,9950,2017-01-14 12:00:00
+Peugeot,205,Stefan Van Helsing,Belgium,3160,500,750,150,3950,2017-07-01 12:00:00
+Peugeot,203,La Bagnole de Luxe,France,1000,500,750,150,1250,2017-01-10 12:00:00
+Peugeot,404,London Executive Prestige Vehicles,United Kingdom,2800,500,750,150,3500,2017-03-05 12:00:00
+Reliant,Robin,London Executive Prestige Vehicles,United Kingdom,760,500,750,150,950,2017-05-20 12:00:00

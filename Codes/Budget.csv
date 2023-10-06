@@ -1,0 +1,236 @@
+BudgetKey,BudgetValue,Year,Month,BudgetDetail,BudgetElement
+1,100000,2015,1,TotalSales,Sales
+2,100000,2015,2,TotalSales,Sales
+3,125000,2015,3,TotalSales,Sales
+4,125000,2015,4,TotalSales,Sales
+5,200000,2015,5,TotalSales,Sales
+6,150000,2015,6,TotalSales,Sales
+7,10000,2015,7,TotalSales,Sales
+8,50000,2015,8,TotalSales,Sales
+9,50000,2015,9,TotalSales,Sales
+10,50000,2015,10,TotalSales,Sales
+11,50000,2015,11,TotalSales,Sales
+12,50000,2015,12,TotalSales,Sales
+13,200000,2016,1,TotalSales,Sales
+14,200000,2016,2,TotalSales,Sales
+15,200000,2016,4,TotalSales,Sales
+16,200000,2016,5,TotalSales,Sales
+17,200000,2016,6,TotalSales,Sales
+18,300000,2016,7,TotalSales,Sales
+19,300000,2016,8,TotalSales,Sales
+20,300000,2016,9,TotalSales,Sales
+21,300000,2016,10,TotalSales,Sales
+22,300000,2016,11,TotalSales,Sales
+23,450000,2016,12,TotalSales,Sales
+24,450000,2017,1,TotalSales,Sales
+25,450000,2017,2,TotalSales,Sales
+26,600000,2017,3,TotalSales,Sales
+27,600000,2017,4,TotalSales,Sales
+28,1000000,2017,5,TotalSales,Sales
+29,600000,2017,6,TotalSales,Sales
+30,600000,2017,7,TotalSales,Sales
+31,150000,2017,8,TotalSales,Sales
+32,450000,2017,9,TotalSales,Sales
+33,250000,2017,10,TotalSales,Sales
+34,600000,2017,11,TotalSales,Sales
+35,300000,2017,12,TotalSales,Sales
+36,450000,2018,1,TotalSales,Sales
+37,450000,2018,2,TotalSales,Sales
+38,450000,2018,3,TotalSales,Sales
+39,500000,2018,4,TotalSales,Sales
+40,500000,2018,5,TotalSales,Sales
+41,500000,2018,6,TotalSales,Sales
+42,500000,2018,7,TotalSales,Sales
+43,500000,2018,8,TotalSales,Sales
+44,500000,2018,9,TotalSales,Sales
+45,700000,2018,10,TotalSales,Sales
+46,250000,2018,11,TotalSales,Sales
+47,500000,2018,12,TotalSales,Sales
+48,250000,2015,NULL,Black,Color
+49,250000,2015,NULL,Blue,Color
+50,111500,2015,NULL,British Racing Green,Color
+51,132000,2015,NULL,Canary Yellow,Color
+52,250000,2015,NULL,Green,Color
+53,50000,2015,NULL,Night Blue,Color
+54,250000,2015,NULL,Red,Color
+55,50000,2015,NULL,Silver,Color
+56,250000,2016,NULL,Black,Color
+57,250000,2016,NULL,Blue,Color
+58,50000,2016,NULL,British Racing Green,Color
+59,50000,2016,NULL,Canary Yellow,Color
+60,50000,2016,NULL,Dark Purple,Color
+61,250000,2016,NULL,Green,Color
+62,400000,2016,NULL,Night Blue,Color
+63,50000,2016,NULL,Pink,Color
+64,500000,2016,NULL,Red,Color
+65,450000,2016,NULL,Silver,Color
+66,500000,2017,NULL,Black,Color
+67,500000,2017,NULL,Blue,Color
+68,869990,2017,NULL,British Racing Green,Color
+69,50000,2017,NULL,Canary Yellow,Color
+70,50000,2017,NULL,Dark Purple,Color
+71,500000,2017,NULL,Green,Color
+72,500000,2017,NULL,Night Blue,Color
+73,50000,2017,NULL,Pink,Color
+74,500000,2017,NULL,Red,Color
+75,800000,2017,NULL,Silver,Color
+76,500000,2018,NULL,Black,Color
+77,500000,2018,NULL,Blue,Color
+78,500000,2018,NULL,British Racing Green,Color
+79,50000,2018,NULL,Canary Yellow,Color
+80,500000,2018,NULL,Dark Purple,Color
+81,500000,2018,NULL,Green,Color
+82,500000,2018,NULL,Night Blue,Color
+83,50000,2018,NULL,Pink,Color
+84,50000,2018,NULL,Red,Color
+85,50000,2018,NULL,Silver,Color
+86,100000,2016,8,Belgium,Country
+87,15500,2017,2,Belgium,Country
+88,100000,2017,3,Belgium,Country
+89,45950,2017,7,Belgium,Country
+90,34000,2017,11,Belgium,Country
+91,950,2018,1,Belgium,Country
+92,6950,2018,6,Belgium,Country
+93,19950,2015,2,France,Country
+94,19600,2015,4,France,Country
+95,8950,2015,5,France,Country
+96,22950,2015,6,France,Country
+97,75500,2015,7,France,Country
+98,2550,2016,1,France,Country
+99,39500,2016,2,France,Country
+100,49580,2016,5,France,Country
+101,180150,2016,6,France,Country
+102,231500,2016,8,France,Country
+103,51065,2016,9,France,Country
+104,100000,2016,12,France,Country
+105,80250,2017,1,France,Country
+106,100000,2017,2,France,Country
+107,109150,2017,3,France,Country
+108,360000,2017,4,France,Country
+109,698450,2017,5,France,Country
+110,29500,2017,6,France,Country
+111,291450,2017,7,France,Country
+112,77675,2017,8,France,Country
+113,100000,2017,9,France,Country
+114,100000,2017,10,France,Country
+115,62700,2017,11,France,Country
+116,7550,2017,12,France,Country
+117,250000,2018,1,France,Country
+118,250000,2018,2,France,Country
+119,250000,2018,3,France,Country
+120,9950,2018,4,France,Country
+121,359000,2018,5,France,Country
+122,345000,2018,7,France,Country
+123,250000,2018,9,France,Country
+124,154450,2018,10,France,Country
+125,8900,2018,11,France,Country
+126,5500,2018,12,France,Country
+127,11500,2015,2,Germany,Country
+128,71890,2016,2,Germany,Country
+129,99500,2016,4,Germany,Country
+130,81000,2016,8,Germany,Country
+131,25000,2016,12,Germany,Country
+132,250000,2017,3,Germany,Country
+133,45000,2017,5,Germany,Country
+134,99500,2017,6,Germany,Country
+135,23600,2017,12,Germany,Country
+136,11550,2018,1,Germany,Country
+137,99500,2018,8,Germany,Country
+138,14590,2016,7,Italy,Country
+139,54950,2016,8,Italy,Country
+140,12500,2016,10,Italy,Country
+141,99500,2016,12,Italy,Country
+142,147500,2017,5,Italy,Country
+143,44500,2017,6,Italy,Country
+144,250000,2017,11,Italy,Country
+145,46900,2017,12,Italy,Country
+146,195000,2018,4,Italy,Country
+147,135000,2018,5,Italy,Country
+148,100000,2018,7,Italy,Country
+149,12500,2018,9,Italy,Country
+150,123500,2018,12,Italy,Country
+151,79500,2016,7,Spain,Country
+152,12750,2016,8,Spain,Country
+153,68900,2016,9,Spain,Country
+154,132100,2016,10,Spain,Country
+155,39500,2016,12,Spain,Country
+156,29500,2017,4,Spain,Country
+157,78390,2017,5,Spain,Country
+158,12950,2017,6,Spain,Country
+159,250000,2017,9,Spain,Country
+160,89000,2017,11,Spain,Country
+161,111940,2017,12,Spain,Country
+162,45950,2018,1,Spain,Country
+163,373690,2018,3,Spain,Country
+164,114400,2018,4,Spain,Country
+165,128500,2018,7,Spain,Country
+166,57600,2018,8,Spain,Country
+167,56890,2018,9,Spain,Country
+168,11500,2018,12,Spain,Country
+169,285000,2015,1,United Kingdom,Country
+170,19500,2015,2,United Kingdom,Country
+171,155000,2015,3,United Kingdom,Country
+172,89000,2015,4,United Kingdom,Country
+173,364500,2015,5,United Kingdom,Country
+174,31685,2015,7,United Kingdom,Country
+175,37200,2015,9,United Kingdom,Country
+176,22600,2015,10,United Kingdom,Country
+177,22950,2015,11,United Kingdom,Country
+178,69500,2015,12,United Kingdom,Country
+179,263950,2016,1,United Kingdom,Country
+180,59650,2016,2,United Kingdom,Country
+181,141750,2016,4,United Kingdom,Country
+182,49450,2016,5,United Kingdom,Country
+183,57150,2016,6,United Kingdom,Country
+184,501650,2016,7,United Kingdom,Country
+185,354780,2016,8,United Kingdom,Country
+186,447150,2016,9,United Kingdom,Country
+187,172100,2016,10,United Kingdom,Country
+188,111890,2016,11,United Kingdom,Country
+189,414490,2016,12,United Kingdom,Country
+190,457850,2017,1,United Kingdom,Country
+191,8750,2017,2,United Kingdom,Country
+192,557620,2017,3,United Kingdom,Country
+193,295000,2017,4,United Kingdom,Country
+194,606700,2017,5,United Kingdom,Country
+195,83150,2017,6,United Kingdom,Country
+196,524000,2017,7,United Kingdom,Country
+197,60500,2017,8,United Kingdom,Country
+198,19500,2017,10,United Kingdom,Country
+199,25000,2017,11,United Kingdom,Country
+200,146000,2017,12,United Kingdom,Country
+201,295420,2018,1,United Kingdom,Country
+202,476450,2018,2,United Kingdom,Country
+203,9800,2018,3,United Kingdom,Country
+204,653785,2018,4,United Kingdom,Country
+205,66125,2018,5,United Kingdom,Country
+206,150500,2018,6,United Kingdom,Country
+207,318290,2018,7,United Kingdom,Country
+208,258550,2018,8,United Kingdom,Country
+209,189450,2018,9,United Kingdom,Country
+210,52950,2018,10,United Kingdom,Country
+211,8500,2018,11,United Kingdom,Country
+212,301540,2018,12,United Kingdom,Country
+213,36500,2015,4,United States,Country
+214,5500,2015,8,United States,Country
+215,123590,2015,10,United States,Country
+216,172150,2016,1,United States,Country
+217,17500,2016,4,United States,Country
+218,12500,2016,7,United States,Country
+219,92150,2016,8,United States,Country
+220,21500,2017,2,United States,Country
+221,250000,2017,5,United States,Country
+222,22600,2017,8,United States,Country
+223,65250,2017,9,United States,Country
+224,12500,2017,12,United States,Country
+225,65450,2018,1,United States,Country
+226,182500,2018,2,United States,Country
+227,56900,2018,3,United States,Country
+228,97000,2018,4,United States,Country
+229,195000,2018,5,United States,Country
+230,33500,2018,6,United States,Country
+231,55000,2018,7,United States,Country
+232,158590,2018,8,United States,Country
+233,89500,2018,9,United States,Country
+234,152990,2018,10,United States,Country
+235,77450,2018,12,United States,Country
