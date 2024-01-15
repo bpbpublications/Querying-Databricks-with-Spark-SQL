@@ -1,0 +1,2495 @@
+Chapter 01
+==========
+
+SELECT  *
+FROM    allsales;
+
+
+SELECT   *
+FROM     allsales
+LIMIT    5;
+
+
+SELECT CustomerName
+FROM   allsales;
+
+
+SELECT CountryName, CustomerName
+FROM   allsales;
+
+
+SELECT CountryName, CountryISO3 AS IsoCode FROM allsales;
+
+
+SELECT DISTINCT  CountryName
+FROM             allsales;
+
+
+SELECT    MakeName, ModelName, SalePrice 
+FROM      allsales
+ORDER BY  SalePrice; 
+
+
+SELECT    MakeName, ModelName, SalePrice 
+FROM      allsales
+ORDER BY  SalePrice DESC;
+
+
+SELECT    CountryName, MakeName, ModelName
+FROM      allsales
+ORDER BY  CountryName, MakeName, ModelName;
+
+
+Chapter 02
+==========
+
+
+SELECT DISTINCT ModelName, Color 
+FROM            allsales
+WHERE           Color = 'Red';
+
+
+SELECT     ModelName, Color 
+FROM       allsales
+WHERE      Color IN ('Red', 'Green', 'Blue');
+
+
+SELECT     DISTINCT MakeName
+FROM       allsales
+WHERE      MakeName <> 'Ferrari'
+ORDER BY   MakeName;
+
+
+SELECT     DISTINCT MakeName
+FROM       allsales
+WHERE      MakeName NOT IN ('Porsche', 'Aston Martin', 'Bentley')
+ORDER BY   MakeName;
+
+
+SELECT     ModelName, Cost
+FROM       allsales
+WHERE      Cost > 50000;
+
+
+SELECT     ModelName, Cost, PartsCost
+FROM       allsales
+WHERE      PartsCost < 1000;
+
+
+SELECT     ModelName, RepairsCost
+FROM       allsales
+WHERE      RepairsCost <= 500;
+
+
+SELECT     DISTINCT MakeName
+FROM       allsales
+WHERE      PartsCost BETWEEN 1000 AND 2000
+ORDER BY   MakeName;
+
+
+SELECT     DISTINCT MakeName, ModelName
+FROM       allsales
+WHERE      IsRHD = TRUE
+ORDER BY   MakeName, ModelName;
+
+
+Chapter 03
+==========
+
+SELECT           MakeName, Color, SaleDate, SalePrice
+FROM             allsales
+WHERE            Color = 'Red' AND MakeName = 'Ferrari';
+
+
+SELECT     DISTINCT MakeName, Color
+FROM       allsales
+WHERE      Color IN ('Red', 'Green', 'Blue')
+           AND MakeName != 'Bentley';
+
+
+SELECT     ModelName, Color, PartsCost, RepairsCost
+FROM       allsales
+WHERE      Color = 'Red' 
+           AND (PartsCost > 1000 OR RepairsCost > 1000);
+
+
+SELECT DISTINCT  ModelName, Color, PartsCost, RepairsCost
+FROM       allsales
+WHERE            (Color IN ('Red', 'Green', 'Blue') 
+                   AND 
+                   ModelName = 'Phantom') 
+                 OR 
+                (PartsCost > 5500 AND RepairsCost > 5500);
+
+
+SELECT     ModelName, Color, PartsCost ,RepairsCost
+FROM       allsales
+WHERE      UPPER(Color) = 'DARK PURPLE'
+ORDER BY   ModelName;
+
+
+SELECT     CustomerName 
+FROM       allsales
+WHERE      CustomerName LIKE '%Pete%';
+
+
+SELECT MakeName
+FROM allsales 
+WHERE MakeName ILIKE '%L%';
+
+
+SELECT     DISTINCT CustomerName 
+FROM       allsales
+WHERE      CustomerName NOT LIKE '%Pete%';
+
+
+SELECT     DISTINCT MakeName, ModelName, Color
+FROM       allsales
+WHERE      Color LIKE SOME ('%ed%', '%el%')
+ORDER BY   MakeName, ModelName;
+
+
+SELECT DISTINCT   ModelName, InvoiceNumber
+FROM              allsales
+WHERE             InvoiceNumber LIKE '___FR%';
+
+
+SELECT   CustomerName, PostCode
+FROM     allsales
+WHERE    PostCode IS NULL;
+
+
+SELECT   CustomerName
+FROM     allsales
+WHERE    CustomerName REGEXP '^Pe.*g$';
+
+
+Chapter 04
+==========
+
+SELECT   MakeName, ModelName
+         , Cost + RepairsCost + PartsCost + TransportInCost AS TotalCost
+FROM     allsales;
+
+
+SELECT   MakeName, ModelName
+         ,SalePrice - (Cost + RepairsCost + PartsCost + TransportInCost) 
+         AS GrossMargin
+FROM     SalesByCountry;
+
+
+SELECT   MakeName, InvoiceNumber,
+         (SalePrice - (Cost + RepairsCost + PartsCost
+          + TransportInCost)) 
+          / SalePrice AS RatioOfCostsToSales
+FROM     AllSales;
+
+
+SELECT (SalePrice * 1.05) 
+       - (Cost + RepairsCost + PartsCost + TransportInCost) 
+       AS ImprovedSalesMargins
+FROM   SalesByCountry;
+
+
+SELECT    MakeName
+          ,(SalePrice - (Cost + RepairsCost + PartsCost
+            + TransportInCost)) 
+          / SalePrice AS Profitability 
+FROM      SalesByCountry 
+ORDER BY  Profitability DESC
+LIMIT 50;
+
+
+SELECT   MakeName, ModelName
+         ,Cost + RepairsCost + NVL(PartsCost, 0)  + TransportInCost 
+         AS TotalCost
+FROM     allsales;
+
+
+SELECT     DISTINCT MakeName, ModelName, SalePrice
+FROM       allsales
+WHERE      SalePrice - 
+             (Cost + RepairsCost + NVL(PartsCost, 0)
+              + TransportInCost) > 5000;
+
+
+SELECT     DISTINCT MakeName, ModelName
+FROM       allsales
+WHERE      (Color = 'Red' AND LineItemDiscount >= 1000 
+           AND (SalePrice - (Cost + RepairsCost + PartsCost 
+                             + TransportInCost)) > 5000) 
+        OR (PartsCost > 500 AND RepairsCost > 500);
+
+
+Chapter 05
+==========
+
+SELECT       SUM(Cost) AS TotalCost 
+FROM         allsales;
+
+
+SELECT        SUM(Cost) AS TotalCost
+             ,SUM(SalePrice) AS TotalSales 
+             ,SUM(SalePrice) - SUM(Cost) AS GrossProfit
+FROM         allsales;
+
+
+SELECT     ModelName, SUM(Cost) AS TotalCost
+FROM       allsales
+GROUP BY   ModelName;
+
+
+SELECT     MakeName, ModelName, SUM(Cost) AS TotalCost
+FROM       allsales
+GROUP BY   MakeName, ModelName
+ORDER BY   MakeName, ModelName
+
+
+SELECT     MakeName, ModelName
+           ,AVG(Cost) AS AverageCost 
+FROM       allsales
+GROUP BY   MakeName, ModelName;
+
+
+SELECT       MakeName, ModelName 
+            ,COUNT(SalesDetailsID) AS NumberofCarsSold
+FROM        allsales
+GROUP BY    MakeName, ModelName
+ORDER BY    MakeName, ModelName;
+
+
+SELECT  COUNT(DISTINCT CountryName) AS CountriesWithSales
+FROM    allsales;
+
+
+SELECT       ModelName
+            ,MAX(SalePrice) AS TopSalePrice
+            ,MIN(SalePrice) AS BottomSalePrice
+FROM        allsales
+GROUP BY    ModelName;
+
+
+SELECT     MakeName, ModelName, SaleDate, InvoiceNumber
+          ,RepairsCost, TransportInCost
+          ,GREATEST(RepairsCost, TransportInCost) AS GreatestCost
+          ,LEAST(RepairsCost, TransportInCost) AS LeastCost
+FROM       allsales;
+
+
+SELECT     MakeName, ModelName
+          ,MAX(GREATEST(RepairsCost, TransportInCost, PartsCost))
+          AS GreatestCost
+          ,MIN(LEAST(RepairsCost, TransportInCost, PartsCost))
+           AS LeastCost
+FROM       allsales
+GROUP BY  MakeName, ModelName;
+
+
+SELECT      MakeName, COUNT(SalePrice) AS CarsSold
+FROM        allsales
+WHERE       Color = 'Red'
+GROUP BY    MakeName;
+
+
+SELECT     CountryName, COUNT(SalesDetailsID) AS NumberofCarsSold
+FROM       allsales
+GROUP BY   CountryName
+HAVING    COUNT(SalesDetailsID) > 50;
+
+
+SELECT     CustomerName, COUNT(SalesDetailsID) AS NumberofCarsSold
+FROM       allsales
+WHERE      (SalePrice 
+            - (
+                Cost + NVL(RepairsCost,0) + PartsCost 
+                + TransportInCost)
+               ) > 5000
+GROUP BY   CustomerName
+HAVING     COUNT(SalesDetailsID) >= 3;
+
+
+SELECT      MakeName
+FROM        allsales
+GROUP BY    MakeName
+ORDER BY    SUM(SalePrice) DESC
+LIMIT 3;
+
+
+SELECT     Color, BOOL_AND(IsRHD) AS AllRightHandDrive
+FROM       allsales
+GROUP BY   Color;
+
+
+Chapter 06
+==========
+
+SELECT     MakeName, ModelName, DateBought
+FROM       allsales
+WHERE      TO_DATE(DateBought) = '2015-07-25';
+
+
+SELECT     MakeName, ModelName, DateBought
+FROM       allsales
+WHERE      TO_DATE(DateBought) BETWEEN '2016-06-30' AND '2016-07-31';
+
+
+SELECT    
+            MakeName
+           ,ModelName 
+           ,DateBought
+           ,SaleDate
+           ,DATEDIFF(SaleDate, DateBought) AS DaysInStock
+FROM       allsales;
+
+
+SELECT     SUM(Cost) 
+           / DATEDIFF('2015-12-31', '2015-07-01')
+             AS AverageDailyCost
+FROM       allsales
+WHERE      DateBought BETWEEN '2015-07-01' AND '2015-12-31';
+
+
+SELECT     MakeName, ModelName, YEAR(SaleDate) AS YearOfSale 
+FROM       allsales
+WHERE      YEAR(SaleDate) = 2015
+ORDER BY   MakeName, ModelName;
+
+
+SELECT DISTINCT MakeName, ModelName, YEAR(SaleDate)
+                AS YearOfSale
+FROM            allsales
+WHERE         YEAR(SaleDate) IN (2015, 2016)
+ORDER BY        YearOfSale, MakeName, ModelName;
+
+
+SELECT     DAY(SaleDate) AS DayOfSale
+           ,SUM(SalePrice) as SalesPerDayOfMonth
+FROM       allsales
+GROUP BY   DAY(SaleDate) 
+ORDER BY   SalesPerDayOfMonth DESC;
+
+
+SELECT     MakeName, ModelName, SaleDate
+FROM       allsales
+WHERE      YEAR(SaleDate) = 2015 
+           AND MONTH(SaleDate) = 7;
+
+
+SELECT     MakeName, ModelName, SaleDate
+FROM       allsales
+WHERE     QUARTER(SaleDate) = 3
+          AND YEAR(SaleDate) = 2015;
+
+
+SELECT     MakeName, ModelName
+FROM       allsales
+WHERE      WEEKDAY(SaleDate) = 6
+           AND YEAR(SaleDate) = 2016;
+
+
+SELECT     MakeName, ModelName, SaleDate
+FROM       allsales
+WHERE     WEEKOFYEAR(SaleDate) = 6
+          AND YEAR(SaleDate) = 2017
+ORDER BY   SaleDate;
+
+
+SELECT      WEEKDAY(SaleDate) AS DayOfWeek
+           ,SUM(SalePrice) AS Sales
+FROM        allsales
+WHERE      YEAR(SaleDate) = 2015
+GROUP BY   WEEKDAY(SaleDate)
+ORDER BY   SUM(SalePrice) DESC;
+
+
+SELECT      DAYOFYEAR(SaleDate) AS DayOfYear
+           ,SUM(SalePrice) AS Sales
+FROM       allsales
+WHERE      YEAR(SaleDate) = 2017
+GROUP BY   DAYOFYEAR(SaleDate)
+ORDER BY   SUM(SalePrice) DESC;
+
+
+SELECT      DATE_FORMAT(SaleDate, "EEEE") AS Weekday
+           ,SUM(SalePrice) AS Sales
+FROM       allsales
+WHERE      YEAR(SaleDate) = 2015
+GROUP BY   DATE_FORMAT(SaleDate, "EEEE")
+ORDER BY   SUM(SalePrice) DESC;
+
+
+SELECT     SUM(SalePrice) AS CumulativeSales
+FROM       allsales
+WHERE      SaleDate BETWEEN DATEADD(MONTH, -2, '2018-07-25') 
+           AND '2018-07-25';
+
+
+SELECT     SUM(SalePrice) AS CumulativeJaguarSales
+FROM       allsales
+WHERE      TO_DATE(SaleDate) BETWEEN DATE_SUB('2017-07-25', 90) 
+          AND '2017-07-25'
+           AND MakeName = 'Jaguar';
+
+
+SELECT     MakeName, SUM(SalePrice) AS CumulativeSales
+FROM       allsales
+WHERE      CAST(SaleDate AS DATE)  
+           BETWEEN ADD_MONTHS(CURRENT_DATE, -3)
+           AND CURRENT_DATE 
+GROUP BY   MakeName
+ORDER BY   MakeName ASC;
+
+
+Chapter 07
+==========
+
+SELECT 'Customer: ' || CustomerName AS Customer
+FROM   allsales;
+
+
+SELECT 'Sold For:' || SalePrice AS SoldFor
+FROM    allsales;
+
+
+SELECT CustomerName, Address1 || ' ' || Town || ' ' 
+       || PostCode AS FullAddress 
+FROM   allsales;
+
+
+SELECT CustomerName, NVL(Address1, '') || ' ' || NVL (Town, '') || ' ' 
+                     || NVL (PostCode, '') AS FullAddress 
+FROM   allsales;
+
+
+SELECT     MakeName || ', ' || ModelName AS MakeAndModel
+           ,SUM(SalePrice) As TotalSold 
+FROM       allsales
+GROUP BY   MakeName ||', ' || ModelName;
+
+
+SELECT     CONCAT('Sales: ', TotalSalePrice ,' GBP')
+           AS SalePriceInPounds
+FROM       allsales;
+
+
+SELECT     UPPER(CustomerName) AS Customer
+FROM       allsales;
+
+
+SELECT     LOWER(ModelName) AS Model
+FROM       allsales;
+
+
+SELECT     INITCAP(ModelName) AS Model
+FROM       allsales;
+
+
+SELECT     ModelName || ' (' || LEFT(MakeName, 3) || ')' AS MakeAndModel
+FROM       allsales;
+
+
+SELECT     RIGHT(InvoiceNumber, 3) AS InvoiceSequenceNumber 
+FROM       allsales
+ORDER BY   InvoiceSequenceNumber;
+
+
+SELECT     SUBSTRING(InvoiceNumber, 4, 2) AS DestinationCountry 
+FROM       allsales;
+
+
+This logic can be implemented using the COALESCE() function that you can see in use in the following piece of SQL:
+SELECT     COALESCE(PostCode, Address1, Town)
+FROM       allsales;
+
+
+SELECT     InvoiceNumber, TotalSalePrice
+FROM       allsales
+WHERE      LEFT(InvoiceNumber, 3) = 'EUR'
+
+
+SELECT     InvoiceNumber, TotalSalePrice
+FROM       allsales
+WHERE      SUBSTRING(InvoiceNumber, 4, 2)  = 'FR'
+           AND MakeCountry = 'ITA';
+
+
+Chapter 08
+==========
+
+SELECT     TotalSalePrice, FLOOR(TotalSalePrice) AS SalePriceRoundedDown
+FROM       allsales;
+
+
+SELECT     TotalSalePrice, CEILING(TotalSalePrice) AS SalePriceRoundedUp
+FROM       allsales;
+
+
+SELECT     TotalSalePrice, ROUND(TotalSalePrice, 0) AS SalePriceRounded
+FROM       allsales;
+
+
+SELECT     TotalSalePrice, ROUND(TotalSalePrice, 2) AS SalePriceRounded
+FROM       allsales;
+
+
+SELECT     SalePrice, ROUND(SalePrice, -3) 
+              AS SalePriceRoundedToThousand
+FROM       allsales;
+
+
+SELECT     TotalSalePrice, BROUND(TotalSalePrice, 0) AS SalePriceRounded
+FROM       allsales
+ORDER BY   TotalSalePrice;
+
+
+SELECT     FORMAT_NUMBER(cost, "#,###.00") AS UKCostPrice
+FROM       allsales
+ORDER BY   stockcode;
+
+
+SELECT     MakeName, ModelName
+           ,FORMAT_NUMBER(SalePrice, "GBP #,###.00") 
+           AS SterlingSalePrice
+FROM       allsales
+ORDER BY   MakeName, ModelName, SterlingSalePrice DESC;
+
+
+SELECT     InvoiceNumber
+          ,DATE_FORMAT(SaleDate, 'd M y') AS SaleDate
+FROM       allsales;
+
+
+SELECT     InvoiceNumber
+           ,DATE_FORMAT(SaleDate, "HH mm") AS SaleTime
+FROM       AllSales;
+
+
+Chapter 09
+==========
+
+SELECT      Cost, RepairsCost, PartsCost
+           ,IFF(PartsCost > RepairsCost, 'Cost Alert!', NULL) 
+           AS CostAnalysis
+FROM       allsales;
+
+
+SELECT     Cost, RepairsCost, PartsCost 
+           ,IFF(
+                LEN(BuyerComments) < 25
+                ,BuyerComments
+                ,LEFT(BuyerComments, 20) + ' ...'
+               ) AS Comments
+FROM       allsales;
+
+
+SELECT      Cost, RepairsCost, PartsCost 
+           ,IFF(
+                (SalePrice - 
+                  (Cost + LineItemDiscount
+                           + PartsCost
+                           + NVL(RepairsCost, 0) 
+                           + TransportInCost
+                   )
+                 ) 
+                 < (SalePrice * 0.1) 
+                 AND (RepairsCost * 2) > PartsCost
+              ,'Warning!!'
+              ,'OK'
+               ) AS CostAlert
+FROM       allsales;
+
+
+SELECT      Cost, RepairsCost, PartsCost 
+           ,IFF(
+                 (SalePrice - 
+                       (Cost + LineItemDiscount - PartsCost 
+                        + RepairsCost + TransportInCost) 
+                  ) < SalePrice * 0.1 
+                   ,'Warning!!'
+               ,IFF(
+                     (SalePrice - 
+                         (Cost + LineItemDiscount - PartsCost 
+                          + RepairsCost + TransportInCost) 
+                      ) < SalePrice * 0.5, 'Acceptable'
+                     , 'OK'
+                    )
+                ) AS CostAlert
+FROM       allsales;
+
+
+SELECT     CountryName
+           ,CASE CountryName
+              WHEN 'Belgium' THEN 'Eurozone'
+              WHEN 'France' THEN 'Eurozone'
+              WHEN 'Italy' THEN 'Eurozone'
+              WHEN 'Spain' THEN 'Eurozone'
+              WHEN 'United Kingdom' THEN 'Pound Sterling'
+              WHEN 'United States' THEN 'Dollar'
+              ELSE 'Other'
+           END AS CurrencyRegion
+FROM       Country;
+
+
+SELECT    CASE 
+            WHEN MakeCountry IN ('ITA', 'GER', 'FRA') THEN 'European'
+            WHEN MakeCountry = 'GBR' THEN 'British'
+            WHEN MakeCountry = 'USA' THEN 'American'
+            ELSE 'Other'
+          END AS SalesRegion
+          ,COUNT(SalesDetailsID) AS NumberOfSales
+FROM       AllSales
+GROUP BY   CASE 
+            WHEN MakeCountry IN ('ITA', 'GER', 'FRA') THEN 'European'
+            WHEN MakeCountry = 'GBR' THEN 'British'
+            WHEN MakeCountry = 'USA' THEN 'American'
+            ELSE 'Other'
+          END;
+
+
+SELECT    CustomerName
+          ,CASE
+          WHEN IsReseller = 0 AND Country 
+                                  IN ('IT', 'DE', 'FR', 'ES', 'BE') 
+                  THEN 'Eurozone Retail Client'
+          WHEN IsReseller = 0 AND Country IN ('GB') 
+                  THEN 'British Retail Client'
+          WHEN IsReseller = 0 AND Country IN ('US') 
+                  THEN 'American Retail Client'
+          WHEN IsReseller = 0 AND Country IN ('CH') 
+                  THEN 'Swiss Retail Client'
+          WHEN IsReseller = 1 AND Country
+                                    IN ('IT', 'DE', 'FR', 'ES', 'BE') 
+                  THEN 'Eurozone Reseller'
+          WHEN IsReseller = 1 AND Country IN ('GB') 
+                  THEN 'British Reseller'
+          WHEN IsReseller = 1 AND Country IN ('US') 
+                  THEN 'American Reseller'
+          WHEN IsReseller = 1 AND Country IN ('CH') 
+                  THEN 'Swiss Reseller'
+         END AS CustomerType
+FROM       Customer;
+
+
+SELECT     CustomerName
+           ,CASE
+               WHEN IsCreditRisk = 0 THEN
+                        CASE 
+                            WHEN Country IN ('IT', 'DE', 'FR'
+                                             ,'ES', 'BE') 
+                                THEN 'Eurozone No Risk'
+                            WHEN Country IN ('GB') 
+                                THEN 'British No Risk'
+                            WHEN Country IN ('US') 
+                                THEN 'American No Risk'
+                            WHEN Country IN ('CH') 
+                                THEN 'Swiss No Risk'
+                        END
+               WHEN IsCreditRisk = 1 THEN
+                        CASE
+                            WHEN Country IN ('IT', 'DE', 'FR'
+                                             ,'ES', 'BE') 
+                               THEN 'Eurozone Credit Risk'
+                            WHEN Country IN ('GB') 
+                               THEN 'British Credit Risk'
+                            WHEN Country IN ('US') 
+                               THEN 'American Credit Risk'
+                            WHEN Country IN ('CH') 
+                               THEN 'Swiss Credit Risk'
+                  END        
+            END AS RiskType
+FROM       Customer;
+
+
+SELECT     MakeName, MakeCountry
+          ,DECODE(MakeCountry
+                   ,'ITA' ,'Italy'
+                   ,'FRA' ,'France'
+                   ,'GBR' ,'Great Britain'
+                   ,'USA' ,'United States'
+                   ,'GER' ,'Germany'
+                 ) AS FullMakeCountryName
+FROM       allsales;
+
+
+SELECT      *
+FROM        SalesByCountry
+ORDER BY    CASE WHEN LineItemDiscount IS NULL THEN 1 ELSE 0 END
+            ,LineItemDiscount
+
+
+Chapter 10
+==========
+
+SELECT      ModelName, Cost
+FROM        Model
+INNER JOIN Stock
+           ON Model.ModelID = Stock.ModelID
+ORDER BY    ModelName;
+
+
+SELECT     ModelName, Cost
+FROM       Model, Stock
+WHERE      Model.Modelid = Stock.Modelid
+
+
+SELECT     Make.MakeName, Model.ModelName, Stock.Cost
+FROM       Stock 
+INNER JOIN Model
+           ON Model.ModelID = Stock.ModelID
+INNER JOIN Make
+           ON Make.MakeID = Model.MakeID;
+
+
+SELECT     Make.MakeName, Model.ModelName, Stock.Cost
+FROM       Stock 
+INNER JOIN Model
+INNER JOIN  Make
+           ON Make.MakeID = Model.ModelID
+           AND Model.ModelID = Stock.ModelID
+
+
+SELECT DISTINCT  CountryName
+FROM             Customer
+INNER JOIN       Country
+                 ON Customer.Country = Country.CountryISO2;
+
+
+SELECT     S.InvoiceNumber, D.LineItemNumber, D.SalePrice
+           ,D.LineItemDiscount
+FROM       Sales AS S
+INNER JOIN SalesDetails AS D
+           ON S.SalesID = D.SalesID
+ORDER BY   S.InvoiceNumber, D.LineItemNumber;
+
+
+SELECT      CY.CountryName
+           ,MK.MakeName
+           ,MD.ModelName
+           ,ST.Cost
+           ,ST.RepairsCost
+           ,ST.PartsCost
+           ,ST.TransportInCost
+           ,ST.Color
+           ,SD.SalePrice
+           ,SD.LineItemDiscount
+           ,SA.InvoiceNumber
+           ,SA.SaleDate
+           ,CS.CustomerName
+FROM       Stock ST 
+INNER JOIN Model MD 
+           ON ST.ModelID = MD.ModelID 
+INNER JOIN Make MK 
+           ON MD.MakeID = MK.MakeID 
+INNER JOIN SalesDetails SD 
+           ON ST.StockCode = SD.StockID 
+INNER JOIN Sales SA 
+           ON SD.SalesID = SA.SalesID 
+INNER JOIN Customer CS 
+           ON SA.CustomerID = CS.CustomerID 
+INNER JOIN Country CY 
+           ON CS.Country = CY.CountryISO2
+ORDER BY    CY.CountryName
+           ,MK.MakeName
+           ,MD.ModelName;
+
+
+SELECT     ModelName, MakeName
+FROM       default.Model
+INNER JOIN test.Make
+WHERE      Model.MakeID = Make.MakeID;
+
+
+Chapter 11
+==========
+
+SELECT DISTINCT     MK.MakeName, MD.ModelName
+FROM                Stock ST
+INNER JOIN          Model MD
+                    ON MD.ModelID = ST.ModelID
+INNER JOIN          Make MK
+                    ON MK.MakeID = MD.MakeID
+ORDER BY            MK.MakeName, MD.ModelName;
+
+
+SELECT      ST.ModelID, MK.MakeName, MD.ModelName, ST.Cost
+FROM        stock AS ST
+INNER JOIN  model AS MD
+            ON MD.modelID = ST. ModelID
+INNER JOIN  make AS MK
+            ON MK.MakeID = MD.MakeID
+SEMI JOIN   salesdetails AS SD
+            ON ST.StockCode = SD.StockID;
+
+
+SELECT     MD.ModelName, SA.SaleDate, SA.InvoiceNumber 
+FROM       Model AS MD 
+INNER JOIN Stock ST
+           ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD 
+           ON ST.StockCode = SD.StockID
+INNER JOIN Sales SA
+           ON SA.SalesID = SD.SalesID
+ORDER BY   MD.ModelName;
+
+
+SELECT DISTINCT    MK.MakeName, MD.ModelName
+FROM               Make MK 
+LEFT OUTER JOIN    Model MD
+                   ON MK.MakeID = MD.MakeID;
+
+
+SELECT DISTINCT    MK.MakeName, MD.ModelName
+FROM               Model MD 
+RIGHT OUTER JOIN   Make MK
+                   ON MK.MakeID = MD.MakeID;
+
+
+SELECT            CT.CountryName, CT.SalesRegion, CS.*
+FROM              Country CT
+FULL OUTER JOIN   Customer CS
+                  ON CS.Country = CT.CountryISO2
+ORDER BY          CT.SalesRegion;
+
+
+SELECT     CO.CountryName, SA.TotalSalePrice
+FROM       Sales SA
+INNER JOIN Customer CS
+           ON SA.CustomerID = CS.CustomerID
+INNER JOIN Country CO
+           ON CS.Country = CO.CountryISO2;
+
+
+SELECT      CS.CustomerName, MI.SpendCapacity
+FROM        Customer CS
+INNER JOIN  MarketingInformation MI
+            ON CS.CustomerName = MI.Cust
+            AND CS.Country = MI.Country;
+
+
+SELECT       ST1.StaffName, ST1.Department, ST2.StaffName AS ManagerName
+FROM         Staff ST1
+INNER JOIN   Staff ST2
+             ON ST1.ManagerID = ST2.StaffID
+
+
+SELECT
+ MK.MakeName
+,MD.ModelName
+,SD.SalePrice
+,CAT.CategoryDescription
+
+FROM        Stock ST 
+INNER JOIN  Model MD 
+            ON ST.ModelID = MD.ModelID 
+INNER JOIN  Make MK 
+            ON MD.MakeID = MK.MakeID 
+INNER JOIN  SalesDetails SD 
+            ON ST.StockCode = SD.StockID 
+INNER JOIN  SalesCategory CAT
+            ON SD.SalePrice BETWEEN 
+                            CAT.LowerThreshold AND CAT.UpperThreshold;
+
+
+SELECT        CountryName, MakeName
+FROM          Country    
+CROSS JOIN    Make
+ORDER BY	   CountryName, MakeName;
+
+
+Chapter 12
+==========
+
+SELECT      CO.CountryName
+           ,COUNT(SD.StockID) AS CarsSold
+           ,(SELECT COUNT(SalesDetailsID)
+             FROM SalesDetails) AS SalesTotal
+FROM       SalesDetails SD 
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+INNER JOIN Customer CU ON SA.CustomerID = CU.CustomerID
+INNER JOIN Country CO ON CU.Country = CO.CountryISO2
+GROUP BY   CO.CountryName;
+
+
+SELECT     MK.MakeName
+           ,SUM(SD.SalePrice) AS SalePrice
+           ,SUM(SD.SalePrice) / (SELECT SUM(SalePrice) 
+                              FROM SalesDetails) AS SalesRatio
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+GROUP BY   MK.MakeName;
+
+
+SELECT     ST.Color
+FROM       Stock AS ST 
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+WHERE      SD.SalePrice = (SELECT MAX(SalePrice) FROM SalesDetails);
+
+
+SELECT     MK.MakeName, MD.ModelName, ST.RepairsCost
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+WHERE      ST.RepairsCost 
+           > 3 * (SELECT AVG(RepairsCost) FROM Stock);
+
+
+SELECT     MK.MakeName, MD.ModelName, ST.Cost, ST.RepairsCost
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+WHERE      RepairsCost BETWEEN
+                        (SELECT AVG(RepairsCost) FROM Stock) * 0.9
+                       AND
+                        (SELECT AVG(RepairsCost) FROM Stock) * 1.1;
+
+
+SELECT     MK.MakeName, AVG(SD.SalePrice) AS AverageUpperSalePrice
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+GROUP BY   MK.MakeName
+HAVING     AVG(SD.SalePrice) > 2 * (SELECT AVG(SalePrice)
+                                   FROM   SalesDetails);
+
+
+SELECT     MKX.MakeName, SDX.SalePrice
+FROM       Make AS MKX 
+INNER JOIN Model AS MDX ON MKX.MakeID = MDX.MakeID
+INNER JOIN Stock AS STX ON STX.ModelID = MDX.ModelID
+INNER JOIN SalesDetails SDX ON STX.StockCode = SDX.StockID
+WHERE      MakeName IN (
+                        SELECT     MK.MakeName
+                        FROM       Make AS MK 
+                        INNER JOIN Model AS MD 
+                                   ON MK.MakeID = MD.MakeID
+                        INNER JOIN Stock AS ST 
+                                   ON ST.ModelID = MD.ModelID
+                        INNER JOIN SalesDetails SD 
+                                   ON ST.StockCode = SD.StockID
+                        INNER JOIN Sales SA
+                                   ON SA.SalesID = SD.SalesID
+                        GROUP BY   MK.MakeName
+                        ORDER BY   SUM(SA.TotalSalePrice) DESC
+                        LIMIT 5
+                        )
+ORDER BY   MKX.MakeName, SDX.SalePrice DESC;
+
+
+SELECT     MKX.MakeName, SDX.SalePrice
+FROM       Make AS MKX 
+INNER JOIN Model AS MDX ON MKX.MakeID = MDX.MakeID
+INNER JOIN Stock AS STX ON STX.ModelID = MDX.ModelID
+INNER JOIN SalesDetails SDX ON STX.StockCode = SDX.StockID
+SEMI JOIN    (
+              SELECT     MK.MakeName
+              FROM       Make AS MK 
+              INNER JOIN Model AS MD 
+                         ON MK.MakeID = MD.MakeID
+              INNER JOIN Stock AS ST 
+                         ON ST.ModelID = MD.ModelID
+              INNER JOIN SalesDetails SD 
+                         ON ST.StockCode = SD.StockID
+              INNER JOIN Sales SA
+                         ON SA.SalesID = SD.SalesID
+              GROUP BY   MK.MakeName
+              ORDER BY   SUM(SA.TotalSalePrice) DESC
+              LIMIT 5
+              ) FiveMake
+ON FiveMake.MakeName = MKX.MakeNAme
+ORDER BY   MKX.MakeName, SDX.SalePrice DESC;
+
+
+SELECT      MK.MakeName
+           ,COUNT(MK.MakeName) AS VehiclesSold
+           ,SUM(SD.SalePrice) AS TotalSalesPerMake
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+WHERE      MakeName IN (
+                        SELECT     MK.MakeName
+                        FROM       Make AS MK 
+                        INNER JOIN Model AS MD 
+                                   ON MK.MakeID = MD.MakeID
+                        INNER JOIN Stock AS ST 
+                                   ON ST.ModelID = MD.ModelID
+                        INNER JOIN SalesDetails SD 
+                                   ON ST.StockCode = SD.StockID
+                        INNER JOIN Sales AS SA 
+                                   ON SA.SalesID = SD.SalesID
+                        GROUP BY    MK.MakeName
+                        ORDER BY   COUNT(MK.MakeName) DESC
+                        LIMIT 3
+                       )
+GROUP BY  MK.MakeName
+ORDER BY  VehiclesSold DESC;
+
+
+SELECT     MK.MakeName, MD.ModelName, SD.SalePrice 
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID 
+WHERE      Color IN (SELECT     ST.Color
+                     FROM       Model AS MD
+                     INNER JOIN Stock AS ST 
+                                ON ST.ModelID = MD.ModelID
+                     INNER JOIN SalesDetails SD 
+                                ON ST.StockCode = SD.StockID
+                     WHERE      SD.SalePrice = 
+                                      (
+                                       SELECT      MAX(SD.SalePrice) 
+                                       FROM        SalesDetails SD
+                                       INNER JOIN  Sales SA
+                                       ON SA.SalesID = SD.SalesID 
+                                   )
+                     )
+ORDER BY   SD.SalePrice DESC
+LIMIT 5;
+
+
+SELECT     MK.MakeName, SUM(SA.TotalSalePrice) AS TotalSales
+FROM       Make AS MK INNER JOIN Model AS MD 
+           ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+INNER JOIN Customer CU ON SA.CustomerID = CU.CustomerID
+INNER JOIN Country CO ON CU.Country = CO.CountryISO2
+WHERE      CountryName NOT IN (
+                               SELECT     CO.CountryName
+                               FROM       Sales AS SA 
+                               INNER JOIN Customer CU 
+                                          ON SA.CustomerID =
+                                                           CU.CustomerID
+                               INNER JOIN Country CO 
+                                          ON CU.Country = CO.CountryISO2
+                               GROUP BY   CountryName
+                               ORDER BY   SUM(SA.TotalSalePrice) ASC
+                               LIMIT 4
+                               )
+GROUP BY   MK.MakeName;
+
+
+SELECT     MK.MakeName
+           ,SUM(SD.SalePrice) AS SalePrice
+           ,SUM(SD.SalePrice) / 
+                        (SELECT     SUM(SD.SalePrice) 
+                         FROM       SalesDetails SD 
+                         INNER JOIN Sales AS SA
+                                    ON SA.SalesID = SD.SalesID
+                         WHERE      YEAR(SaleDate) = 2015
+                        ) AS SalesRatio
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+WHERE      YEAR(SA.SaleDate) = 2015
+GROUP BY   MK.MakeName;
+
+
+SELECT      MK.MakeName
+           ,MD.ModelName
+           ,SD.SalePrice AS ThisYearsSalePrice
+           ,SD.SalePrice
+             - (SELECT    AVG(SD.SalePrice) 
+                FROM       Stock ST
+                INNER JOIN SalesDetails SD 
+                           ON ST.StockCode = SD.StockID
+                INNER JOIN Sales AS SA 
+                           ON SA.SalesID = SD.SalesID
+                WHERE      YEAR(SA.SaleDate) = 2015) 
+                                           AS DeltaToLastYearAverage
+FROM       Make AS MK INNER JOIN Model AS MD 
+           ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+WHERE      YEAR(SA.SaleDate) = 2016;
+
+
+Chapter 13
+==========
+
+SELECT
+ MakeName
+,ModelName
+,SaleDate
+,SalePrice
+,Cost
+,SalePrice - DirectCosts AS GrossProfit
+,SalePrice - DirectCosts - NVL(LineItemDiscount, 0) AS NetProfit
+FROM
+(
+  SELECT     
+   MK.MakeName
+  ,MD.ModelName
+  ,SA.SaleDate
+  ,SD.SalePrice
+  ,ST.Cost
+  ,LineItemDiscount
+  ,(NVL(ST.RepairsCost, 0) + NVL(ST.PartsCost, 0) 
+  + ST.TransportInCost) AS DirectCosts
+  FROM       Make AS MK INNER JOIN Model 
+             AS MD ON MK.MakeID = MD.MakeID
+             INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+             INNER JOIN SalesDetails SD ON ST.StockCode 
+                                                = SD.StockID
+             INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+  ) DT
+ORDER BY  MakeName, ModelName, SaleDate;
+
+
+SELECT     DT.CustomerClassification
+           ,COUNT(DT.CustomerSpend) AS NumberOfCustomers
+FROM
+          (
+            SELECT     SUM(SD.SalePrice) AS CustomerSpend
+            ,SA.CustomerID
+            ,CASE
+             WHEN SUM(SD.SalePrice) <= 100000 THEN 'Tiny'
+             WHEN SUM(SD.SalePrice) BETWEEN 100001 AND 200000 
+                  THEN 'Small'
+             WHEN SUM(SD.SalePrice) BETWEEN 200001 AND 300000 
+                  THEN 'Medium'
+             WHEN SUM(SD.SalePrice) BETWEEN 300001 AND 400000 
+                  THEN 'Large'
+             WHEN SUM(SD.SalePrice) > 400000 THEN 'Mega Rich'
+            END AS CustomerClassification
+            FROM       SalesDetails SD 
+                       INNER JOIN Sales AS SA 
+                       ON SA.SalesID = SD.SalesID
+            GROUP BY   SA.CustomerID
+         ) AS DT
+GROUP BY   DT.CustomerClassification
+ORDER BY   NumberOfCustomers DESC;
+
+
+SELECT    ST.DateBought, MK.MakeName, MD.ModelName, ST.Color
+          ,ST.Cost, SD.SalePrice, DT.AveragePurchasePrice
+          ,DT.AverageSalePrice
+FROM
+     (
+      SELECT     MK1.MakeName 
+                 ,MD1.ModelName 
+                 ,AVG(ST1.Cost) AS AveragePurchasePrice
+                 ,AVG(SD1.SalePrice) AS AverageSalePrice
+      FROM       Make AS MK1
+                 INNER JOIN Model AS MD1 ON MK1.MakeID = MD1.MakeID
+                 INNER JOIN Stock AS ST1 ON ST1.ModelID =
+                                                         MD1.ModelID 
+                 INNER JOIN SalesDetails SD1 
+                 ON ST1.StockCode = SD1.StockID
+      GROUP BY   MK1.MakeName, MD1.ModelName
+     ) AS DT
+     INNER JOIN Make AS MK
+     INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+     INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+     INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+     AND MK.MakeName = DT.MakeName
+     AND MD.ModelName = DT.ModelName
+ORDER BY   ST.DateBought, MK.MakeName, MD.ModelName;
+
+
+SELECT 
+TOT.PurchaseYear
+,AGG.Color
+,(AGG.CostPerYear / TOT.TotalPurchasePrice) * 100 AS PercentPerColorPerYear
+FROM
+   (
+    SELECT       STX.Color
+                ,SUM(STX.Cost) AS CostPerYear
+                ,YEAR(STX.DateBought) AS YearBought
+    FROM        Stock AS STX 
+    INNER JOIN  Model AS MDX
+                ON STX.ModelID = MDX.ModelID
+    GROUP BY    STX.Color
+                ,YEAR(STX.DateBought)
+   ) AGG
+INNER JOIN
+   (
+    SELECT      YEAR(DateBought) AS PurchaseYear, SUM(Cost) 
+                AS TotalPurchasePrice
+    FROM        Stock
+    GROUP BY    YEAR(DateBought)
+   ) TOT
+ON TOT.PurchaseYear = AGG.YearBought
+ORDER BY TOT.PurchaseYear, PercentPerColorPerYear DESC;
+
+
+SELECT 
+ DT2.CountryName
+,DT2.CustomerName
+,DT2.NumberOfCustomerSales
+,DT2.TotalCustomerSales
+,DT2.NumberOfCustomerSales 
+  / DT1.NumberOfCountrySales 
+      AS PercentageOfCountryCarsSold
+,DT2.TotalCustomerSales / DT1.TotalCountrySales 
+      AS PercentageOfCountryCarsSoldByValue
+FROM
+(
+    SELECT      CO.CountryName
+               ,COUNT(*) AS NumberOfCountrySales
+               ,SUM(SD.SalePrice) AS TotalCountrySales
+    FROM       Stock AS ST 
+    INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+    INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+    INNER JOIN Customer CU ON SA.CustomerID = CU.CustomerID
+    INNER JOIN Country CO ON CU.Country = CO.CountryISO2
+    GROUP BY   CO.CountryName
+) AS DT1
+INNER JOIN
+(
+    SELECT      CO.CountryName
+               ,CU.CustomerName
+               ,COUNT(*) AS NumberOfCustomerSales
+               ,SUM(SD.SalePrice) AS TotalCustomerSales
+    FROM       Stock AS ST 
+    INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+    INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+    INNER JOIN Customer CU ON SA.CustomerID = CU.CustomerID
+    INNER JOIN Country CO ON CU.Country = CO.CountryISO2
+    GROUP BY   CO.CountryName, CU.CustomerName
+) AS DT2
+ON DT1.CountryName = DT2.CountryName
+ORDER BY DT2.CountryName, NumberOfCustomerSales DESC;
+
+
+SELECT      CO.CountryName
+           ,SUM(SD.SalePrice) AS Sales
+           ,SUM(CSQ.BudgetValue) AS BudgetValue
+           ,YEAR(SA.SaleDate) AS YearOfSale
+           ,MONTH(SA.SaleDate) AS MonthOfSale
+           ,SUM(CSQ.BudgetValue) 
+           - SUM(SD.SalePrice) AS DifferenceBudgetToSales
+FROM      SalesDetails SD
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+INNER JOIN Customer CU ON SA.CustomerID = CU.CustomerID
+INNER JOIN Country CO ON CU.Country = CO.CountryISO2
+INNER JOIN           (
+                        SELECT     BudgetValue, BudgetDetail, Year,
+                                   Month
+                        FROM       Budget
+                        WHERE      BudgetElement = 'Country'
+                      ) CSQ
+           ON CSQ.BudgetDetail = CO.CountryName
+           AND CSQ.Year = YEAR(SaleDate)
+           AND CSQ.Month = MONTH(SaleDate)
+GROUP BY CO.CountryName, YEAR(SA.SaleDate), MONTH(SA.SaleDate)
+ORDER BY CO.CountryName, YEAR(SA.SaleDate), MONTH(SA.SaleDate);
+
+
+SELECT      MK.MakeName
+           ,MD.ModelName
+           ,SD.SalePrice
+           ,CSQ.MaxSalePrice - SD.SalePrice 
+                AS PriceDifferenceToMaxPrevYear
+FROM       Make AS MK 
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+INNER JOIN  (
+                    SELECT     MAX(SDX.SalePrice) AS MaxSalePrice
+                              ,YEAR(SAX.SaleDate) AS SaleYear
+                              ,MKX.MakeName
+                    FROM       Make AS MKX 
+                    INNER JOIN Model AS MDX 
+                               ON MKX.MakeID = MDX.MakeID
+                    INNER JOIN Stock AS STX 
+                               ON STX.ModelID = MDX.ModelID
+                    INNER JOIN SalesDetails SDX 
+                               ON STX.StockCode = SDX.StockID
+                    INNER JOIN Sales AS SAX 
+                               ON SAX.SalesID = SDX.SalesID
+                    WHERE      YEAR(SAX.SaleDate) = 2015
+                    GROUP BY   YEAR(SAX.SaleDate)
+                               ,MKX.MakeName
+               ) CSQ
+            ON CSQ.MakeName = MK.MakeName
+WHERE       YEAR(SA.SaleDate) = 2016;
+
+
+SELECT     ST.Color, ST.DateBought, ST.Cost, CSQ.MinPurchaseCost
+FROM       Stock ST
+INNER JOIN 
+           (
+           SELECT     Color, MIN(Cost) AS MinPurchaseCost
+                      ,YEAR(DateBought) AS PurchaseYear
+           FROM       Stock
+           WHERE      YEAR(DateBought) = 2016
+           GROUP BY   Color, YEAR(DateBought) 
+           ) CSQ
+           ON ST.Color = CSQ.Color        
+           AND YEAR(ST.DateBought) = CSQ.PurchaseYear - 1;
+
+
+Chapter 14
+==========
+
+WITH Sales2015_CTE
+AS
+(
+SELECT     MK.MakeName, MD.ModelName, ST.Color
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+WHERE      YEAR(SA.SaleDate) = 2015
+)
+SELECT     MakeName, ModelName, Color
+FROM       Sales2015_CTE
+GROUP BY   MakeName, ModelName, Color
+ORDER BY   MakeName, ModelName, Color;
+
+
+WITH Sales_CTE
+AS
+(
+SELECT     MK.MakeName
+           ,SalePrice - (
+                         ST.Cost 
+                         + ST.RepairsCost 
+                         + NVL(ST.PartsCost, 0) 
+                         + ST.TransportInCost
+                        ) AS Profit
+FROM       Make AS MK 
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+)
+
+SELECT     MakeName, AVG(Profit) AS AverageProfit
+FROM       Sales_CTE
+GROUP BY   MakeName;
+
+
+WITH Discount2015_CTE (Make, Model, Color, SalePrice, LineItemDiscount)
+AS
+(
+SELECT     MK.MakeName, MD.ModelName, ST.Color
+           ,SD.SalePrice, SD.LineItemDiscount
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+WHERE      YEAR(SaleDate) = 2015
+)
+SELECT     Make, Model, Color, LineItemDiscount, SalePrice
+           ,(SELECT AVG(LineItemDiscount) * 2 FROM Discount2015_CTE) 
+           AS AverageDiscount
+FROM       Discount2015_CTE
+WHERE      LineItemDiscount > (SELECT AVG(LineItemDiscount) * 2 
+                               FROM Discount2015_CTE);
+
+
+WITH ExpensiveCar_CTE (
+                        MakeName, ModelName, SalePrice
+                       ,Color, TransportInCost, SaleDate
+                       ,InvoiceNumber, CustomerName
+)
+AS
+(
+SELECT     MK.MakeName, MD.ModelName, SD.SalePrice, ST.Color
+           ,ST.TransportInCost, SA.SaleDate, SA.InvoiceNumber
+           ,CU.CustomerName
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+INNER JOIN Customer CU ON SA.CustomerID = CU.CustomerID
+WHERE      YEAR(SaleDate) = 2015
+)
+SELECT     SLS.MakeName, SLS.ModelName, SLS.Color, CustomerName
+           ,SLS.TransportInCost, SLS.SaleDate, SLS.InvoiceNumber
+FROM       ExpensiveCar_CTE SLS
+           INNER JOIN (
+                       SELECT    MakeName
+                                ,MAX(SalePrice) AS MaxSalePrice
+                       FROM     ExpensiveCar_CTE
+                       GROUP BY MakeName
+                      ) MX
+           ON SLS.MakeName = MX.MakeName
+           AND SLS.SalePrice = MX.MaxSalePrice;
+
+
+WITH SalesBudget_CTE
+AS
+(
+SELECT     BudgetValue, BudgetDetail, Year, Month
+FROM       Budget
+WHERE      BudgetElement = 'Country'
+)
+
+SELECT     CO.CountryName, YEAR(SA.SaleDate) AS YearOfSale
+           ,MONTH(SA.SaleDate) AS MonthOfSale
+           ,SUM(SD.SalePrice) AS SalePrice
+           ,SUM(CTE.BudgetValue) AS BudgetValue
+           ,SUM(CTE.BudgetValue) 
+           - SUM(SD.SalePrice) AS DifferenceBudgetToSales
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+INNER JOIN Customer CU ON SA.CustomerID = CU.CustomerID
+INNER JOIN Country CO ON CU.Country = CO.CountryISO2
+INNER JOIN SalesBudget_CTE CTE
+           ON CTE.BudgetDetail = CO.CountryName
+           AND CTE.Year = YEAR(SA.SaleDate)
+           AND CTE.Month = MONTH(SA.SaleDate)
+GROUP BY   CO.CountryName, YEAR(SA.SaleDate), MONTH(SaleDate);
+
+
+WITH
+ColorSales_CTE
+AS
+(
+SELECT     ST.Color
+           ,SUM(SD.SalePrice) AS TotalSalesValue
+FROM       Stock ST 
+INNER JOIN SalesDetails SD 
+           ON ST.StockCode = SD.StockID 
+INNER JOIN Sales SA 
+           ON SD.SalesID = SA.SalesID 
+WHERE      YEAR(SA.SaleDate) = 2016
+GROUP BY   Color
+)
+,
+ColorBudget_CTE
+AS
+(
+SELECT  BudgetDetail AS Color, BudgetValue
+FROM    Budget
+WHERE   BudgetElement = 'Color'
+            AND YEAR = 2016
+)
+
+SELECT      BDG.Color, SLS.TotalSalesValue, BDG.BudgetValue
+            ,(SLS.TotalSalesValue - BDG.BudgetValue) AS BudgetDelta
+FROM        ColorSales_CTE SLS
+INNER JOIN  ColorBudget_CTE BDG
+            ON SLS.Color = BDG.Color;
+
+
+WITH Outer2015Sales_CTE
+AS
+(
+SELECT     MK.MakeName
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+WHERE      YEAR(SA.SaleDate) = 2015
+)
+,
+CoreSales_CTE (MakeName, NumberOfSales)
+AS
+(
+SELECT     MakeName
+           ,COUNT(*)
+FROM       Outer2015Sales_CTE
+GROUP BY   MakeName
+HAVING     COUNT(*) >= 2
+)
+
+SELECT      CTE.MakeName, MK2.MakeCountry AS CountryCode
+           ,CTE.NumberOfSales 
+FROM       CoreSales_CTE CTE
+INNER JOIN Make MK2
+           ON CTE.MakeName = MK2.MakeName;
+
+
+WITH Initial2017Sales_CTE
+AS
+(
+SELECT     SD.SalePrice, CU.CustomerName, SA.SaleDate
+FROM       Make AS MK
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+INNER JOIN Customer CU ON SA.CustomerID = CU.CustomerID
+WHERE      YEAR(SA.SaleDate) = 2017
+)
+,
+AggregateSales_CTE (CustomerName, SalesForCustomer)
+AS
+(
+SELECT     CustomerName, SUM(SalePrice)
+FROM       Initial2017Sales_CTE
+GROUP BY   CustomerName
+)
+,
+TotalSales_CTE (TotalSalePrice)
+AS
+(
+SELECT     SUM(SalePrice)
+FROM       Initial2017Sales_CTE
+)
+
+SELECT
+ IT.CustomerName
+,IT.SalePrice
+, IT.SaleDate
+,FORMAT_NUMBER(IT.SalePrice / AG.SalesForCustomer, '0.00%')
+           AS SaleAsPercentageForCustomer
+,FORMAT_NUMBER(IT.SalePrice / (SELECT TotalSalePrice FROM TotalSales_CTE), '0.00%') AS SalePercentOverall
+FROM       Initial2017Sales_CTE IT
+           INNER JOIN AggregateSales_CTE AG
+           ON IT.CustomerName = AG.CustomerName
+ORDER BY  IT.SaleDate, IT.CustomerName;
+
+
+Chapter 15
+==========
+
+SELECT
+SD.SalesDetailsID
+,SalePrice
+,(SELECT SUM(TotalSalePrice) FROM sales 
+        WHERE      SalesId = SD.SalesId) AS TotalSales
+FROM       SalesDetails SD
+ORDER BY   SalesDetailsID;
+
+
+SELECT
+ CS.CustomerName
+,SA.INVOICENUMBER
+,SD.SalePrice
+,SD.SalePrice
+/
+(
+SELECT     SUM(SDC.SalePrice)
+FROM       SalesDetails SDC
+INNER JOIN Sales SAC 
+           ON SDC.SalesID = SAC.SalesID 
+INNER JOIN  Customer CSC 
+           ON SAC.CustomerID = CSC.CustomerID 
+WHERE      SAC.CustomerID = CS.CustomerID
+) * 100 AS PercentSalesPerCustomer
+FROM       SalesDetails SD 
+INNER JOIN  Sales SA 
+           ON SD.SalesID = SA.SalesID 
+INNER JOIN  Customer CS 
+           ON SA.CustomerID = CS.CustomerID 
+ORDER BY   CS.CustomerName;
+
+
+SELECT     MKX.MakeName, STX.RepairsCost, STX.StockCode
+FROM       Make AS MKX INNER JOIN Model AS MDX 
+           ON MKX.MakeID = MDX.MakeID
+INNER JOIN Stock AS STX ON STX.ModelID = MDX.ModelID
+INNER JOIN SalesDetails SDX ON STX.StockCode = SDX.StockID
+WHERE      STX.RepairsCost >
+                 (
+                  SELECT     AVG(ST.RepairsCost) AS AvgRepairCost
+                  FROM       Make AS MK
+                  INNER JOIN Model AS MD 
+                             ON MK.MakeID = MD.MakeID
+                  INNER JOIN Stock AS ST 
+                             ON ST.ModelID = MD.ModelID
+                  WHERE     MK.MakeName = MKX.MakeName
+                  ) * 1.5;
+
+
+SELECT     MKX.MakeName, STX.RepairsCost, STX.StockCode
+,(
+    SELECT     AVG(ST.RepairsCost) AS AvgRepairCost
+    FROM       Make AS MK
+    INNER JOIN Model AS MD 
+               ON MK.MakeID = MD.MakeID
+    INNER JOIN Stock AS ST 
+               ON ST.ModelID = MD.ModelID
+    WHERE     MK.MakeName = MKX.MakeName
+ ) AS MakeAvgRepairCost
+
+FROM       Make AS MKX 
+INNER JOIN Model AS MDX 
+           ON MKX.MakeID = MDX.MakeID
+INNER JOIN Stock AS STX ON STX.ModelID = MDX.ModelID
+INNER JOIN SalesDetails SDX ON STX.StockCode = SDX.StockID
+WHERE      STX.RepairsCost >
+                 (
+                  SELECT     AVG(ST.RepairsCost) AS AvgRepairCost
+                  FROM       Make AS MK
+                  INNER JOIN Model AS MD 
+                             ON MK.MakeID = MD.MakeID
+                  INNER JOIN Stock AS ST 
+                             ON ST.ModelID = MD.ModelID
+                   WHERE     MK.MakeName = MKX.MakeName
+                  ) * 1.5;
+
+
+SELECT     MKX.MakeName, MDX.ModelName
+FROM       Make AS MKX 
+           INNER JOIN Model AS MDX ON MKX.MakeID = MDX.MakeID
+           INNER JOIN Stock AS STX ON STX.ModelID = MDX.ModelID
+GROUP BY   MKX.MakeName, MDX.ModelName
+HAVING     MAX(STX.Cost) >= 
+                  (
+                   SELECT     AVG(ST.Cost) * 1.5 AS AvgCostPerModel
+                   FROM       Make AS MK 
+                   INNER JOIN Model AS MD 
+                              ON MK.MakeID = MD.MakeID
+                   INNER JOIN Stock AS ST 
+                              ON ST.ModelID = MD.ModelID
+                   WHERE      MD.ModelName = MDX.ModelName
+                              AND MK.MakeName = MKX. MakeName
+                    );
+
+
+SELECT DISTINCT    CU.CustomerName
+FROM               Customer CU
+WHERE              EXISTS
+                   (
+                    SELECT    *
+                    FROM      Sales SA
+                    WHERE     SA.CustomerID = CU.CustomerID
+                              AND YEAR(SA.SaleDate) = 2017
+                   )
+ORDER BY           CU.CustomerName;
+
+
+SELECT     MakeName || ', ' || ModelName AS VehicleInStock, ST.STOCKCODE
+FROM       Make AS MK 
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+WHERE      NOT EXISTS
+                      (SELECT  *
+                       FROM    SalesDetails SD
+                       WHERE   ST.StockCode = SD.StockID);
+
+
+Chapter 16
+==========
+
+SELECT  MakeName, ModelName, CustomerName, CountryName
+        ,Cost, RepairsCost, PartsCost, TransportInCost
+        ,SalePrice, SaleDate
+FROM    Sales2015
+UNION 
+SELECT  MakeName, ModelName, CustomerName, CountryName
+        ,Cost, RepairsCost, PartsCost, TransportInCost
+        ,SalePrice, SaleDate
+FROM    Sales2016
+UNION
+SELECT  MakeName, ModelName, CustomerName, CountryName
+        ,Cost, RepairsCost, PartsCost, TransportInCost
+        ,SalePrice, SaleDate
+FROM    Sales2017;
+
+
+SELECT     MK.MakeName
+FROM       Make AS MK 
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+WHERE      YEAR(ST.DateBought) = 2015
+INTERSECT
+SELECT     MK.MakeName
+FROM       Make AS MK 
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+WHERE      YEAR(ST.DateBought) = 2016;
+
+
+SELECT     MK.MakeName || ' ' || MD.ModelName AS MakeModel
+FROM       Make AS MK 
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+WHERE      YEAR(SA.SaleDate) = 2015
+EXCEPT
+SELECT     MK.MakeName || ' ' || MD.ModelName
+FROM       Make AS MK 
+INNER JOIN Model AS MD ON MK.MakeID = MD.MakeID
+INNER JOIN Stock AS ST ON ST.ModelID = MD.ModelID
+INNER JOIN SalesDetails SD ON ST.StockCode = SD.StockID
+INNER JOIN Sales AS SA ON SA.SalesID = SD.SalesID
+WHERE      YEAR(SA.SaleDate) = 2016;
+
+
+SELECT  MakeName, ModelName
+FROM
+(
+   SELECT  MakeName, ModelName, CustomerName, CountryName, Cost
+   ,RepairsCost, PartsCost, TransportInCost, SalePrice, SaleDate
+   FROM    Sales2015
+   UNION 
+   SELECT  MakeName, ModelName, CustomerName, CountryName, Cost
+   ,RepairsCost, PartsCost, TransportInCost, SalePrice, SaleDate
+   FROM    Sales2016
+   UNION
+   SELECT  MakeName, ModelName, CustomerName, CountryName, Cost
+   ,RepairsCost, PartsCost, TransportInCost, SalePrice, SaleDate
+   FROM    Sales2017
+) SQ
+WHERE   CountryName = 'Germany';
+
+
+Chapter 17
+==========
+
+SELECT       CustomerName
+            ,FORMAT_NUMBER(
+                     COUNT(CustomerName)
+                     / (SELECT COUNT(*) 
+                        FROM allsales)
+                     , "0.00 %")
+             AS PercentageSalesPerCustomer
+FROM        allsales
+GROUP BY    CustomerName
+ORDER BY    CustomerName;
+
+
+SELECT       MakeName, ModelName, SalePrice
+             ,(SalePrice / CRX.TotalSales) * 100 AS PercentOfSales
+             ,SalePrice - CRX.AverageSales AS DifferenceToAverage
+FROM         SalesByCountry
+CROSS JOIN   (SELECT SUM(SalePrice) AS TotalSales
+                     ,AVG(SalePrice) AS AverageSales 
+              FROM   SalesByCountry 
+              WHERE  YEAR(SaleDate) = 2017) AS CRX
+WHERE        YEAR(SaleDate) = 2017;
+
+
+SELECT       MakeName
+            ,ModelName
+            ,INT(Cost) AS Cost
+            ,INT(RepairsCost) AS RepairsCost
+            ,INT(PartsCost) AS PartsCost
+            ,INT(SalePrice) AS SalePrice
+FROM        SalesByCountry;
+
+
+SELECT        DOUBLE(RepairsCost) AS Repairs
+FROM          allsales
+
+
+The people in the finance department want to see what the multiple of the cost of parts is when compared to the cost of each vehicle in stock. The following SQL will help in achieving this:
+SELECT      ModelName 
+            ,Cost
+            ,CASE
+                WHEN PartsCost != 0 THEN Cost / PartsCost
+                ELSE 0
+            END AS PartsCostMultiple 
+FROM        allsales;
+
+
+SELECT    CustomerID
+FROM
+     (
+     SELECT      CustomerID
+                 ,CustomerID % 3 AS ModuloOutput
+                 ,CASE
+                       WHEN CustomerID % 3 = 1 THEN 'Winner'
+                           ELSE NULL
+                   END AS LuckyWinner
+     FROM        Customer
+     ) Rnd
+WHERE       LuckyWinner IS NOT NULL;
+
+
+SELECT
+ InitialCost
+,MonthsSincePurchase
+,(InitialCost * POWER(1 + (0.75 / 100), MonthsSincePurchase)) 
+- InitialCost AS InterestCharge
+,InitialCost * POWER(1 + (0.75 / 100), MonthsSincePurchase) 
+ AS TotalWithInterest
+FROM
+(
+   SELECT
+    DATEDIFF(MONTH, DateBought, SaleDate) AS MonthsSincePurchase
+   ,(Cost + NVL(PartsCost, 0) + RepairsCost) 
+                 AS InitialCost
+    FROM         allsales
+    WHERE        DATEDIFF(MONTH, DateBought, SaleDate) > 2
+) SRC;
+
+
+SELECT                  RowNo AS PeriodNumber
+                        ,Cost
+                        ,Cost / 5 AS StraightLineDepreciation
+                        ,Cost - ((Cost / 5) * RowNo) AS RemainingValue
+
+FROM                  allsales
+CROSS JOIN
+(
+    SELECT 1 AS RowNo
+    UNION ALL
+    SELECT 2
+    UNION ALL
+    SELECT 3
+    UNION ALL
+    SELECT 4
+    UNION ALL
+    SELECT 5
+) Tally
+WHERE  StockCode = 'A2C3B95E-3005-4840-8CE3-A7BC5F9CFB5F';
+
+
+SELECT       CountryName
+            ,MakeName
+            ,TRY_CAST(SalePrice AS NUMERIC(20,4)) AS SalePriceConverted
+FROM        SalesText;
+
+
+Chapter 18
+==========
+
+SELECT       CustomerName
+            ,MakeName || ', ' || ModelName AS MakeAndModel
+            ,SalePrice
+            ,RANK() OVER (ORDER BY SalePrice DESC) 
+                   AS SalesImportance
+FROM        allsales
+WHERE       YEAR(SaleDate) = 2018
+ORDER BY    SalesImportance;
+
+
+SELECT       MakeName || ', ' || ModelName AS MakeAndModel
+            , SalePrice
+            , RANK() OVER (PARTITION BY MakeName 
+                          ORDER BY SalePrice DESC) AS SalesImportance
+FROM        allsales
+WHERE       YEAR(SaleDate) = 2017
+ORDER BY    MakeName, SalesImportance;
+
+
+WITH
+AllSalesProfit_CTE (CustomerName, MakeName, ModelName, SalePrice, ProfitPerModel)
+AS
+(
+SELECT       CustomerName, MakeName, ModelName
+             ,SalePrice
+             ,((SalePrice - 
+                 (Cost + NVL(RepairsCost,0) 
+                  + PartsCost + TransportInCost))
+                / SalePrice) * 100
+FROM        SalesByCountry
+)
+  
+SELECT       CustomerName, MakeName, ModelName, ProfitPerModel, SalePrice
+             , RANK() OVER 
+                      (PARTITION BY CustomerName, MakeName 
+                       ORDER BY ProfitPerModel DESC) AS SalesImportance
+FROM        AllSalesProfit_CTE
+ORDER BY    CustomerName, MakeName, SalesImportance;
+
+
+SELECT      Color, MakeName
+FROM
+             (
+             SELECT       DISTINCT MakeName, Color
+                         ,RANK() OVER (PARTITION BY MakeName
+                                      ORDER BY SalePrice DESC) 
+                                           AS ColorRank
+             FROM        allsales
+             ) SQ
+WHERE       ColorRank = 1
+ORDER BY MakeName;
+
+
+SELECT      Color, MakeAndModel, SalesImportance
+FROM
+(
+SELECT       ST.Color, MakeName || ', ' || ModelName AS MakeAndModel
+             , SalePrice
+             , DENSE_RANK() OVER (ORDER BY SalePrice DESC) 
+                           AS SalesImportance
+FROM        allsales ST
+INNER JOIN 
+           (
+            SELECT           Color, COUNT(*) AS NumberOfSales
+            FROM             allsales
+            GROUP BY         Color
+            ORDER BY         NumberOfSales
+            LIMIT 5
+            ) CL
+            ON CL.Color = ST.Color
+) RK
+WHERE       SalesImportance <= 10
+ORDER BY    SalesImportance;
+
+
+SELECT       Color, MakeName || ', ' || ModelName AS MakeAndModel
+             ,SalePrice
+             ,NTILE(10) OVER (ORDER BY SalePrice DESC) AS SalesDecile
+FROM        allsales
+ORDER BY    SalesDecile, Color, MakeAndModel;
+
+
+WITH PercentileList_CTE
+AS
+(
+SELECT     RepairsCost
+          , Cost
+          , NTILE(100) OVER (ORDER BY Cost DESC) AS Percentile
+FROM      Stock
+)
+SELECT Percentile
+          , SUM(Cost) AS TotalCostPerPercentile
+          , SUM(RepairsCost) AS RepairsCostPerPercentile
+              , SUM(RepairsCost) / SUM(Cost) AS RepairCostRatio
+FROM      PercentileList_CTE
+GROUP BY  Percentile
+ORDER BY  RepairCostRatio DESC;
+
+
+WITH Top20PercentSales_CTE
+AS
+(
+SELECT       SalesDetailsID, MakeName, ModelName, SalePrice
+             ,NTILE(5) OVER (ORDER BY SalePrice DESC) 
+                  AS SalesQuintile
+FROM        allsales
+)
+
+SELECT      MakeName, ModelName, SalePrice
+FROM        Top20PercentSales_CTE CTE
+WHERE       MakeName IN (
+                         SELECT   MakeName
+                         FROM     Top20PercentSales_CTE
+                         WHERE    SalesQuintile = 2
+                         GROUP BY MakeName
+                         ORDER BY SUM(SalePrice) DESC
+                         LIMIT 3
+                        )   
+ORDER BY   SalePrice DESC;
+
+
+SELECT     DISTINCT  CustomerName
+           ,TotalSalePrice
+           ,TotalSalePrice - PERCENTILE_CONT(0.5) 
+           WITHIN GROUP(ORDER BY TotalSalePrice) 
+                        OVER(PARTITION BY CustomerName) 
+               AS SaleToMedianDelta
+FROM       allsales;
+
+
+Chapter 19
+==========
+
+SELECT       InvoiceNumber 
+            ,DATE_FORMAT(SaleDate, "dd-MM-yy") AS DateOfSale
+            ,SalePrice
+            ,SUM(SalePrice) 
+            OVER (ORDER BY SaleDate ASC) AS AccumulatedSales
+            ,AVG(SalePrice) 
+            OVER (ORDER BY SaleDate ASC) 
+                 AS AverageSalesValueToDate
+FROM        allsales
+WHERE       YEAR(SaleDate) = 2017
+ORDER BY    SaleDate;
+
+
+SELECT      DateBought
+            ,SUM(Cost) AS PurchaseCost
+            ,SUM(SUM(Cost)) 
+               OVER (ORDER BY DateBought ASC) AS CostForTheYear
+FROM        Stock
+WHERE       YEAR(DateBought) = 2016
+GROUP BY    DateBought
+ORDER BY    DateBought;
+
+
+SELECT       DATE_FORMAT(SaleDate, "dd-MM-yy") AS DateOfSale
+            ,CustomerName, Town
+            ,SalePrice
+            ,COUNT(SalesDetailsID) 
+             OVER (PARTITION BY YEAR(SaleDate) 
+                   ORDER BY SaleDate ASC) 
+                        AS AnnualNumberOfSalesToDate
+FROM        allsales
+ORDER BY    SaleDate;
+
+
+SELECT       DATE_FORMAT(SaleDate, "dd-MM-yyyy") AS DateOfSale
+            ,DailyCount AS NumberOfSales
+            ,SUM(DailyCount) OVER 
+                   (PARTITION BY YEAR(SaleDate) ORDER BY SaleDate ASC) 
+                   AS AnnualNumberOfSalesToDate
+            ,SUM(DailySalePrice) OVER 
+                   (PARTITION BY YEAR(SaleDate) ORDER BY SaleDate ASC) 
+                   AS AnnualSalePriceToDate
+FROM        (
+             SELECT       SA.SaleDate
+                         ,COUNT(SalesDetailsID) AS DailyCount
+                         ,SUM(SalePrice) AS DailySalePrice
+             FROM        SalesDetails SD
+             INNER JOIN  Sales AS SA 
+                         ON SA.SalesID = SD.SalesID
+             GROUP BY    SA.SaleDate
+            ) DT
+ORDER BY    SaleDate;
+
+
+SELECT       DATE_FORMAT(SaleDate, "dd-MM-yyyy") AS DateOfSale
+            ,SalePrice, CustomerName, Town, MakeName
+            ,COUNT(SalesDetailsID) 
+              OVER (PARTITION BY YEAR(SaleDate) 
+              ORDER BY SaleDate ASC) 
+                 AS AnnualNumberOfSalesToDate
+            ,ROW_NUMBER() OVER (ORDER BY SaleDate ASC) 
+                 AS SalesCounter        
+FROM        allsales
+ORDER BY    SaleDate;
+
+
+WITH Tally_CTE
+AS
+(
+SELECT     ROW_NUMBER() OVER (ORDER BY StockCode) AS Num
+FROM       Stock
+LIMIT      52
+)
+
+SELECT           CTE.Num, SLS.SalesForTheWeek
+FROM             Tally_CTE CTE
+LEFT OUTER JOIN  
+                 (
+                 SELECT         SUM(TotalSalePrice) AS SalesForTheWeek
+                               ,DATE_PART("WEEK", SaleDate) AS WeekNo
+                 FROM          Sales
+                 WHERE         YEAR(SaleDate) = 2016
+                 GROUP BY      DATE_PART("WEEK", SaleDate)
+                 ) SLS
+                 ON CTE.Num = SLS.WeekNo;
+
+
+WITH Tally_CTE
+AS
+(
+SELECT     ROW_NUMBER() OVER (ORDER BY ST1.StockCode) -1 AS Num
+FROM       Stock ST1
+JOIN       Stock ST2
+LIMIT      10000
+)
+,DateRange_CTE
+AS
+(
+SELECT     DATE_ADD('2017-01-01', Num) AS DateList FROM Tally_CTE 
+WHERE      Num <= DATEDIFF('2017-06-30', '2017-01-01')
+)
+
+SELECT           CAST(DateList AS DATE) AS SaleDate, SalesPerDay
+FROM             DateRange_CTE CTE
+LEFT OUTER JOIN  
+                 (
+                 SELECT         CAST(SaleDate AS DATE) AS DateOfSale
+                               ,SUM(TotalSalePrice) AS SalesPerDay
+                 FROM          Sales
+                 GROUP BY      CAST(SaleDate AS DATE)
+                 ) SLS
+                 ON CTE.DateList = SLS.DateOfSale;
+
+
+SELECT      CustomerName
+           ,SaleDate
+           ,TotalSalePrice
+           ,TotalSalePrice - LAG(TotalSalePrice,1) 
+                                 OVER (PARTITION BY CustomerName 
+                                 ORDER BY SaleDate)
+                                     AS DifferenceToPreviousSalePrice
+FROM       allsales
+ORDER BY   SaleDate;
+
+
+SELECT *
+FROM
+(
+SELECT      CustomerName
+           ,SaleDate
+           ,TotalSalePrice
+           ,TotalSalePrice - LAG(TotalSalePrice,1) 
+                        OVER (PARTITION BY CustomerName 
+                              ORDER BY SaleDate)
+                                    AS PreviousSalePriceDifference
+FROM       allsales
+) SQ
+WHERE PreviousSalePriceDifference IS NOT NULL
+ORDER BY   SaleDate;
+
+
+SELECT      CustomerName
+           ,SaleDate
+           ,TotalSalePrice AS CurrentSale
+           ,FIRST_VALUE(TotalSalePrice) 
+            OVER (PARTITION BY CustomerName 
+                  ORDER BY SaleDate)
+                      AS InitialOrder
+           ,LAST_VALUE(TotalSalePrice) 
+            OVER (PARTITION BY CustomerName
+                  ORDER BY SaleDate
+                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING) 
+                      AS FinalOrder
+FROM       allsales;
+
+
+SELECT      CustomerName
+           ,SaleDate
+           ,TotalSalePrice
+           ,AVG(TotalSalePrice) 
+            OVER (PARTITION BY CustomerName ORDER BY SaleDate 
+            ROWS BETWEEN 3 PRECEDING AND CURRENT ROW)
+               AS AverageSalePrice
+FROM       allsales
+ORDER BY   CustomerName, SaleDate;
+
+
+SELECT   
+ CustomerName
+,SaleDate
+,TotalSalePrice
+,FIRST_VALUE(TotalSalePrice) OVER (PARTITION BY CustomerName
+                                    ORDER BY SaleDate) AS FirstOrder
+,LAG(TotalSalePrice, 3) OVER (PARTITION BY CustomerName
+                              ORDER BY SaleDate) AS LastButThreeOrder
+,LAG(TotalSalePrice, 2) OVER (PARTITION BY CustomerName
+                              ORDER BY SaleDate) AS LastButTwoOrder
+,LAG(TotalSalePrice, 1) OVER (PARTITION BY CustomerName
+                              ORDER BY SaleDate) AS LastButOneOrder
+,LAST_VALUE(TotalSalePrice) OVER (PARTITION BY CustomerName
+                                  ORDER BY SaleDate) AS LatestOrder
+FROM     allsales;
+
+
+SELECT      MakeName, ModelName, InvoiceNumber, SalePrice
+           ,ROUND(CUME_DIST() 
+            OVER (PARTITION BY MakeName ORDER BY SalePrice),2) 
+            AS RelativeStanding
+FROM        allsales	
+ORDER BY    MakeName, SalePrice, RelativeStanding;
+
+
+SELECT      CountryName, SaleDate, InvoiceNumber
+           ,FORMAT_NUMBER(PERCENT_RANK() 
+            OVER (PARTITION BY CountryName 
+            ORDER BY TotalSalePrice), "0.00 %") AS PercentageRanking
+FROM       allsales
+ORDER BY   CountryName, TotalSalePrice DESC;
+
+
+SELECT        CASE
+                  WHEN LEFT(CustomerName, 1) = 
+                       LAG (LEFT(CustomerName, 1)) 
+                       OVER (ORDER BY CustomerName) THEN NULL
+                 ELSE LEFT(CustomerName, 1)
+               END AS IndexLetter
+             ,CustomerName
+FROM         SalesByCountry
+GROUP BY     CustomerName
+ORDER BY     CustomerName;
+
+
+Chapter 20
+==========
+
+SELECT     MakeName, SUM(SalePrice) AS CumulativeSalesYTD
+FROM       allsales
+WHERE      SaleDate BETWEEN 
+               DATE_TRUNC('YEAR', CURDATE())
+               AND CURDATE()
+GROUP BY   MakeName
+ORDER BY   MakeName ASC;
+
+
+SELECT     MakeName, SUM(Cost) AS TotalCost
+FROM       make AS MK JOIN model AS MD 
+           ON MK.MakeID = MD.MakeID
+JOIN       stock AS ST ON ST.ModelID = MD.ModelID
+WHERE      DateBought BETWEEN TRUNC(CURDATE(), 'MONTH') 
+           - INTERVAL 1 MONTH
+           AND
+           LAST_DAY(CURDATE()) - INTERVAL 1 MONTH 
+GROUP BY   MakeName;
+
+
+SELECT     SA.Color, AVG(SA.TotalSalePrice) AS AverageMonthSales
+           ,MIN(SQ.AveragePreviousMonthSales) AS AveragePreviousMonthSales
+FROM       allsales AS SA
+LEFT OUTER JOIN 
+           (
+            SELECT     Color, AVG(TotalSalePrice) 
+                       AS AveragePreviousMonthSales
+            FROM       allsales
+            WHERE      YEAR(SaleDate) = YEAR(TO_DATE('2018-06-01')) - 1
+                       AND MONTH(SaleDate) = MONTH(TO_DATE('2018-06-01'))
+            GROUP BY   Color
+           ) SQ   
+           ON SQ.Color = SA.Color
+WHERE      YEAR(SA.SaleDate) = YEAR(TO_DATE('2018-06-01'))
+           AND MONTH(SA.SaleDate) = MONTH(TO_DATE('2018-06-01'))
+GROUP BY   SA.Color;
+
+
+SELECT     DAYOFYEAR(SaleDate) AS DayNumber
+          ,SUM(SalePrice) AS SalePrice
+          ,DATE_FORMAT(SaleDate, 'EEEE') AS Weekday
+FROM      allsales
+WHERE     YEAR(SaleDate) = 2018
+          AND WEEKDAY(SaleDate) NOT IN (5,6)
+GROUP BY  DAYOFYEAR(SaleDate)
+          ,DATE_FORMAT(SaleDate, 'EEEE')
+ORDER BY  DayNumber
+
+
+WITH TallyTable_CTE
+AS
+(
+SELECT     ROW_NUMBER() OVER (ORDER BY StockCode) AS Nm
+FROM       stock
+ORDER BY   Nm
+LIMIT      90
+)
+,WeekendList_CTE
+AS
+(
+SELECT       DATE_ADD('2018-03-01', Nm - 1) AS WeekdayDate
+FROM         TallyTable_CTE
+WHERE        DAYOFWEEK(DATE_ADD('2018-03-01', Nm - 1))
+                  IN (5,6)
+             AND Nm <= DATEDIFF('2018-04-30', '2018-03-01')
+)
+
+SELECT    COUNT(*) AS WeekendDays FROM WeekendList_CTE;
+
+
+WITH TallyTable_CTE
+AS
+(
+SELECT     ROW_NUMBER() OVER (ORDER BY StockCode) AS nm
+FROM       stock
+ORDER BY   nm
+LIMIT      12
+)
+,LastDayOfMonth_CTE
+AS
+(
+SELECT       LAST_DAY(CONCAT('2016-', nm, '-01')) AS LastDayDate
+FROM         TallyTable_CTE
+)
+
+SELECT        CTE.LastDayDate
+             ,SUM(SLS.SalePrice) AS TotalDailySales
+FROM         salesbycountry SLS
+JOIN         LastDayOfMonth_CTE CTE
+             ON CTE.LastDayDate = DATE(SLS.SaleDate)
+GROUP BY     CTE.LastDayDate
+ORDER BY     CTE.LastDayDate;
+
+
+WITH TallyTable_CTE
+AS
+(
+SELECT     ROW_NUMBER() OVER (ORDER BY StockCode) AS nm
+FROM       stock
+ORDER BY   nm
+LIMIT      12
+)
+,LastDayOfMonth_CTE
+AS
+(
+SELECT       LAST_DAY(CONCAT('2023-', nm, '-01')) AS MonthEndDate
+             ,WEEKDAY(LAST_DAY(CONCAT('2023-', nm, '-01'))) + 1
+             AS MonthEndDay
+FROM         TallyTable_CTE
+)
+
+SELECT       MonthEndDate
+             ,CASE
+                 WHEN MonthEndDay >= 5 THEN DATE_ADD(MonthEndDate
+                      ,5 - MonthEndDay) 
+                 ELSE DATE_SUB(MonthEndDate
+             ,2 + MonthEndDay)
+             END AS LastFridayOfMonth
+FROM         LastDayOfMonth_CTE;
+
+
+SELECT       ST.StockCode
+            ,ST.DateBought
+            ,SLS.SaleDate
+            ,TIMESTAMPDIFF(YEAR, ST.DateBought
+              ,IFNULL(SLS.SaleDate, CURDATE())) AS Years
+            ,TIMESTAMPDIFF(MONTH, ST.DateBought
+              ,IFNULL(SLS.SaleDate, CURDATE())) AS Months
+            ,TIMESTAMPDIFF(DAY, ST.DateBought
+              ,IFNULL(SLS.SaleDate, CURDATE())) AS Days
+FROM        stock ST
+LEFT JOIN   (
+            SELECT SA.SaleDate
+                   ,StockID                   
+            FROM   salesdetails SD
+            JOIN   sales SA USING(SalesID)
+            ) SLS
+            ON ST.StockCode = SLS.StockID 
+WHERE       SLS.SaleDate IS NULL
+ORDER BY    Years DESC, Months DESC, Days DESC; 
+
+
+SELECT       ST.DateBought
+            ,SA.SaleDate
+            ,CONCAT(MakeName, '-', ModelName) AS MakeAndModel
+            ,TIMESTAMPDIFF(HOUR, ST.DateBought, SA.SaleDate) AS Hours
+            ,TIMESTAMPDIFF(MINUTE, ST.DateBought, SA.SaleDate) AS Minutes
+            ,TIMESTAMPDIFF(SECOND, ST.DateBought, SA.SaleDate) AS Seconds
+            ,CONCAT(FLOOR(TIMESTAMPDIFF(HOUR, ST.DateBought, SA.SaleDate) / 24) 
+                    ,' Days - '
+                    ,TIMESTAMPDIFF(HOUR, ST.DateBought, SA.SaleDate) % 24
+                    ,' Hours')
+                 AS DaysAndHours
+FROM         stock ST
+JOIN         model MD
+             ON ST.ModelID = MD.ModelID 
+JOIN         make MK
+             ON MD.MakeID = MK.MakeID 
+JOIN         salesdetails SD
+             ON ST.StockCode = SD.StockID 
+JOIN         sales SA
+             ON SD.SalesID = SA.SalesID 
+WHERE        YEAR(SA.SaleDate) = 2017
+ORDER BY     Hours DESC, Minutes DESC, Seconds DESC;
+
+
+SELECT     MakeName, ModelName, SalePrice, SaleDate
+          ,DATE_FORMAT(SaleDate, 'hh:mm') AS TimeOfDaySold
+FROM      allsales
+WHERE     YEAR(SaleDate) = 2017
+ORDER BY  TimeOfDaySold;
+
+
+SELECT
+            CONCAT(HourOfDay, '-', HourOfDay + 1) AS HourBand
+            ,SUM(SalePrice) AS SalesByHourBand
+FROM
+    (
+     SELECT     SalePrice
+               ,HOUR(SaleDate) AS HourOfDay
+     FROM      salesbycountry
+     WHERE     YEAR(SaleDate) = 2017
+    ) A
+GROUP BY   HourOfDay
+ORDER BY   HourOfDay;
+
+
+SELECT      QuarterOfHour 
+           ,SUM(SalePrice) AS SalesByQuarterHourBand
+FROM
+    (
+     SELECT     SalePrice
+               ,FLOOR((MINUTE(SaleDate) / 15) + 1) AS QuarterOfHour
+     FROM      salesbycountry
+     WHERE     YEAR(SaleDate) = 2017
+    ) A
+GROUP BY   QuarterOfHour
+ORDER BY   QuarterOfHour;
+
+
+Chapter 21
+==========
+
+SELECT      Color, y2015, y2016, y2017, y2018
+FROM        
+            (
+             SELECT      Color, SD.SalePrice, YEAR(SA.SaleDate)
+                                                       AS YearOfSale
+             FROM        Stock ST
+             INNER JOIN  SalesDetails SD 
+                         ON StockCode = SD.StockID
+             INNER JOIN  Sales SA 
+                         ON SA.SalesID = SD.SalesID
+            ) SQ
+PIVOT       (
+             SUM(SalePrice) FOR YearOfSale 
+                            IN (2015 y2015, 2016 y2016, 2017 y2017, 2018 y2018)
+            );
+
+
+WITH MakeAndModelCostByYear_CTE (MakeName, ModelName, Color, CostPrice)
+AS 
+(
+SELECT      MakeName, ModelName, Color, Cost
+FROM        allsales
+)
+
+SELECT      MakeName, ModelName, Black, Blue, 'British Racing Green', 
+                           'Canary Yellow', 'Dark Purple', Green, 
+                           'Night Blue', Pink, Red, Silver
+FROM        MakeAndModelCostByYear_CTE
+PIVOT       (
+                   COUNT(CostPrice) FOR Color IN 
+                          (
+                           'Black' Black, 'Blue' Blue, 'British Racing Green' 'British Racing Green', 
+                           'Canary Yellow' 'Canary Yellow', 'Dark Purple' 'Dark Purple', 'Green' Green, 
+                           'Night Blue' 'Night Blue', 'Pink' Pink, 'Red' Red, 'Silver' Silver
+                           )
+             ) 
+ORDER BY    MakeName, ModelName;
+
+
+SELECT      MakeName, Color, SUM(Cost) AS Cost
+FROM        allsales
+GROUP BY    GROUPING SETS ((MakeName, Color), ())
+ORDER BY    MakeName, Color;
+
+
+SELECT      MakeName, Color, SUM(Cost) AS Cost
+FROM        allsales
+GROUP BY    GROUPING SETS ((MakeName, Color)
+              , (MakeName), (Color), ())
+ORDER BY    MakeName, Color;
+
+
+WITH GroupedSource_CTE
+AS
+(
+SELECT 
+MakeName
+,Color
+,Count(*) AS NumberOfCarsBought
+
+FROM        allsales
+WHERE       MakeName IS NOT NULL OR Color IS NOT NULL
+GROUP BY    GROUPING SETS ((MakeName), (Color), ())
+)
+
+SELECT AggregationType
+,Category
+,NumberOfCarsBought
+
+FROM
+(
+SELECT   'GrandTotal' AS AggregationType, NULL AS Category
+         ,NumberOfCarsBought, 1 AS SortOrder
+FROM     GroupedSource_CTE
+WHERE    MakeName IS NULL and Color IS NULL
+UNION
+SELECT   'Make Subtotals', MakeName, NumberOfCarsBought , 2
+FROM     GroupedSource_CTE
+WHERE    MakeName IS NOT NULL and Color IS NULL 
+UNION
+SELECT   'Color Subtotals', Color, NumberOfCarsBought , 3
+FROM     GroupedSource_CTE
+WHERE    MakeName IS NULL and Color IS NOT NULL
+) SQ
+ORDER BY SortOrder, NumberOfCarsBought DESC;
+
+
+SELECT     REPLACE(CustomerName, 'Ltd', 'Limited') AS NoAcronymName
+FROM       Customer
+WHERE      LOWER(CustomerName) LIKE '%ltd%';
+
+
+
