@@ -1,0 +1,22 @@
+%python
+
+--dbutils.fs.ls("dbfs:/user/hive/warehouse/")
+
+dbutils.fs.rm('dbfs:/user/hive/warehouse/allsales', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/budget', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/country', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/customer', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/make', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/marketinginformation', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/model', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/pivottable', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/sales', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/sales2015', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/sales2016', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/sales2017', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/sales2018', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/salesbycountry', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/salescategory', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/salesdetails', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/staff', True)
+dbutils.fs.rm('dbfs:/user/hive/warehouse/stock', True)
